@@ -1,0 +1,78 @@
+html body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* 헤더 */
+.cu-search {
+    background-color: #fff !important;
+}
+.notifi_icon {
+    position: relative;
+}
+.notifi_icon em {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    font-style: normal;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #fff;
+}
+.topLink_menu a {
+    margin: 0 3px;
+}
+.topLink_menu span {
+    margin: 0 6px;
+    font-weight: 300;
+}
+.topSearch > * {
+    margin: 0 5px;
+}
+
+/* 탑메뉴 */
+.topMenu .side {
+    width: 230px;
+}
+.topMenu .home {
+    margin-left: 0 !important;
+}
+.top-nav > ul li .top-menu {
+    height: 40px;
+}
+.top-nav > ul li .top-menu .top-menu__title {
+    margin-left: 0.45rem;
+}
+.top-nav > ul li:hover .top-menu:not(.top-menu--active) .top-menu__icon:before {
+    border-radius: 10px;
+}
+
+/* 북마크 */
+.bookMark,
+.bookMarkCancel {
+    width: 17px;
+    height: 17px;
+}
+.bookMark.active {
+    color: #facc15;
+    fill: #facc15;
+}
+
+/* sidemenu */
+.side-nav.on {
+    width: 85px;
+}
+.side-nav.on .side-menu__title {
+    display: none !important;
+}
+.tr {
+    transition: all 0.3s;
+}
+.modal .modal-dialog.modal-xxl {
+    width: 1200px;
+}
