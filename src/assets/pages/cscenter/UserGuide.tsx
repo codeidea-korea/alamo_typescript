@@ -306,7 +306,7 @@ const UserGuide = () => {
                               요금제 포함사항
                             </div>
                             <div id="Note1_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금제 포함사항
                                 </div>
@@ -388,7 +388,7 @@ const UserGuide = () => {
                               보험종류
                             </div>
                             <div id="Note1_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   보험종류
                                 </div>
@@ -410,7 +410,7 @@ const UserGuide = () => {
                               차량 인수 시 필수 지참사항
                             </div>
                             <div id="Note1_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 인수 시 필수 지참사항
                                 </div>
@@ -432,7 +432,7 @@ const UserGuide = () => {
                               렌터카 예약, 언제 하나요?
                             </div>
                             <div id="Note1_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌터카 예약, 언제 하나요?
                                 </div>
@@ -454,7 +454,7 @@ const UserGuide = () => {
                               요금 책정 기준
                             </div>
                             <div id="Note1_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금 책정 기준
                                 </div>
@@ -476,7 +476,7 @@ const UserGuide = () => {
                               국제면허증 발급 방법
                             </div>
                             <div id="Note1_guide06" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   국제면허증 발급 방법
                                 </div>
@@ -498,7 +498,7 @@ const UserGuide = () => {
                               만 25세 미만 운전자
                             </div>
                             <div id="Note1_guide07" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   만 25세 미만 운전자
                                 </div>
@@ -520,7 +520,7 @@ const UserGuide = () => {
                               편도 렌탈
                             </div>
                             <div id="Note1_guide08" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   편도 렌탈
                                 </div>
@@ -542,7 +542,7 @@ const UserGuide = () => {
                               미국 편도 렌탈
                             </div>
                             <div id="Note1_guide09" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   미국 편도 렌탈
                                 </div>
@@ -564,7 +564,7 @@ const UserGuide = () => {
                               하와이 편도 렌탈
                             </div>
                             <div id="Note1_guide10" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   하와이 편도 렌탈
                                 </div>
@@ -586,7 +586,7 @@ const UserGuide = () => {
                               장기 렌탈
                             </div>
                             <div id="Note1_guide11" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   장기 렌탈
                                 </div>
@@ -608,7 +608,7 @@ const UserGuide = () => {
                               지점에 한국인 직원이 있나요?
                             </div>
                             <div id="Note1_guide12" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   지점에 한국인 직원이 있나요?
                                 </div>
@@ -630,7 +630,7 @@ const UserGuide = () => {
                               결제 방법
                             </div>
                             <div id="Note1_guide13" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   결제 방법
                                 </div>
@@ -652,7 +652,7 @@ const UserGuide = () => {
                               렌탈 절차
                             </div>
                             <div id="Note1_guide14" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌탈 절차
                                 </div>
@@ -686,7 +686,7 @@ const UserGuide = () => {
                               차량 선택
                             </div>
                             <div id="Note2_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 선택
                                 </div>
@@ -708,7 +708,7 @@ const UserGuide = () => {
                               2/4 door란?
                             </div>
                             <div id="Note2_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   2/4 door란?
                                 </div>
@@ -730,7 +730,7 @@ const UserGuide = () => {
                               차량조회 불가능
                             </div>
                             <div id="Note2_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량조회 불가능
                                 </div>
@@ -752,7 +752,7 @@ const UserGuide = () => {
                               온라인 예약 절차 안내
                             </div>
                             <div id="Note2_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   온라인 예약 절차 안내
                                 </div>
@@ -774,7 +774,7 @@ const UserGuide = () => {
                               동영상-등급 별 대표 차량안내
                             </div>
                             <div id="Note2_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   동영상-등급 별 대표 차량안내
                                 </div>
@@ -808,7 +808,7 @@ const UserGuide = () => {
                               차량인수(Pick up) & 차량반납(Drop off)
                             </div>
                             <div id="Note3_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량인수(Pick up) & 차량반납(Drop off)
                                 </div>
@@ -830,7 +830,7 @@ const UserGuide = () => {
                               추가 옵션
                             </div>
                             <div id="Note3_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 옵션
                                 </div>
@@ -852,7 +852,7 @@ const UserGuide = () => {
                               추가 운전자 등록
                             </div>
                             <div id="Note3_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 운전자 등록
                                 </div>
@@ -874,7 +874,7 @@ const UserGuide = () => {
                               응급상황 대처 방법
                             </div>
                             <div id="Note3_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   응급상황 대처 방법
                                 </div>
@@ -896,7 +896,7 @@ const UserGuide = () => {
                               항공기 연착
                             </div>
                             <div id="Note3_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   항공기 연착
                                 </div>
@@ -930,7 +930,7 @@ const UserGuide = () => {
                               주차하기
                             </div>
                             <div id="Note4_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주차하기
                                 </div>
@@ -1012,7 +1012,7 @@ const UserGuide = () => {
                               주유하기
                             </div>
                             <div id="Note4_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주유하기
                                 </div>
@@ -1034,7 +1034,7 @@ const UserGuide = () => {
                               컨버터블 차량 작동법
                             </div>
                             <div id="Note4_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   컨버터블 차량 작동법
                                 </div>
@@ -1056,7 +1056,7 @@ const UserGuide = () => {
                               운전 시 주의사항
                             </div>
                             <div id="Note4_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   운전 시 주의사항
                                 </div>
@@ -1078,7 +1078,7 @@ const UserGuide = () => {
                               행정수수료(Administrative Fee)
                             </div>
                             <div id="Note4_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   행정수수료(Administrative Fee)
                                 </div>
@@ -1115,7 +1115,7 @@ const UserGuide = () => {
                               요금제 포함사항
                             </div>
                             <div id="Note1_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금제 포함사항
                                 </div>
@@ -1197,7 +1197,7 @@ const UserGuide = () => {
                               보험종류
                             </div>
                             <div id="Note1_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   보험종류
                                 </div>
@@ -1219,7 +1219,7 @@ const UserGuide = () => {
                               차량 인수 시 필수 지참사항
                             </div>
                             <div id="Note1_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 인수 시 필수 지참사항
                                 </div>
@@ -1241,7 +1241,7 @@ const UserGuide = () => {
                               렌터카 예약, 언제 하나요?
                             </div>
                             <div id="Note1_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌터카 예약, 언제 하나요?
                                 </div>
@@ -1263,7 +1263,7 @@ const UserGuide = () => {
                               요금 책정 기준
                             </div>
                             <div id="Note1_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금 책정 기준
                                 </div>
@@ -1285,7 +1285,7 @@ const UserGuide = () => {
                               국제면허증 발급 방법
                             </div>
                             <div id="Note1_guide06" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   국제면허증 발급 방법
                                 </div>
@@ -1307,7 +1307,7 @@ const UserGuide = () => {
                               만 25세 미만 운전자
                             </div>
                             <div id="Note1_guide07" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   만 25세 미만 운전자
                                 </div>
@@ -1329,7 +1329,7 @@ const UserGuide = () => {
                               편도 렌탈
                             </div>
                             <div id="Note1_guide08" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   편도 렌탈
                                 </div>
@@ -1351,7 +1351,7 @@ const UserGuide = () => {
                               미국 편도 렌탈
                             </div>
                             <div id="Note1_guide09" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   미국 편도 렌탈
                                 </div>
@@ -1373,7 +1373,7 @@ const UserGuide = () => {
                               하와이 편도 렌탈
                             </div>
                             <div id="Note1_guide10" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   하와이 편도 렌탈
                                 </div>
@@ -1395,7 +1395,7 @@ const UserGuide = () => {
                               장기 렌탈
                             </div>
                             <div id="Note1_guide11" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   장기 렌탈
                                 </div>
@@ -1417,7 +1417,7 @@ const UserGuide = () => {
                               지점에 한국인 직원이 있나요?
                             </div>
                             <div id="Note1_guide12" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   지점에 한국인 직원이 있나요?
                                 </div>
@@ -1439,7 +1439,7 @@ const UserGuide = () => {
                               결제 방법
                             </div>
                             <div id="Note1_guide13" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   결제 방법
                                 </div>
@@ -1461,7 +1461,7 @@ const UserGuide = () => {
                               렌탈 절차
                             </div>
                             <div id="Note1_guide14" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌탈 절차
                                 </div>
@@ -1495,7 +1495,7 @@ const UserGuide = () => {
                               차량 선택
                             </div>
                             <div id="Note2_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 선택
                                 </div>
@@ -1517,7 +1517,7 @@ const UserGuide = () => {
                               2/4 door란?
                             </div>
                             <div id="Note2_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   2/4 door란?
                                 </div>
@@ -1539,7 +1539,7 @@ const UserGuide = () => {
                               차량조회 불가능
                             </div>
                             <div id="Note2_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량조회 불가능
                                 </div>
@@ -1561,7 +1561,7 @@ const UserGuide = () => {
                               온라인 예약 절차 안내
                             </div>
                             <div id="Note2_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   온라인 예약 절차 안내
                                 </div>
@@ -1583,7 +1583,7 @@ const UserGuide = () => {
                               동영상-등급 별 대표 차량안내
                             </div>
                             <div id="Note2_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   동영상-등급 별 대표 차량안내
                                 </div>
@@ -1617,7 +1617,7 @@ const UserGuide = () => {
                               차량인수(Pick up) & 차량반납(Drop off)
                             </div>
                             <div id="Note3_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량인수(Pick up) & 차량반납(Drop off)
                                 </div>
@@ -1639,7 +1639,7 @@ const UserGuide = () => {
                               추가 옵션
                             </div>
                             <div id="Note3_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 옵션
                                 </div>
@@ -1661,7 +1661,7 @@ const UserGuide = () => {
                               추가 운전자 등록
                             </div>
                             <div id="Note3_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 운전자 등록
                                 </div>
@@ -1683,7 +1683,7 @@ const UserGuide = () => {
                               응급상황 대처 방법
                             </div>
                             <div id="Note3_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   응급상황 대처 방법
                                 </div>
@@ -1705,7 +1705,7 @@ const UserGuide = () => {
                               항공기 연착
                             </div>
                             <div id="Note3_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   항공기 연착
                                 </div>
@@ -1739,7 +1739,7 @@ const UserGuide = () => {
                               주차하기
                             </div>
                             <div id="Note4_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주차하기
                                 </div>
@@ -1817,7 +1817,7 @@ const UserGuide = () => {
                               주유하기
                             </div>
                             <div id="Note4_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주유하기
                                 </div>
@@ -1839,7 +1839,7 @@ const UserGuide = () => {
                               컨버터블 차량 작동법
                             </div>
                             <div id="Note4_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   컨버터블 차량 작동법
                                 </div>
@@ -1861,7 +1861,7 @@ const UserGuide = () => {
                               운전 시 주의사항
                             </div>
                             <div id="Note4_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   운전 시 주의사항
                                 </div>
@@ -1883,7 +1883,7 @@ const UserGuide = () => {
                               행정수수료(Administrative Fee)
                             </div>
                             <div id="Note4_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   행정수수료(Administrative Fee)
                                 </div>
@@ -1920,7 +1920,7 @@ const UserGuide = () => {
                               요금제 포함사항
                             </div>
                             <div id="Note1_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금제 포함사항
                                 </div>
@@ -1998,7 +1998,7 @@ const UserGuide = () => {
                               보험종류
                             </div>
                             <div id="Note1_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   보험종류
                                 </div>
@@ -2020,7 +2020,7 @@ const UserGuide = () => {
                               차량 인수 시 필수 지참사항
                             </div>
                             <div id="Note1_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 인수 시 필수 지참사항
                                 </div>
@@ -2042,7 +2042,7 @@ const UserGuide = () => {
                               렌터카 예약, 언제 하나요?
                             </div>
                             <div id="Note1_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌터카 예약, 언제 하나요?
                                 </div>
@@ -2064,7 +2064,7 @@ const UserGuide = () => {
                               요금 책정 기준
                             </div>
                             <div id="Note1_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금 책정 기준
                                 </div>
@@ -2086,7 +2086,7 @@ const UserGuide = () => {
                               국제면허증 발급 방법
                             </div>
                             <div id="Note1_guide06" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   국제면허증 발급 방법
                                 </div>
@@ -2108,7 +2108,7 @@ const UserGuide = () => {
                               만 25세 미만 운전자
                             </div>
                             <div id="Note1_guide07" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   만 25세 미만 운전자
                                 </div>
@@ -2130,7 +2130,7 @@ const UserGuide = () => {
                               편도 렌탈
                             </div>
                             <div id="Note1_guide08" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   편도 렌탈
                                 </div>
@@ -2152,7 +2152,7 @@ const UserGuide = () => {
                               미국 편도 렌탈
                             </div>
                             <div id="Note1_guide09" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   미국 편도 렌탈
                                 </div>
@@ -2174,7 +2174,7 @@ const UserGuide = () => {
                               하와이 편도 렌탈
                             </div>
                             <div id="Note1_guide10" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   하와이 편도 렌탈
                                 </div>
@@ -2196,7 +2196,7 @@ const UserGuide = () => {
                               장기 렌탈
                             </div>
                             <div id="Note1_guide11" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   장기 렌탈
                                 </div>
@@ -2218,7 +2218,7 @@ const UserGuide = () => {
                               지점에 한국인 직원이 있나요?
                             </div>
                             <div id="Note1_guide12" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   지점에 한국인 직원이 있나요?
                                 </div>
@@ -2240,7 +2240,7 @@ const UserGuide = () => {
                               결제 방법
                             </div>
                             <div id="Note1_guide13" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   결제 방법
                                 </div>
@@ -2262,7 +2262,7 @@ const UserGuide = () => {
                               렌탈 절차
                             </div>
                             <div id="Note1_guide14" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌탈 절차
                                 </div>
@@ -2296,7 +2296,7 @@ const UserGuide = () => {
                               차량 선택
                             </div>
                             <div id="Note2_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 선택
                                 </div>
@@ -2318,7 +2318,7 @@ const UserGuide = () => {
                               2/4 door란?
                             </div>
                             <div id="Note2_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   2/4 door란?
                                 </div>
@@ -2340,7 +2340,7 @@ const UserGuide = () => {
                               차량조회 불가능
                             </div>
                             <div id="Note2_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량조회 불가능
                                 </div>
@@ -2362,7 +2362,7 @@ const UserGuide = () => {
                               온라인 예약 절차 안내
                             </div>
                             <div id="Note2_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   온라인 예약 절차 안내
                                 </div>
@@ -2384,7 +2384,7 @@ const UserGuide = () => {
                               동영상-등급 별 대표 차량안내
                             </div>
                             <div id="Note2_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   동영상-등급 별 대표 차량안내
                                 </div>
@@ -2418,7 +2418,7 @@ const UserGuide = () => {
                               차량인수(Pick up) & 차량반납(Drop off)
                             </div>
                             <div id="Note3_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량인수(Pick up) & 차량반납(Drop off)
                                 </div>
@@ -2440,7 +2440,7 @@ const UserGuide = () => {
                               추가 옵션
                             </div>
                             <div id="Note3_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 옵션
                                 </div>
@@ -2462,7 +2462,7 @@ const UserGuide = () => {
                               추가 운전자 등록
                             </div>
                             <div id="Note3_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 운전자 등록
                                 </div>
@@ -2484,7 +2484,7 @@ const UserGuide = () => {
                               응급상황 대처 방법
                             </div>
                             <div id="Note3_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   응급상황 대처 방법
                                 </div>
@@ -2506,7 +2506,7 @@ const UserGuide = () => {
                               항공기 연착
                             </div>
                             <div id="Note3_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   항공기 연착
                                 </div>
@@ -2540,7 +2540,7 @@ const UserGuide = () => {
                               주차하기
                             </div>
                             <div id="Note4_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주차하기
                                 </div>
@@ -2618,7 +2618,7 @@ const UserGuide = () => {
                               주유하기
                             </div>
                             <div id="Note4_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주유하기
                                 </div>
@@ -2640,7 +2640,7 @@ const UserGuide = () => {
                               컨버터블 차량 작동법
                             </div>
                             <div id="Note4_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   컨버터블 차량 작동법
                                 </div>
@@ -2662,7 +2662,7 @@ const UserGuide = () => {
                               운전 시 주의사항
                             </div>
                             <div id="Note4_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   운전 시 주의사항
                                 </div>
@@ -2684,7 +2684,7 @@ const UserGuide = () => {
                               행정수수료(Administrative Fee)
                             </div>
                             <div id="Note4_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   행정수수료(Administrative Fee)
                                 </div>
@@ -2721,7 +2721,7 @@ const UserGuide = () => {
                               요금제 포함사항
                             </div>
                             <div id="Note1_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금제 포함사항
                                 </div>
@@ -2799,7 +2799,7 @@ const UserGuide = () => {
                               보험종류
                             </div>
                             <div id="Note1_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   보험종류
                                 </div>
@@ -2821,7 +2821,7 @@ const UserGuide = () => {
                               차량 인수 시 필수 지참사항
                             </div>
                             <div id="Note1_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 인수 시 필수 지참사항
                                 </div>
@@ -2843,7 +2843,7 @@ const UserGuide = () => {
                               렌터카 예약, 언제 하나요?
                             </div>
                             <div id="Note1_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌터카 예약, 언제 하나요?
                                 </div>
@@ -2865,7 +2865,7 @@ const UserGuide = () => {
                               요금 책정 기준
                             </div>
                             <div id="Note1_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   요금 책정 기준
                                 </div>
@@ -2887,7 +2887,7 @@ const UserGuide = () => {
                               국제면허증 발급 방법
                             </div>
                             <div id="Note1_guide06" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   국제면허증 발급 방법
                                 </div>
@@ -2909,7 +2909,7 @@ const UserGuide = () => {
                               만 25세 미만 운전자
                             </div>
                             <div id="Note1_guide07" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   만 25세 미만 운전자
                                 </div>
@@ -2931,7 +2931,7 @@ const UserGuide = () => {
                               편도 렌탈
                             </div>
                             <div id="Note1_guide08" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   편도 렌탈
                                 </div>
@@ -2953,7 +2953,7 @@ const UserGuide = () => {
                               미국 편도 렌탈
                             </div>
                             <div id="Note1_guide09" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   미국 편도 렌탈
                                 </div>
@@ -2975,7 +2975,7 @@ const UserGuide = () => {
                               하와이 편도 렌탈
                             </div>
                             <div id="Note1_guide10" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   하와이 편도 렌탈
                                 </div>
@@ -2997,7 +2997,7 @@ const UserGuide = () => {
                               장기 렌탈
                             </div>
                             <div id="Note1_guide11" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   장기 렌탈
                                 </div>
@@ -3019,7 +3019,7 @@ const UserGuide = () => {
                               지점에 한국인 직원이 있나요?
                             </div>
                             <div id="Note1_guide12" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   지점에 한국인 직원이 있나요?
                                 </div>
@@ -3041,7 +3041,7 @@ const UserGuide = () => {
                               결제 방법
                             </div>
                             <div id="Note1_guide13" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   결제 방법
                                 </div>
@@ -3063,7 +3063,7 @@ const UserGuide = () => {
                               렌탈 절차
                             </div>
                             <div id="Note1_guide14" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   렌탈 절차
                                 </div>
@@ -3097,7 +3097,7 @@ const UserGuide = () => {
                               차량 선택
                             </div>
                             <div id="Note2_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량 선택
                                 </div>
@@ -3119,7 +3119,7 @@ const UserGuide = () => {
                               2/4 door란?
                             </div>
                             <div id="Note2_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   2/4 door란?
                                 </div>
@@ -3141,7 +3141,7 @@ const UserGuide = () => {
                               차량조회 불가능
                             </div>
                             <div id="Note2_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량조회 불가능
                                 </div>
@@ -3163,7 +3163,7 @@ const UserGuide = () => {
                               온라인 예약 절차 안내
                             </div>
                             <div id="Note2_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   온라인 예약 절차 안내
                                 </div>
@@ -3185,7 +3185,7 @@ const UserGuide = () => {
                               동영상-등급 별 대표 차량안내
                             </div>
                             <div id="Note2_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   동영상-등급 별 대표 차량안내
                                 </div>
@@ -3219,7 +3219,7 @@ const UserGuide = () => {
                               차량인수(Pick up) & 차량반납(Drop off)
                             </div>
                             <div id="Note3_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   차량인수(Pick up) & 차량반납(Drop off)
                                 </div>
@@ -3241,7 +3241,7 @@ const UserGuide = () => {
                               추가 옵션
                             </div>
                             <div id="Note3_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 옵션
                                 </div>
@@ -3263,7 +3263,7 @@ const UserGuide = () => {
                               추가 운전자 등록
                             </div>
                             <div id="Note3_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   추가 운전자 등록
                                 </div>
@@ -3285,7 +3285,7 @@ const UserGuide = () => {
                               응급상황 대처 방법
                             </div>
                             <div id="Note3_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   응급상황 대처 방법
                                 </div>
@@ -3307,7 +3307,7 @@ const UserGuide = () => {
                               항공기 연착
                             </div>
                             <div id="Note3_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   항공기 연착
                                 </div>
@@ -3341,7 +3341,7 @@ const UserGuide = () => {
                               주차하기
                             </div>
                             <div id="Note4_guide01" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주차하기
                                 </div>
@@ -3419,7 +3419,7 @@ const UserGuide = () => {
                               주유하기
                             </div>
                             <div id="Note4_guide02" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   주유하기
                                 </div>
@@ -3441,7 +3441,7 @@ const UserGuide = () => {
                               컨버터블 차량 작동법
                             </div>
                             <div id="Note4_guide03" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   컨버터블 차량 작동법
                                 </div>
@@ -3463,7 +3463,7 @@ const UserGuide = () => {
                               운전 시 주의사항
                             </div>
                             <div id="Note4_guide04" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   운전 시 주의사항
                                 </div>
@@ -3485,7 +3485,7 @@ const UserGuide = () => {
                               행정수수료(Administrative Fee)
                             </div>
                             <div id="Note4_guide05" className="modal">
-                              <div className="modal-content2">
+                              <div className="modal-content2 min-100">
                                 <div className="modal-title Title03">
                                   행정수수료(Administrative Fee)
                                 </div>

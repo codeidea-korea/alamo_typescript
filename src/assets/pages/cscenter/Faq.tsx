@@ -270,14 +270,14 @@ const Faq = () => {
               </div>
               {/* <!-- FAQ list E --> */}
 
-              <div className="pagination">
+              {/* <div className="pagination">
                 <a
                   href="/board/board_list.php?board_id=notice&amp;page=1"
                   className="selected"
                 >
                   1
                 </a>
-              </div>
+              </div> */}
             </article>
           </div>
         </section>
