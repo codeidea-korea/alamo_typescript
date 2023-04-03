@@ -21,6 +21,11 @@ const RsvStatus = () => {
             $("body").removeClass("noneScroll");
         });
 
+        $(".modal .calendar_close").click(function () {
+            $(".modal#calendar").hide();
+            $("body").removeClass("noneScroll");
+          });
+
         $(".view").show();
         $(".hidden").hide();
 
@@ -463,7 +468,7 @@ const RsvStatus = () => {
                                 direction="horizontal"
                             />
                             <div className="l-button mt30">
-                                <button type="button" className="button full_button link button--primary">
+                                <button type="button" className="button full_button link button--primary calendar_close">
                                     확인
                                 </button>
                             </div>

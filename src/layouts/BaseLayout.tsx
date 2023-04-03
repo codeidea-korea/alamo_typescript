@@ -235,6 +235,7 @@ const BaseLayout = () => {
               url === "/faq" ||
               url === "/user_guide" ||
               url === "/nm_rsv" ||
+              url === "/setting" ||
               url === "/company") && (
               <>
                 <a onClick={() => history.back()} className="back_button">
@@ -351,6 +352,7 @@ const BaseLayout = () => {
                   url !== "/faq" &&
                   url !== "/user_guide" &&
                   url !== "/nm_rsv" &&
+                  url !== "/setting" &&
                   url !== "/company" && (
                     <>
                       <a className="img search" href="/rsv_main"></a>

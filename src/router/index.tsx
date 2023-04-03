@@ -47,6 +47,8 @@ import PickupScheduled from "../assets/pages/mypage/PickupScheduled";
 import Coupon from "../assets/pages/mypage/Coupon";
 import LinkList from "../assets/pages/Link";
 import LinkLayout from "../layouts/LinkLayout";
+import { element } from "prop-types";
+import Setting from "../assets/pages/mobile/Setting";
 
 function Router() {
     const routes = [
@@ -239,6 +241,11 @@ function Router() {
                     path: "membership",
                     element: <Membership />,
                 },
+                // mobile 설정
+                {
+                    path: "setting",
+                    element:<Setting />,
+                } ,
             ],
         },
         {

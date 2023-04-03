@@ -135,9 +135,9 @@ const InqueryList = () => {
                                                 <button type="button" className="button link button--cancle mr10">
                                                     삭제
                                                 </button>
-                                                <button type="button" className="button link button--primary">
+                                                <a href="/inquiry_regist" type="button" className="button link button--primary">
                                                     재문의하기
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

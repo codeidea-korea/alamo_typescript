@@ -733,4 +733,10 @@ header.scroll .header_head {
   .mypage_top-right a{
     width:100%;
   }
+  #main .swiper-main .swiper-button-pause{
+    bottom:100px!important;
+    display: block!important;
+  }
+  /* 설정 */
+  
 }
