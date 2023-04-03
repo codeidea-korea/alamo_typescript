@@ -102,7 +102,7 @@ const RsvStatus = () => {
                     <div className="inner">
                         <article className="sub_title Title01 tac">예약현황</article>
                         <article className="search-box form flex pa30 ico shadow" style={{alignItems: "center"}} id="DatePick">
-                            <span className="mr5" style={{flex: "1"}}>
+                            <span className="mr5" style={{flex: "1.2"}}>
                                 <input type="text" value={start + " ~ " + end} readOnly onClick={() => openModal("calendar")} />
                                 <span className="ui-datepicker-trigger"></span>
                             </span>
@@ -113,12 +113,12 @@ const RsvStatus = () => {
                                 </svg>
                                 <input type="search" autoComplete="off" className="search_input mr5" data-test-id="search-input" placeholder="검색" />
                             </span>
-                            <button type="button" className="button search_btn">
+{/*                             <button type="button" className="button search_btn">
                                 <span className="ico">검색</span>
-                            </button>
+                            </button> */}
                         </article>
 
-                        <article className="l-box">
+                        <article className="tab_l-box l-box">
                             <ul id="tab-btn" className="tab_btn pb5">
                                 <li>
                                     <a className="active_tab" href="#" data-category="all">
@@ -151,18 +151,28 @@ const RsvStatus = () => {
                                 <div className="rsv_status_list">
                                     <ul className="l-box">
                                         <li className="box_cont open drop all tab1">
-                                            <div className="Note1 cont_title arrow pa30 toggle_btn toggle flex toggle_tit active" onClick={toggleHandle}>
+                                            <div className="Note1 cont_title arrow pa30 toggle_btn toggle flex ai-ct toggle_tit active" onClick={toggleHandle}>
                                                 <span>예약번호</span>
                                                 <span className="fwb ml5">1111103</span>
                                                 <button type="button" className="button button--primary step Fs_sm ml10">
-                                                    <span className="mr5">픽업예정</span>
+                                                    픽업예정
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5px" height="7x" viewBox="0 0 50 80">
+                                                        <polyline
+                                                            fill="none"
+                                                            stroke="#fff"
+                                                            strokeWidth="6"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            points="
+                  0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                                                    </svg>
                                                 </button>
                                             </div>
                                             <div className="cont_info view hidden toggle_cont">
                                                 <table className="table01 mb10">
                                                     <tbody>
                                                         <tr>
-                                                            <td className="FS_sm">
+                                                            <td className="FS_sm flex">
                                                                 <span className="line">요금제&요금</span>
                                                                 <span className="point">지금결제</span>
                                                             </td>
@@ -173,7 +183,7 @@ const RsvStatus = () => {
                                                         <tr>
                                                             <td className="mb10 fwb">기본할인요금제</td>
                                                             <td className="tar">
-                                                                <span className="Fs_sm">
+                                                                <span className="Fs_sm pay">
                                                                     USD <b className="Title03">110.40</b>/KRW <b className="Title03">103,999</b>
                                                                 </span>
                                                             </td>
@@ -223,7 +233,17 @@ const RsvStatus = () => {
                                                 <span>예약번호</span>
                                                 <span className="fwb ml5">1111103</span>
                                                 <button type="button" className="button button--disabled step Fs_sm ml10">
-                                                    <span className="mr5">NO SHOW</span>
+                                                    NO SHOW
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5px" height="7x" viewBox="0 0 50 80">
+                                                        <polyline
+                                                            fill="none"
+                                                            stroke="#808386"
+                                                            strokeWidth="6"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            points="
+                  0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                                                    </svg>
                                                 </button>
                                             </div>
                                             <div className="cont_info view hidden toggle_cont2">
@@ -232,7 +252,7 @@ const RsvStatus = () => {
                                                         <tr>
                                                             <td className="FS_sm">
                                                                 <span className="line">요금제&요금</span>
-                                                                <span className="point">현지결제</span>
+                                                                <span className="point02">현지결제</span>
                                                             </td>
                                                             <td className="tar ico">
                                                                 <img src="/img/icon/receipt.png" alt="" />
@@ -283,7 +303,17 @@ const RsvStatus = () => {
                                                 <span>예약번호</span>
                                                 <span className="fwb ml5">1111103</span>
                                                 <button type="button" className="button button--disabled step Fs_sm ml10">
-                                                    <span className="mr5">픽업완료</span>
+                                                    픽업완료
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5px" height="7x" viewBox="0 0 50 80">
+                                                        <polyline
+                                                            fill="none"
+                                                            stroke="#808386"
+                                                            strokeWidth="6"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            points="
+                  0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                                                    </svg>
                                                 </button>
                                             </div>
                                             <div className="cont_info view hidden toggle_cont3">
@@ -343,7 +373,17 @@ const RsvStatus = () => {
                                                 <span>예약번호</span>
                                                 <span className="fwb ml5">1111103</span>
                                                 <button type="button" className="button button--disabled step Fs_sm ml10">
-                                                    <span className="mr5 error">예약취소</span>
+                                                    <span className="error">예약취소</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5px" height="7x" viewBox="0 0 50 80">
+                                                        <polyline
+                                                            fill="none"
+                                                            stroke="#d83028"
+                                                            strokeWidth="6"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            points="
+                  0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                                                    </svg>
                                                 </button>
                                             </div>
                                             <div className="cont_info view hidden toggle_cont4">
@@ -352,7 +392,7 @@ const RsvStatus = () => {
                                                         <tr>
                                                             <td className="FS_sm">
                                                                 <span className="line">요금제&요금</span>
-                                                                <span className="point">현지결제</span>
+                                                                <span className="point02">현지결제</span>
                                                             </td>
                                                             <td className="tar ico">
                                                                 <img src="/img/icon/receipt.png" alt="" />

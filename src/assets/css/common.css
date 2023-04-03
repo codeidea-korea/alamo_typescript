@@ -954,6 +954,10 @@ textarea,
 .point {
     color: var(--point02);
 }
+.point02 {
+    color: #EB9616;
+}
+
 
 /* button */
 .l-button {
