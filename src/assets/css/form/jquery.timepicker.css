@@ -1,0 +1,225 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background: white;
+    transition: background 0.25s ease;
+  }
+  
+  .container.pm {
+    background: var(--main-color);
+  }
+  
+  .timepicker-container-outer {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+    padding: 30px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+/*     top: 50%;
+    transform: translateY(-50%); */
+    transition: background 0.25s ease;
+  }
+  
+  .pm .timepicker-container-outer {
+    background: var(--main-color);
+  }
+  
+  .timepicker-container-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+  }
+  
+  .timeline-container {
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 36px;
+  }
+  
+  .current-time {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: -23px;
+    left: -20px;
+    cursor: ew-resize;
+    user-select: none;
+  }
+  .current-time::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: var(--main-color);
+    transform: rotate(45deg);
+    border-radius: 20px 20px 3px 20px;
+    z-index: -1;
+    top: 0;
+  }
+  .am .current-time::after {
+    background: var(--main-color);
+  }
+  .pm .current-time::after {
+    background: white;
+  }
+  
+  .actual-time {
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .am .actual-time {
+    color: white;
+  }
+  
+  .pm .actual-time {
+    color: var(--main-color);
+  }
+  
+  .timeline {
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+  }
+  .timeline::before, .timeline::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    top: -6px;
+    position: absolute;
+    background: var(--main-color);
+    left: -1px;
+  }
+  .timeline::after {
+    left: auto;
+    right: -1px;
+  }
+  
+  .pm .timeline::before, .pm .timeline::after {
+    background: white;
+  }
+  
+  .hours-container {
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 31px;
+  }
+  
+  .hour-mark {
+    width: 2px;
+    display: block;
+    float: left;
+    height: 4px;
+    background: var(--main-color);
+    position: relative;
+    margin-left: calc((100% / 12) - 2px);
+  }
+  .hour-mark:nth-child(3n) {
+    height: 6px;
+    top: -1px;
+  }
+  
+  .pm .hour-mark {
+    background: white;
+  }
+  
+  .display-time {
+    width: 60%;
+    display: block;
+    padding: 30px 0 0;
+    float: left;
+    font-size: 36px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .am .display-time {
+    color: var(--main-color);
+  }
+  
+  .pm .display-time {
+    color: white;
+  }
+  
+  .am-pm-container {
+    width: 40%;
+    float: left;
+    height: 36px;
+    display: block;
+    position: relative;
+    padding: 33px 0 0 10px;
+  }
+  
+  .am-pm-button {
+    width: calc(50% - 5px);
+    height: 36px;
+    line-height: 36px;
+    background: #2196F3;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+  }
+  .am-pm-button:first-child {
+    background: var(--main-color);
+    color: white;
+  }
+  .am-pm-button:last-child {
+    background: white;
+    color: var(--main-color);
+    margin-left: 10px;
+  }
+  .pm .am-pm-button:last-child {
+    color: var(--main-color);
+  }
+  
+  .loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 100vh;
+    font-family: sans-serif;
+    background: white;
+    pointer-events: none;
+    opacity: 1;
+    visibility: visible;
+    animation: fade-out 0.5s forwards;
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

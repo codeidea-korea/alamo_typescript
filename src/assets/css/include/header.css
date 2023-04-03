@@ -1,0 +1,350 @@
+@charset "utf-8";
+
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    height: auto;
+}
+#header.scroll {
+    top: 0;
+    left: 0;
+}
+.header_head {
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+.header_head.on {
+    background: #fff;
+}
+.h_inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 97%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* logo */
+.header_logo {
+    width: 147px;
+    cursor: pointer;
+}
+
+/* header_gnb */
+.header_gnb {
+    flex: 1;
+    text-align: center;
+}
+.header_gnb > ul > li {
+    display: inline-block;
+    position: relative;
+    width: 19%;
+    max-width: 150px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 100px;
+    cursor: pointer;
+}
+.header_gnb > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: var(--main-color);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+}
+.header_gnb > ul > li:hover ul {
+    display: block;
+}
+.header_gnb > ul ul > li {
+    color: var(--light_gray-color);
+    height: 50px;
+    line-height: 50px;
+}
+.header_gnb > ul ul > li:hover {
+    color: #fff;
+}
+@media (hover: hover) {
+    header:hover .header_head {
+        background-color: #fff;
+        border-bottom: 1px solid var(--border-color);
+    }
+    header:hover .header_gnb > ul > li {
+        color: #333;
+    }
+    header:hover .header_gnb > ul > li:hover {
+        color: var(--main-color);
+    }
+}
+header.scroll .header_head {
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+}
+header.scroll .header_gnb > ul > li {
+    color: #333;
+}
+
+/* header_side */
+/* PC */
+.right-pc .right-pc_btn {
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 5px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+header:hover .header_head .right-pc_btn,
+header.scroll .header_head .right-pc_btn {
+    border-color: #333;
+    color: #333;
+}
+header:hover .header_head .right-pc_btn:hover,
+header.scroll .header_head .right-pc_btn:hover {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+/* MO */
+.right-mo {
+    z-index: 999;
+    display: none;
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right-mo .img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.right-mo .img.search {
+    background: url("../../img/icon/car-search.png") no-repeat center/24px;
+}
+.right-mo .img.ham_btn {
+    background: url("../../img/icon/ham_menu.png") no-repeat center/24px;
+}
+.right-mo .img.ham_btn.active {
+    background: url("../../img/icon/cancle.png") no-repeat center/24px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.right-mo .img.ham_btn.active:hover {
+    transform: rotate(180deg);
+}
+header.scroll .right-mo .img.search {
+    background: url("../../img/icon/ho_car-search.png") no-repeat center/24px;
+}
+header.scroll .right-mo .img.ham_btn {
+    background: url("../../img/icon/ho_ham_menu.png") no-repeat center/24px;
+}
+
+/* 모바일 메뉴 */
+.header_mobile {
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    box-sizing: border-box;
+    padding: 16px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+.mobile-menu_wrap {
+    position: absolute;
+    width: 90%;
+    background: #fff;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+/* 로그인, SNS로그인 */
+.mobile-menu_top {
+    padding: 2rem 1.6rem;
+    background: var(--main-color);
+    padding: 16px;
+}
+.mobile-menu_top .login-btn {
+    padding: 1rem 0;
+    border: 2px solid var(--point01);
+    background: var(--point01);
+    color: var(--main-color);
+    border-radius: 5px;
+    display: block;
+}
+
+/* 예약확인, 예약하기, 뉴스&이벤트 */
+.mobile-menu_ico li {
+    flex: 1;
+}
+/* 모바일 메뉴 */
+.mobile_top_info {
+    color: #fff;
+}
+.mobile_top_info .name {
+    font-size: 20px;
+}
+.mobile_top_info a {
+    color: #fff;
+}
+.mobile_top_info .flex {
+    gap: 20px;
+}
+.overflow_box {
+    height: calc(100% - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.mobile-menu_gnb {
+    width: 100%;
+    padding: 16px;
+}
+.mobile-menu_gnb > ul > li {
+    display: block;
+    position: relative;
+    margin-bottom: 5px;
+    width: calc(100% - 32px);
+    padding: 10px 20px;
+    background: var(--input-disabled);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.mobile-menu_gnb > ul > li a {
+    display: block;
+}
+/* 소개, 약관, 취급방침 */
+.mobile-menu_bottom {
+    padding-bottom: 20px;
+}
+.mobile-menu_bottom li {
+    padding: 0 10px;
+}
+.mobile-menu_bottom li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 80%;
+    background: var(--border-color);
+}
+.mobile-menu_bottom li:last-child:after {
+    content: none;
+}
+/* 뒤로가기 버튼 */
+.back-btn {
+    display: none; /* z-index: 999; */
+    position: absolute;
+    left: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.back-btn_img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: var(--point01) url("../../img/icon/arrow01.png") no-repeat center/24px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .h_inner {
+        margin: 0 auto;
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header_head {
+        height: 60px;
+    }
+    .header_logo {
+        width: 80px;
+        margin: 0 auto;
+    }
+    #header .header_gnb {
+        display: none;
+    }
+    #header .right-pc {
+        display: none;
+    }
+    #header .right-mo {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 500px) {
+}
+
+.app_download {
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 101;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.app_download span img{
+    width:20px;
+    height:20px;
+}
+
+.app_download img {
+    width: 80px;
+}
+.app_download button {
+    height: 30px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.app_download span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    /* .app_download {
+        display: flex;
+    } */
+}
+
+.color_blue {
+    color: var(--main-color);
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "toureasy";
+    src: url("../font/TourEasy_Trust_OTF.otf") format("truetype");
+}
+
+/* main_vis */
+#main_vis {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+}
+#main_vis .vis {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    background: url("/resources/img/main/main_vis1.jpg?ver=0108") no-repeat center/cover;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+#main_vis .vis1 {
+    background: url("../img/page/main_vis_01.jpg") no-repeat center/cover;
+}
+#main_vis .vis2 {
+    background: url("../img/page/main_vis_01.jpg") no-repeat center/cover;
+}
+#main_vis .vis3 {
+    background: url("../img/page/main_vis_01.jpg") no-repeat center/cover;
+}
+#main_vis .vis4 {
+    background: url("../img/page/main_vis_01.jpg") no-repeat center/cover;
+}
+
+#main_vis .swiper-container.swiper1 .vis.swiper-slide .vis_bg {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(1);
+}
+
+#main_vis .vis_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 1;
+    max-width: 1600px;
+    width: 97%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "toureasy";
+    margin-left:312px;
+}
+#main_vis .vis_txt .tit {
+    font-size: 60px;
+}
+#main_vis .vis_txt .txt {
+    font-size: 55px;
+}
+.swiper-main .swiper-pagination {
+    bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .swiper-main .swiper-pagination {
+        bottom: 100px;
+    }
+}
+
+.slide-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.swiper-pagination {
+    position: relative !important;
+    width: auto;
+    bottom: 0;
+}
+.swiper-pagination .swiper-pagination-bullet {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+    opacity: 1;
+    border-radius: 6px;
+}
+.swiper-button-pause {
+    z-index: 10;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+.swiper-button-pause img {
+    vertical-align: super;
+}
+
+/* 예약하기 form */
+#main .box_cont.rsv-box {
+    overflow: inherit;
+    box-shadow: none;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 97%;
+}
+#main .rsv-form {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 561px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+    padding: 30px;
+    height:700px;
+}
+#point-search .search {
+    position: relative;
+}
+#point-search .search .search_icon {
+    left: 1.6rem;
+}
+#point-search .point_detail .cont_info {
+    background: var(--input-disabled);
+}
+
+/* 퀵메뉴 */
+#quick-menu ul {
+    flex-flow: row wrap;
+}
+#quick-menu ul li {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    width: 16%;
+    box-sizing: border-box;
+}
+#quick-menu ul li p {
+    margin-top: 11px;
+}
+
+/* 이벤트 슬라이드 */
+#swiper-event .slide-btn {
+    position: relative;
+    bottom: 0;
+}
+#swiper-event .swiper-pagination .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin-right: 5px;
+    background: #333;
+}
+#swiper-event .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    #main .contents::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        height: 500px;
+        background: rgb(255, 255, 255);
+        border-radius: 30px 30px 0px 0px;
+        z-index: 10;
+    }
+    #main_vis .vis_txt {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        margin-left:0
+    }
+    .slide-btn {
+        bottom: 70px;
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 5px;
+        height: 5px;
+    }
+    .swiper-button-pause {
+        width: 8px;
+        height: 8px;
+    }
+    #main .rsv-form {
+        position: relative;
+        bottom: inherit;
+        right: inherit;
+        width: auto;
+        padding: 0;
+    }
+    #main .box_cont.rsv {
+        margin: 0 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #main_vis {
+        height: 50vh;
+    }
+    #main_vis .vis {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #main .box_cont.rsv-box {
+        padding: 20px;
+        padding-top: 0px;
+    }
+    #main .mb120 {
+        margin-bottom: 50px !important;
+    }
+    #main_vis .vis_txt .txt {
+        font-size: 32px;
+    }
+    #main_vis .vis_txt .tit {
+        font-size: 34px;
+    }
+
+    /* 퀵메뉴 */
+    #quick-menu ul li {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+}
+
+.slide_box .swiper-pagination-bullet {
+    background-color: #333;
+}
+.slide_box .swiper-pagination {
+    bottom: -5px;
+}

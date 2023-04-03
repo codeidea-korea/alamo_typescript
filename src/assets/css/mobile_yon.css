@@ -1,0 +1,245 @@
+#user_guide .search-box.mo_search {
+    display: none;
+}
+#user_guide .cont_info .info-detail img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#news_list .search-box.mo_search {
+    display: none;
+}
+#news_list .file_icon img.mo_icon {
+    display: none;
+}
+#news_list .guide_title .summary .new_icon {
+    display: none;
+}
+
+#FAQ .search-box.mo_search {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    /* 보유 차량 */
+    #car_info .disabled-selected {
+        height: 35px;
+    }
+    #car_info .tab_btn li a {
+        height: 36px;
+        line-height: 36px;
+    }
+    #car_info .l-line {
+        display: none;
+    }
+    #car_info .tab_inner {
+        margin-top: 10px;
+    }
+    #car_info .list-member {
+        top: 37px;
+        background-color: #fff;
+    }
+
+    /* 이용가이드 */
+    #user_guide .search-box {
+        display: none;
+    }
+    #user_guide .search-box.mo_search {
+        display: flex;
+        box-shadow: none;
+        margin-bottom: 10px;
+    }
+    #user_guide .l-line {
+        display: none;
+    }
+    #user_guide .disabled-selected {
+        height: 35px;
+    }
+    #user_guide .tab_btn li a {
+        height: 36px;
+        line-height: 36px;
+    }
+    #user_guide .list-member {
+        top: 37px;
+    }
+    #user_guide .guide_list {
+        margin-top: 10px;
+    }
+    #user_guide .cont_title {
+        padding: 20px 30px !important;
+    }
+    #user_guide .guide_title {
+        padding: 10px;
+    }
+    #user_guide li:last-of-type > .guide_title {
+        border-bottom: 0 none;
+    }
+    #user_guide .guide_title.arrow:after {
+        right: 15px;
+    }
+    #user_guide .refresh_icon {
+        position: absolute;
+        right: 0.6em;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    #user_guide .box_cont.open .cont_title.active {
+        border-bottom: 0 none;
+    }
+    #user_guide .cont_info {
+        background-color: #fff;
+    }
+
+    /* 뉴스 이벤트 */
+    #news_list .search-box {
+        display: none;
+    }
+    #news_list .search-box.mo_search {
+        display: flex;
+        box-shadow: none;
+        margin-bottom: 30px;
+    }
+    #news_list .refresh_icon {
+        position: absolute;
+        right: 0.6em;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    #news_list .tab_btn li a {
+        height: 36px;
+        line-height: 36px;
+    }
+    #news_list .list-member {
+        top: 37px;
+    }
+    #news_list .pagination {
+        display: none;
+    }
+    #news_list .guide_title {
+        padding: 10px;
+    }
+    #news_list .guide_title .title {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #news_list .guide_title.arrow:after {
+        display: none;
+    }
+    #news_list .new_icon {
+        padding: 2px 5px;
+        font-size: 10px;
+        background: #d83028;
+    }
+    #news_list .guide_title .mo_tit .new_icon {
+        display: none;
+    }
+    #news_list .file_icon img {
+        display: none;
+    }
+    #news_list .file_icon img.mo_icon {
+        display: block;
+    }
+    #news_list .guide_title .summary .new_icon {
+        display: inline-block;
+    }
+
+    /* faq */
+    #FAQ .search-box {
+        display: none;
+    }
+    #FAQ .tab_btn li a {
+        height: 36px;
+        line-height: 36px;
+    }
+    #FAQ .list-member {
+        top: 37px;
+    }
+    #FAQ .cont_title {
+        padding: 10px !important;
+    }
+    #FAQ .search-box.mo_search {
+        display: flex;
+        box-shadow: none;
+        margin-bottom: 30px;
+    }
+    #FAQ .refresh_icon {
+        position: absolute;
+        right: 0.6em;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    #FAQ .box_cont.open .cont_title {
+        border: 0 none;
+    }
+    #FAQ .box_cont.open .cont_title.active {
+        border-bottom: 1px solid var(--border-color);
+    }
+    #FAQ .box_cont.drop .cont_info {
+        background: #f8fbfe;
+        padding: 12px 16px !important;
+    }
+    #FAQ .box_cont.drop .cont_info p {
+        font-size: 14px;
+        color: #333333;
+    }
+}
+
+/* join */
+.join .sub_desc {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .join .sub_desc {
+        font-size: 12px;
+    }
+}
+
+/* -- */
+#company .mo_br {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #company .sub-vis {
+        min-height: 560px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #company .sub-vis {
+        background: url("/img/page/company_mo_banner.png") no-repeat center center / cover;
+        min-height: 360px !important;
+    }
+    #company .mo_br {
+        display: block;
+    }
+    #company .box_cont {
+        padding: 30px 15px;
+    }
+}
+
+#newsletter .mo_br {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    #newsletter .modal-title {
+        font-size: 14px;
+    }
+    #newsletter .cont_info {
+        padding: 15px;
+    }
+    #newsletter .summary {
+        font-size: 12px;
+        color: #333333;
+    }
+    #newsletter .mo_br {
+        display: block;
+    }
+    #newsletter input {
+        color: #333333;
+    }
+}

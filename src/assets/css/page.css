@@ -1,0 +1,1806 @@
+@charset "utf-8";
+/******** 서브페이지 공통 S ********/
+
+.pc-n{display: none;}
+.sub-vis {
+    width: 100%;
+    min-height: 220px;
+    position: relative;
+    background: linear-gradient(#295eac, #193e75, #193e75);
+}
+.contents {
+    position: relative;
+    margin-bottom: 120px;
+}
+.contents:before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border-radius: 50px 50px 0 0;
+}
+.sub section,
+.sub article {
+    position: relative;
+    margin-bottom: 50px;
+}
+.sub section:last-child,
+.sub article:last-child {
+    margin-bottom: 120px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    background: var(--border-color);
+    padding: 50px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Box article 공통 s */
+.box_title {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex !important;
+    align-items: center;
+}
+.box_title .clar {
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.box_cont {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-sizing: border-box;
+}
+.box_cont.open {
+    padding: 0;
+}
+.box_cont.open .cont_title {
+    padding: 15px;
+}
+.box_cont.open .toggle.arrow:after {
+    right: 20px;
+    transform: rotate(135deg);
+}
+.box_cont.open .price-info {
+    right: 50px;
+}
+.price-info {
+    position: absolute;
+    right: 30px;
+    margin-top: -3px;
+}
+.cont_title span.detail {
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.cont_title,
+.arrow {
+    position: relative;
+    cursor: pointer;
+}
+.cont_title i.arrow_icon,
+.arrow:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid var(--gray-color);
+    border-right: 1px solid var(--gray-color);
+    transform: rotate(45deg);
+}
+
+.box_cont.open .toggle.arrow.active:after {
+    transform: rotate(135deg);
+}
+.box_cont.open .toggle.arrow:after {
+    transform: rotate(-45deg);
+}
+
+.cont_title.arrow.active:after,
+.cont_title.active i.arrow_icon {
+    transform: rotate(135deg);
+}
+
+.cont_title.arrow:after,
+.cont_title i.arrow_icon {
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.cont_title.mo_ver {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .cont_title.pc_ver {
+        display: none;
+    }
+    .cont_title.mo_ver {
+        display: block;
+    }
+}
+.box_cont.drop .cont_info {
+    background: var(--input-disabled);
+    padding: 30px;
+    max-height: 100%;
+}
+
+/* form */
+.sub_form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form_input label,
+.lookup_input label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.lookup_input {
+    position: relative;
+    display: flex;
+}
+.lookup_input div {
+    flex: 1;
+}
+select.phone,
+select[id*="phone_number"] {
+    width: 130px;
+    padding-right: 20px;
+}
+select[id*="phone_number"].long {
+    width: 260px;
+}
+select[id*="phone_number"] option {
+    color: var(--gray-color);
+}
+input[id*="phone_number_value"] {
+    position: absolute;
+    width: 90px;
+    border: 0;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    padding: 0;
+}
+.phone_input {
+    overflow: hidden;
+    position: relative;
+}
+.phone_input:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 43px;
+    top: calc(50% - 10px);
+    width: 1px;
+    height: 20px;
+    background-color: #e4e7ea;
+}
+.phone_input .local_num {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    border: 0 none;
+    width: 43px;
+    height: 36px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.phone_input .local_num + input {
+    padding-left: 50px;
+}
+
+/*** 로그인 ***/
+.sns-box button {
+    /* border-radius: 100%; */
+    width: 50px;
+    height: 50px;
+}
+.sns-box .naver {
+    background: #1ec800;
+    color: #fff;
+}
+.sns-box .kakao {
+    background: #f9e000;
+    color: #371d1e;
+}
+.sns-box .google {
+    background: #fff;
+    border: 1px solid var(--border-color);
+}
+.simple-login-line {
+    position: relative;
+}
+.simple-login-line:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+}
+.simple-login-line:after {
+    content: "간편로그인";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    background: #fff;
+    color: var(--gray-color);
+}
+
+/*** 아이디/비밀번호 찾기 ***/
+.join .sub_desc {
+    width: 490px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    padding: 20px;
+    font-weight: 400;
+    color: #193e75;
+    font-size: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#find_login .tab {
+    position: absolute;
+    top: -70px;
+    max-width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#find_login .tab_item.active {
+    border-bottom: 5px solid var(--main-color);
+    padding-bottom:10px;
+}
+
+/* 약관 동의 */
+#joinAgree label span {
+    margin-left: 5px;
+}
+#joinAgree label span.ess {
+    color: var(--error-color);
+}
+#joinAgree .detail {
+    float: right;
+    cursor: pointer;
+    font-size: 13px;
+    color: #717171;
+    margin-top: 5px;
+}
+#joinAgree .detail img {
+    vertical-align: inherit;
+    margin-left: 5px;
+}
+#joinAgree .agree_check {
+    padding: 5px;
+}
+#joinAgree .agree_box {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+.join .thumb_view {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.join .thumb_view div {
+    position: relative;
+    width: 33%;
+}
+.join .thumb_view div img {
+    /* width: 50px; */
+    display: block;
+    width: 100%;
+}
+.join .thumb_view div i {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* 이미지 다중 첨부 */
+.filebox {
+    position: relative;
+}
+.filebox label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 84px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff !important;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+#att_zone {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 500px;
+}
+#att_zone div:last-child {
+    margin-right: 0;
+}
+#att_zone:empty:before {
+    content: attr(data-placeholder);
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* 예약하기 폼 */
+.rsv-form {
+    z-index: 10;
+    background: #fff;
+    border-radius: 15px;
+}
+.rsv-form img {
+    width: auto;
+}
+.rsv-form .button.step {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.rsv-form select {
+    border: 0;
+    padding: 0;
+    color: var(--gray-color);
+}
+.rsv-form_input {
+    position: relative;
+    padding: 15px 15px 15px 30px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+.rsv-form_label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.rsv-form_label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -18px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon/Search.svg") no-repeat center/contain;
+}
+.rsv-form_title {
+    position: relative;
+}
+.rsv-form_title:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -15px;
+    width: calc(100% + 45px);
+    height: 1px;
+    background: var(--border-color);
+}
+.rsv-form_title:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -18px;
+    width: 14px;
+    height: 14px;
+}
+.rsv-form_title.rent-period:after {
+    background: url("../img/icon/Date.svg") no-repeat center/contain;
+}
+.rsv-form_title.driver-age:after {
+    background: url("../img/icon/User.svg") no-repeat center/contain;
+}
+.rsv-form_title.coupon:after {
+    background: url("../img/icon/Ticket.svg") no-repeat center/contain;
+}
+.l-period-group {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.period-group {
+    width: 40%;
+    padding: 10px 0;
+}
+.period-group .date {
+    display: block;
+    margin-top: 3px;
+    font-size: 1.6rem;
+}
+.period-group .time {
+    display: block;
+}
+.period-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    padding: 3px 12px;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 5px;
+    z-index: 99;
+}
+#rsv_date .modal-content2 {
+    width: 500px;
+}
+#rsv_date .modal-content2.type2 {
+    width: 700px;
+}
+#rsv_date .modal-content2 .cont_title.arrow:after {
+    transform: rotate(-45deg);
+}
+#rsv_date .modal-content2 .box_cont.open .toggle.arrow:after {
+    transform: rotate(135deg);
+}
+#rsv_date .modal-content2 .box_cont.drop .cont_info {
+    background: #fff;
+}
+
+.share {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+.share_ico {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Tooltip */
+.l-tooltip {
+    display: inline-block;
+    position: relative;
+}
+.l-tooltip img {
+    vertical-align: unset;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+}
+.tooltip {
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    max-width: 350px;
+    background: #004c8a;
+    color: #fff;
+    border-radius: 5px;
+    display: none;
+}
+.tooltip.right {
+    left: 0;
+}
+.tooltip_cont4{
+    left:-135px!important;
+}
+.tooltip_cont3{
+    left:-200px!important;
+}
+.tooltip.center {
+    left: calc(100% - 100px);
+}
+
+/******** rsv page S ********/
+.rsv-page .sub-vis {
+    padding-top: 100px;
+    min-height: 250px;
+}
+
+.rsv-page .contents {
+    margin-top: 80px;
+}
+.step-pc {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.step-pc li {
+    width: 20%;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: var(--point01);
+    font-size: 14px;
+}
+.step-pc li img {
+    width: 60px;
+    height: 60px;
+}
+.step-pc li:after {
+    content: "";
+    position: absolute;
+    right: -35%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35%;
+    height: 2px;
+    background: #4e72a8;
+}
+.step-pc li:last-child:after {
+    content: none;
+}
+.step-pc li.step_com {
+    background: #4e72a8;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.step-mo {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    margin: 0 auto;
+}
+.step-mo li {
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border-radius: 100%;
+    background: var(--point01);
+}
+.step-mo li:after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 2px;
+    background: #e4e7ea;
+}
+.step-mo li:last-child:after {
+    content: none;
+}
+.step-mo li img {
+    margin-top: 4px;
+}
+.step-mo li.step_ing img {
+    width: 70%;
+    margin-top: 6px;
+}
+.step-mo li.step_com {
+    width: 30px;
+    height: 30px;
+    background: #e4e7ea;
+}
+.step-mo li.step_exp {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+}
+
+/*** 차량 등급 ***/
+.vihicle .cont_info {
+    padding: 0;
+}
+.l-car-list {
+    display: flex;
+}
+.l-car-list > div {
+    flex: 1;
+    padding: 20px 30px;
+}
+.refer-ment {
+    color: var(--main-color);
+}
+.car-list_txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-list_info .info-ico {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.car-list_info .info-ico img {
+    width: 20px;
+}
+.car-list_img img {
+    width: 100%;
+}
+.car-list_price {
+    display: none;
+    background: var(--input-disabled);
+    justify-content: space-between;
+}
+.car-list_price .price-info {
+    position: relative;
+    right: 0 !important;
+}
+.car-list_price b {
+    color: var(--main-color);
+}
+.price-detail {
+    /* width: 100%; */
+    margin-right: 15px;
+}
+
+/* 차량 및 요금제 선택 */
+.car-rate {
+    display: flex;
+}
+.cont_left {
+    flex: 1;
+}
+.cont_right {
+    flex: 1.2;
+    background: var(--input-disabled);
+    padding: 20px 30px;
+}
+.cont_right ul {
+    display: flex;
+    justify-content: space-between;
+}
+.cont_right ul li {
+    width: 49%;
+    padding: 15px 0;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.cont_right ul li:hover {
+    border-color: var(--main-color);
+}
+.cont_right .price-info {
+    position: relative;
+    right: 0 !important;
+    color: #333;
+}
+
+/* 기본사양 */
+.car-spec {
+    background: var(--input-disabled);
+}
+.car-spec li {
+    color: var(--gray-color);
+}
+
+/* 예약번호 */
+.l-rsv-com ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-color);
+}
+.rsv-num .Title02 {
+    font-weight: bold;
+    color: #333;
+}
+
+/*** 운전자 정보 ***/
+.driver table {
+    box-shadow: none;
+}
+
+/*** 대여일정 ***/
+.rental-point .cont_info {
+    display: flex;
+}
+.rental-point .cont_info > ul {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-right: 1px solid var(--border-color);
+    background: #fff;
+}
+.rental-point .cont_info > ul:last-child {
+    border: none;
+}
+.rental-point .cont_info > ul > li {
+    padding: 30px;
+}
+
+/*** 기타 안내 ***/
+.guide-explan {
+    color: var(--light_gray-color);
+    margin-bottom: 25px;
+}
+.guide-explan:last-child {
+    margin-bottom: 0;
+}
+.guide-title {
+    color: var(--gray-color);
+    margin-bottom: 5px;
+}
+.guide-explan li {
+    left: 10px;
+    width: calc(100% - 10px);
+}
+.guide-explan.circle > li:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background: var(--light_gray-color);
+}
+.guide-explan.number li {
+    width: calc(100% - 11px);
+    padding-left: 2px;
+    text-indent: -11px;
+    word-break: keep-all;
+}
+.guide-explan .number2 li {
+    width: calc(100% - 22px);
+    padding-left: 8px;
+    text-indent: -22px;
+    word-break: keep-all;
+}
+
+/*** 예약수정 ***/
+.disabled {
+    opacity: 0.5;
+}
+.vihicle_now,
+.vihicle_change {
+    position: relative;
+}
+.vihicle_now .button {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.vihicle_change .button {
+    z-index: 1;
+    position: absolute;
+    top: -30px;
+    right: 30px;
+}
+.vihicle_change .button {
+    right: 0;
+}
+.vihicle_change {
+    display: none;
+}
+.badge {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+.before .badge {
+    background: var(--gray-color);
+}
+.after {
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.after .badge {
+    background: var(--main-color);
+}
+
+/******** rsv page E ********/
+
+/* 구글맵 */
+#map_container {
+    position: relative;
+}
+#map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+/* board */
+
+/* pagination */
+.pagination {
+    margin: 50px auto 0;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.pagination button,
+.pagination a {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 2px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.pagination button:hover,
+.pagination a:hover {
+    text-decoration: underline;
+}
+.pagination .selected {
+    color: #fff;
+    background-color: var(--main-color);
+    font-weight: 500;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .p-prev,
+.pagination .n-next {
+    transition: 0.3s ease-in-out;
+    width: 26px;
+    height: 26px;
+    background-image: url("/resources/img/common/page-arrow.png");
+    background-repeat: no-repeat; /*border: 1px solid #dcdcdc;*/
+    border: 1px solid #fff;
+    text-indent: -999em;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.pagination .p-prev {
+    background-position: -8px 5px;
+}
+.pagination .prev {
+    background-position: -59px 5px;
+}
+.pagination .next {
+    background-position: -109px 5px;
+}
+.pagination .n-next {
+    background-position: -159px 5px;
+}
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .p-prev:hover,
+.pagination .n-next:hover {
+    background-color: transparent;
+}
+
+.guide_title {
+    padding: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+.guide_title.arrow:after {
+    right: 22px;
+}
+.guide_list {
+    margin-top: 45px;
+}
+
+/* mypage toggle-btn */
+.toggle-btn {
+    position: absolute;
+    right: 15px;
+    width: 40px;
+    height: 20px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+}
+.toggle-btn,
+.toggle-btn .layer {
+    border-radius: 100px;
+}
+.checkbox {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+.knobs,
+.layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.knobs {
+    z-index: 2;
+}
+.layer {
+    width: 100%;
+    background-color: var(--main-color);
+    z-index: 1;
+}
+.toggle-btn .knobs:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+.toggle-btn .checkbox:checked + .knobs:before {
+    content: "";
+    left: 24px;
+}
+.toggle-btn .checkbox:checked ~ .layer {
+    background-color: var(--light_gray-color);
+}
+
+.toggle-btn.yes .layer {
+    background-color: var(--main-color);
+}
+.toggle-btn.no .layer {
+    background-color: var(--light_gray-color);
+}
+.toggle-btn.no .knobs:before {
+    content: "";
+    left: 24px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.modal2 {
+    background: rgba(0, 0, 0, 0);
+}
+.modal .close {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    color: var(--light_gray-color);
+}
+.modal .close:hover {
+    color: #333;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    max-width: 80%;
+    height: 180px;
+    max-height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-content2 {
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    max-height: calc(100vh - 60px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal-title {
+    padding: 20px 30px;
+}
+.modal-content2 .cont_info {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+    padding:20px 30px 30px 30px;
+}
+.modal-content2 .cont_info.tab {
+    padding: 0px;
+}
+#point-search .cont_title.arrow:after {
+    transform: rotate(45deg);
+}
+
+/* 기본 - 검색틀 */
+.search-box {
+    position: relative;
+    background-color: #ffffff;
+}
+.search-box.form {
+    margin: 32px 0 80px;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.search-box.form > span {
+    position: relative;
+}
+.search_input {
+    width: 100%;
+    padding: 0.4em;
+    text-indent: 2em;
+    border: 1px solid var(--border-color);
+}
+.search_icon {
+    position: absolute;
+    top: 0;
+    left: 0.6em;
+    bottom: 3px;
+    margin: auto auto auto 0;
+    width: 1em;
+    height: 1em;
+    z-index: 1;
+    fill: var(--border-color);
+}
+.search_btn {
+    width: 120px;
+    height: 40px;
+    background-color: var(--gray-color);
+    text-align: center;
+    color: #fff;
+}
+
+/* Tab */
+.tab_item {
+    display: block;
+    opacity: 0.8;
+    text-align: center;
+    cursor: pointer;
+}
+.tab_item.active {
+    opacity: 1;
+}
+.tab_inner {
+    display: none;
+}
+.tab_inner.active {
+    display: block;
+}
+
+.tab_btn {
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.tab_btn li {
+    margin-right: 5px;
+}
+.tab_btn li:last-child {
+    margin-right: 0;
+}
+.tab_btn li a {
+    display: inline-block;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+.active_tab,
+.tab_btn li a:hover,
+.tab_btn a.active {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/* table01 */
+
+.table-pc{display: table;}
+.table-mo{display: none;}
+.table01 {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+.table01 .thead {
+    color: var(--gray-color);
+    font-size: 14px;
+    width: 20%;
+}
+.table01 tr {
+    border-bottom: 1px solid var(--border-color);
+}
+.table01 td,
+.table01 th {
+    position: relative;
+    padding: 14px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: left;
+}
+.table01 tr:last-child td {
+    border-bottom: none;
+}
+.p-count {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.count {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+/* table02 */
+.table02 {
+    text-align: center;
+    width: 100%;
+    word-break: keep-all;
+    border-spacing: 0px;
+    background: #fff;
+}
+.table02 th,
+.table02 td {
+    position: relative;
+    padding: 0.7rem;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+    border-spacing: 0px;
+}
+.table02 th:last-child,
+.table02 td:last-child {
+    border-right: 0;
+}
+.table02 th {
+    background: var(--gray-color);
+    color: #fff;
+    font-weight: 400;
+}
+
+/* ==================== 게시판 VIEW Style ==================== */
+.board_view {
+    margin: 32px 0 0;
+    border-bottom: 1px solid #d7d7d7;
+}
+.board_view_top {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+.board_view_con {
+    padding: 30px;
+}
+.board_view_file {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #d7d7d7;
+}
+.board_view_file .tit {
+    display: table-cell;
+    width: 20%;
+    padding: 15px 25px;
+    background-color: #f5f7f9;
+    vertical-align: middle;
+}
+.board_view_file .file_box {
+    display: table-cell;
+    padding: 15px 20px;
+    vertical-align: middle;
+}
+.board_view_file .file_each a:hover,
+.board_view_file .file_each a:focus {
+    text-decoration: underline;
+}
+.board_view_file .file_each a {
+    position: relative;
+    padding: 0 0 0 20px;
+    background-image: url("/images/user/basic/attach_ico.png");
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+.video-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ==================== 게시판 VIEW Style ==================== */
+
+.board-box .box_cont {
+    box-shadow: none;
+    border-radius: 0;
+}
+.board-box img {
+    width: auto;
+}
+
+/******** 서브페이지 공통 E ********/
+
+/******** mypage S ********/
+.mypage-title_ico {
+    display: flex;
+    float: right;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+.mypage-title_ico .ico {
+    display: none;
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+.mypage-title_ico .ico.logout {
+    display: block;
+    background: url("../../img/icon/Log_out.png") no-repeat center/contain;
+}
+.mypage-title_ico .ico.alarm {
+    background: url("../../img/icon/Alarm.png") no-repeat center/contain;
+}
+.mypage-title_ico .ico.alarm.none {
+    background: url("../../img/icon/Alarm_none.png") no-repeat center/contain;
+}
+.mypage-title_ico .ico.set {
+    background: url("../../img/icon/Set.png") no-repeat center/contain;
+}
+
+.mypage_top {
+    display: flex;
+    justify-content: space-between;
+}
+.mypage_top-left {
+    width: calc(50% - 5px);
+    background: var(--main-color);
+}
+.top-left_info {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+}
+.top-left_info .name {
+    display: flex;
+    align-items: center;
+}
+.top-left_info .myinfo {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0px 10px;
+    background: var(--main-color);
+    color: #fff;
+}
+.top-left_info .arrow:after {
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.top-left_btn {
+    float: right;
+    background: var(--point01);
+    opacity: 1;
+    padding: 12px;
+}
+.top-left_btn:hover span {
+    color: var(--error-color);
+}
+
+.mypage_top-right {
+    width: calc(50% - 5px);
+}
+.top-right_ico {
+    display: flex;
+}
+.top-right_ico li {
+    flex: 1;
+}
+.top-right_ico li .ico {
+    width: 30px;
+    height: 30px;
+}
+.top-right_ico li p {
+    margin-top: 5px;
+}
+
+.mypage_gnb {
+    width: 100%;
+    overflow-y: auto;
+}
+.mypage_gnb > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.mypage_gnb > ul:first-child li {
+    border-top: 1px solid var(--border-color);
+}
+.mypage_gnb > ul > li {
+    width: calc(50% - 5px);
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+.mypage_gnb > ul > li:hover {
+    background: var(--input-disabled);
+}
+.mypage_gnb > ul > li > a {
+    position: relative;
+    display: block;
+    padding: 20px;
+}
+.mypage_gnb > ul > li > a:after {
+    right: 20px;
+}
+
+.mypage_bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.mypage_bottom li a {
+    color: var(--gray-color);
+    cursor: pointer;
+}
+
+/******** mypage E ********/
+
+/*** 회사소개 ***/
+#company .sub-vis {
+    min-height: 560px;
+    background: url("../img/page/company_sample.png") no-repeat right/cover;
+}
+#company .sub-vis .txt {
+    position: absolute;
+    width: 1000px;
+    max-width: 97%;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/*** 이용가이드 ***/
+
+/*** 예약현황 ***/
+#rsv_status .rental-point {
+    border-radius: 10px;
+    padding: 0;
+}
+#rsv_status .rental-point .cont_info {
+    padding: 0;
+}
+
+/*** 보유차량 ***/
+#car_info .tab_btn li {
+    width: calc(25% - 5px) !important;
+}
+
+/*** 문의하기 ***/
+.inquiry_info {
+    position: relative;
+    background: var(--main-color);
+    color: #fff;
+}
+.inquiry_info .button {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: #fff;
+    color: var(--main-color);
+    opacity: 1;
+}
+
+.re-answer.arrow:after {
+    transform: rotate(315deg);
+}
+.re-answer:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid var(--gray-color);
+    border-right: 1px solid var(--gray-color);
+    transform: rotate(180deg);
+}
+
+/******** Modal S ********/
+/*** 요금 및 기본사양  ***/
+.modal .car-detail {
+    background: var(--input-disabled);
+    padding: 30px 15px;
+}
+.modal .tab-group {
+    display: flex;
+}
+.modal .tab_item {
+    flex: 1;
+}
+.modal .tab_item.active {
+    border-bottom: 2px solid var(--main-color);
+}
+.modal .car-list {
+    padding: 30px;
+}
+.modal .cont_right {
+    padding: 20px 0 0;
+}
+
+/*** 예약취소 ***/
+.modal .ask-box {
+    background: var(--input-disabled);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+/*** 이용약관 ***/
+#tos .modal-content2 .cont_info {
+    max-height: 60vh;
+}
+#tos .box_cont {
+    box-shadow: none;
+    border-radius: 0;
+}
+#tos .box_cont.open .cont_title {
+    padding: 10px;
+}
+#tos .box_cont.open .cont_title.toggle {
+    padding: 10px;
+}
+#tos .modal-content2 .tos_info {
+    overflow-y: auto;
+    background: var(--input-disabled);
+    padding: 10px;
+    height: 50vh;
+}
+
+/*** 예약하기-시간선택 ***/
+.rsv_time .box_cont.drop .cont_info {
+    overflow: hidden;
+    height: 200px;
+}
+.rsv_time .box_cont.drop .cont_info > div {
+    width: 100%;
+}
+.rsv_time .swiper {
+    height: 100%;
+}
+/* #rsv_time .swiper .swiper-slide{border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color)} */
+.rsv_time .t-swiper .swiper-wrapper > .swiper-slide {
+    opacity: 0.5;
+}
+.rsv_time .t-swiper .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    font-weight: bold;
+}
+/******** Modal E ********/
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    /*** 예약하기-시간선택 ***/
+    .rsv_time .box_cont.drop .cont_info.time_info {
+        max-height: 25vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pc-n{display: block;}
+    .back-btn {
+        display: block;
+    }
+    .box_cont {padding:15px;
+    }
+
+    /******** rsv page S ********/
+    /*** 차량 등급 ***/
+    .l-car-list {
+        flex-flow: column;
+    }
+    .l-car-list > div {
+        padding: 20px 15px;
+    }
+    .car-spec {
+        display: none;
+    }
+    .car-list_price {
+        display: flex;
+    }
+    /* 차량 및 요금제 선택 */
+    .cont_right {
+        display: none;
+    }
+    .cont_title .detail {
+        display: none;
+    }
+
+    /******** Modal S ********/
+    .modal .cont_right {
+        display: block;
+    }
+
+    /******** mypage S ********/
+    .mypage_top {
+        flex-flow: column wrap;
+    }
+    .mypage_top .box_cont {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .mypage_gnb > ul:first-child li:last-child {
+        border-top: 0;
+    }
+
+    /* FAQ */
+    .board-tab {
+        flex-flow: column wrap;
+    }
+    .board-tab ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .table-pc{display: none;}
+    .table-mo{display: table}
+    .table01 td span{display:block; width: 100%!important;}
+
+    .sub-vis {
+        min-height: 130px;
+    }
+    .contents:before {
+        top: -49px;
+        height: 50px;
+    }
+    .sub section,
+    .sub article {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .sub section:last-child,
+    .sub article:last-child {
+        margin-bottom: 50px;
+    }
+    .find_login .tab-group {
+        padding: 80px 0 50px;
+    }
+    .search_input {
+        width: 100%;
+    }
+
+    /* Tab */
+    #FAQ .tab_btn {
+        flex-flow: row wrap;
+    }
+    #FAQ .tab_btn li {
+        width: calc(25% - 5px) !important;
+        margin-top: 5px;
+    }
+
+    /* .box_cont{padding:20px 10px;} */
+    .cont_title.arrow:after {
+        right: 20px;
+    }
+    .box_cont.open .cont_title.toggle.arrow:after {
+        right: 15px;
+    }
+    .box_cont.open .cont_title {
+        padding: 20px 20px;
+    }
+    .box_cont.open .cont_title.toggle {
+        padding: 20px 20px;
+    }
+    .box_cont.drop .cont_info {
+        padding: 15px;
+    }
+    .box_cont.open .price-info {
+        right: 35px;
+    }
+    .price-info {
+        position: absolute;
+        right: 10px;
+        margin-top: -3px;
+    }
+
+    /* join */
+    .l-line {
+        margin: 30px 0;
+    }
+
+    /******** rsv page S ********/
+    .rsv-page .sub-vis {
+        padding-top: 0;
+        min-height: 110px;
+    }
+    .rsv-page .contents {
+        margin-top: 0;
+    }
+    .step-pc {
+        display: none;
+    }
+    .step-mo {
+        display: flex;
+    }
+    .share_ico {
+        margin-left: 10px;
+    }
+    .share_ico img {
+        width: 80%;
+    }
+
+    /*** 운전자 정보 ***/
+    .driver-info .thead {
+        padding: 10px 0 5px;
+        border-bottom: 0;
+        width: 100%;
+    }
+    .driver-info td {
+        display: block;
+        padding: 0 0 10px;
+    }
+    .driver-info .line:after {
+        content: none;
+    }
+
+    /*** 대여일정 ***/
+    .rental-point .cont_info {
+        flex-flow: column wrap;
+    }
+    .rental-point .cont_info > ul {
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+        border-right: 0;
+    }
+    .rental-point .cont_info > ul > li {
+        padding: 10px;
+    }
+    .rental-point .box_cont.open {
+        padding: 20px;
+    }
+    .rental-point.df .box_cont.open {
+        padding: 0;
+    }
+    .rental-point .line:after {
+        right: 0;
+    }
+    .vihicle_now .button{top:20px;}
+    /******** rsv page E ********/
+
+    /******** mypage S ********/
+    .mypage-title_ico .ico {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .mypage_gnb {
+        padding: 0;
+    }
+    .mypage_gnb > ul {
+        flex-flow: column wrap;
+    }
+    .mypage_gnb > ul > li {
+        width: 100%;
+    }
+
+    /* Modal */
+    .modal-content2 .cont_info {
+        max-height: calc(100vh - 125px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*** 차량 등급 ***/
+    .car-list_img {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .modal-title {
+        padding: 20px 15px;
+    }
+    .vihicle_now{display: flex; flex-direction: column-reverse;}
+    .vihicle_now .button{position: relative; top: unset; right: auto;}
+}
+@media screen and (max-width: 1024px) {
+    .modal-content2 {
+        transform: translate(-50%, -45%);
+        border-radius: 20px 20px 0 0;
+        height: calc(100vh - 60px);
+    }
+
+    .rsv-form_input {
+        padding: 10px 10px 10px 20px;
+    }
+    .rsv-form .button.step {
+        right: 10px;
+    }
+    .rsv-form_title:before {
+        width: calc(100% + 30px);
+        right: -10px;
+    }
+}
+.new_icon {
+    padding: 3px 8px;
+    font-size: 12px;
+    background-color: rgb(176, 0, 0);
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.bg_white {
+    background-color: #fff !important;
+}
