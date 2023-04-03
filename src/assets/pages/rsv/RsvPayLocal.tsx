@@ -582,18 +582,95 @@ const RsvPayLocal = () => {
                     USD <b className="Title03">29.33</b>
                   </span>
                 </div>
+                <div className="cont_info Fs_xsm pt10 bt-0">
+                  <ul>
+                    <li>
+                      - 해당 추가 옵션 및 편도 이용 금액은 세금 및 기타
+                      항목이불포함된 가격입니다.
+                    </li>
+                    <li>
+                      - 예약 완료 후 최종 예상 금액을 확인하실 수 있으며 현지
+                      지점에서 지불하시기 바랍니다.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="cont_info Fs_xsm pt10 bt-0">
-                <ul>
-                  <li>
-                    - 해당 추가 옵션 및 편도 이용 금액은 세금 및 기타
-                    항목이불포함된 가격입니다.
-                  </li>
-                  <li>
-                    - 예약 완료 후 최종 예상 금액을 확인하실 수 있으며 현지
-                    지점에서 지불하시기 바랍니다.
-                  </li>
-                </ul>
+              {/* <!-- 취소 수수료 및 환불 규정 --> */}
+              <div className="box_cont open drop mt10">
+                <div
+                  className="cont_title arrow toggle_btn toggle_tit6"
+                  onClick={toggleHandle6}
+                >
+                  취소 수수료 및 환불 규정
+                </div>
+                <div className="cont_info view toggle_cont6">
+                  <table className="table02 mb10">
+                    <thead>
+                      <tr>
+                        <th>기간 (한국 시간 기준)</th>
+                        <th>취소 수수료 및 환불</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2022-11-26(토) 08:29까지</td>
+                        <td>전액환불</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          2022-11-26(토) 08:29 ~ <br />
+                          2022-11-28(월) 07:29
+                        </td>
+                        <td>
+                          <span className="primary">103,000</span>원<br />
+                          차감 후 환불
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2022-11-28(월) 07:29부터</td>
+                        <td className="error">환불 불가</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul className="guide-explan circle Fs_xsm">
+                    <li>취소료 적용은 현지 픽업 시간을 기준으로 합니다.</li>
+                    <li>
+                      예약 취소/노쇼 및 환불 규정
+                      <ul>
+                        <li>
+                          - 현지 픽업 시간 기준 48시간 전 : 무료취소 가능하며
+                          전액환불
+                        </li>
+                        <li>
+                          - 현지 픽업 시간 기준 48시간 ~ 1시간 전 : 1일
+                          대여요금이 패널티로 부과되어 차감 후 환불
+                        </li>
+                        <li>
+                          - 현지 픽업 시간 기준 1시간 이내 또는 픽업 시간 이후 :
+                          환불 불가
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      예약완료 후 수정이 불가하므로, 예약 시 반드시 취소료 적용
+                      시점을 확인 해 주시길 바랍니다.
+                    </li>
+                    <li>
+                      취소료 적용 환율은 예약 결제시 적용된 환율과 동일합니다.
+                    </li>
+                    <li>
+                      사전 반납시, 이용 하지 않은 대여 기간에 대해서 환불이
+                      불가합니다.
+                    </li>
+                    <li>
+                      이벤트 및 제휴 항공사 마일리지 적립은 적용되지 않습니다.
+                    </li>
+                    <li>
+                      환불 요청은 픽업 1시간 전까지만 신청이 가능하며 그
+                      이후에는 환불이 불가합니다.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </article>
 
