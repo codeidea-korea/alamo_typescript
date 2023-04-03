@@ -369,7 +369,9 @@ const BaseLayout = () => {
           <div className="mobile-menu_wrap">
             <div className="mobile-menu_top">
               <div className="set ico">
-                <img src="/img/icon/setting.png" alt="" />
+                <a href="/setting">
+                  <img src="/img/icon/setting.png" alt="" />
+                </a>
                 <a className="img search02" href="/rsv_main"></a>
               </div>
 
@@ -545,7 +547,9 @@ const BaseLayout = () => {
                     className="button link button--primary"
                     onClick={() => openModal("newsletter_com")}
                   >
-                    신청하기(모두 입력 시)
+                    신청하기
+                    <br />
+                    (모두 입력 시)
                   </button>
                 </div>
               </form>
@@ -569,7 +573,9 @@ const BaseLayout = () => {
                 즐거운 소식 전하도록 노력하겠습니다.
               </div>
               <div className="l-button flex jc-ct mt30">
-                <button type="button" className="button link button--primary close_newsletter_com"
+                <button
+                  type="button"
+                  className="button link button--primary close_newsletter_com"
                 >
                   확인
                 </button>

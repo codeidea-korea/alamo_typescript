@@ -4,6 +4,37 @@ html {
 .py12{
   padding:0 12px;
 }
+
+.w-24{
+  width:24px;
+}
+.h-12{
+  height:12px;
+}
+.w-12{
+  width:12px;
+}
+.h-24{
+  height:24px;
+}
+.mb-0{
+  margin-bottom:0;
+}
+.py-10{
+  padding:10px 0;
+}
+.py-5{
+  padding:5px 0;
+}
+.mt-5{
+  margin-top:5px;
+}
+.shrink-0{
+  flex-shrink: 0;
+}
+.border-b{
+  border-bottom:1px solid #ddd;
+}
 .header_gnb > ul ul > li{
   color:#b7d3ef;
 }
@@ -746,5 +777,50 @@ header.scroll .header_head {
     display: block!important;
   }
   /* 설정 */
+  .switch-toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
   
+  .switch-toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch-toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.2s;
+  }
+  
+  .switch-toggle-label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(3px, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+  
+  .switch-toggle-checkbox:checked + .switch-toggle-label {
+    background-color: #2196F3;
+  }
+  
+  .switch-toggle-checkbox:checked + .switch-toggle-label:after {
+    transform: translate(27px, -50%);
+  }
 }
