@@ -1,10 +1,20 @@
 html {
   scroll-behavior: smooth;
 }
+.rem_l20{
+  padding:1rem 1rem 1rem 33px!important;
+  text-indent: 0em;
+  text-align: left;
+}
 .py12{
   padding:0 12px;
 }
-
+.text-left{
+  text-align: left;
+}
+.pagination{
+  display: block!important;
+}
 .w-24{
   width:24px;
 }
@@ -183,6 +193,10 @@ select {
 }
 .modal-title {
   border-bottom: 1px solid #f1f1f1;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
 }
 .ml-auto {
   margin-left: auto;
@@ -372,6 +386,14 @@ header.scroll .header_head {
 }
 /* mobile 시작 */
 @media screen and (max-width: 1024px) {
+  .search_input{
+    text-indent: 0!important;
+    padding:0 26px!important;
+  }
+  #FAQ .box_cont.drop .cont_info p{
+    font-size:1.2rem!important;
+    line-height:1.5em;
+  }
   .mfs12{
     font-size:1.2rem;
   }
@@ -822,5 +844,8 @@ header.scroll .header_head {
   
   .switch-toggle-checkbox:checked + .switch-toggle-label:after {
     transform: translate(27px, -50%);
+  }
+  #rsv_main .rsvbutton{
+    width:auto!important;
   }
 }

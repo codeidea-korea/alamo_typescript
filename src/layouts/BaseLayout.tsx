@@ -87,6 +87,11 @@ const BaseLayout = () => {
     $("body").removeClass("noneScroll");
   });
 
+  $(".modal .close_membership_modal").click(function () {
+    $(".modal#membership_modal").hide();
+    $("body").removeClass("noneScroll");
+  });
+
   useEffect(() => {
     // mobile gnb click
     $(document).on("click", ".ham_btn", function () {
@@ -437,7 +442,7 @@ const BaseLayout = () => {
                   </a>
                 </li>
                 <li className="cursor tac ico line">
-                  <a href="/">
+                  <a href="/rsv_main">
                     <img src="/img/icon/Calendar_Plus.svg" alt="예약하기" />
                     <p className="mt5">예약하기</p>
                   </a>
@@ -475,7 +480,9 @@ const BaseLayout = () => {
                   <li className="arrow" onClick={() => openModal("newsletter")}>
                     뉴스레터 구독신청
                   </li>
-                  <li className="arrow">멤버십 안내</li>
+                  <li className="arrow"
+                  onClick={() => openModal("membership_modal")}
+                  >멤버십 안내</li>
                   <li
                     className="arrow"
                     onClick={() => openModal("emergency_contact")}
@@ -576,6 +583,29 @@ const BaseLayout = () => {
                 <button
                   type="button"
                   className="button link button--primary close_newsletter_com"
+                >
+                  확인
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="membership_modal" className="modal">
+          <div className="modal-content2">
+            <div className="modal-title Title03">멤버십 안내</div>
+            <span className="close fwb">&times;</span>
+            <div className="cont_info tac">
+              <div className="Title03 text-left">
+                멤버십 안내입니다.
+              </div>
+              <div className="mt10 summary text-left">
+                멤버십 안내 내용입니다
+              </div>
+              <div className="l-button flex jc-ct mt30">
+                <button
+                  type="button"
+                  className="button link button--primary close_membership_modal"
                 >
                   확인
                 </button>

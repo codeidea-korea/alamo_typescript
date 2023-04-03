@@ -801,7 +801,7 @@ const Main = () => {
       {/* 지점 모달 */}
       <div id="pickup_location" className="modal">
         <div className="modal-content2">
-          <div className="modal-title Title03"></div>
+          <div className="modal-title Title03 h-66"></div>
           <span className="close fwb">&times;</span>
           <div className="cont_info">
             <div className="search-box flex search">

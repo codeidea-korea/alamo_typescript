@@ -120,6 +120,8 @@ const RsvDriverLocal = () => {
     setIsAllChecked(allChecked);
   };
 
+
+  
   return (
     <>
       <main className="sub rsv-page rsv-driver" id="rsv-page">
@@ -737,6 +739,7 @@ const RsvDriverLocal = () => {
                             type="text"
                             id="phone_number_value"
                             defaultValue="+82"
+                            disabled
                           />
                           <select id="phone_number" className="mr5">
                             <option value="+82">대한민국 +82</option>
