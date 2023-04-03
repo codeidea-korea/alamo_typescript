@@ -76,9 +76,10 @@ $(function () {
     if ($("#selbox").val() == "direct") {
       $("#textarea").show();
     } else {
-      $("#ttextarea").hide();
+      $("#textarea").hide();
     }
   })
+});
 
 
   /* textarea 글자수 제한 */
@@ -97,7 +98,7 @@ $(function () {
     obj.style.height = "1px";
     obj.style.height = (12 + obj.scrollHeight) + "px";
   }
-});
+
 
 
 /* 탭버튼 S */

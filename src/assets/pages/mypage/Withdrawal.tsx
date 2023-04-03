@@ -22,7 +22,7 @@ const Withdrawal = () => {
         if (e.target.value === "direct") {
             $("#textarea").show();
         } else {
-            $("#ttextarea").hide();
+            $("#textarea").hide();
         }
     };
     return (
@@ -36,25 +36,28 @@ const Withdrawal = () => {
                             <img src="/img/page/user_img2.png" alt="회원이미지" />
                             <div className="sub_form tac mt30">
                                 <div className="Title03">홍길동 회원님</div>
-                                <div className="mt10 summary">
+                                <div className="Fs_sm mt10 summary">
                                     탈퇴 시 예약내역, 문의내역이 모두 삭제되며 복구가 불가능합니다.
                                     <br />
                                     그래도 탈퇴 하시겠습니까?
                                 </div>
                                 <select className="mt20" id="selbox" name="selbox" onChange={selectHandle}>
-                                    <option value="" disabled hidden>
+                                    <option value="" selected disabled hidden>
                                         탈퇴사유 선택
                                     </option>
-                                    <option value="사유01">사유01</option>
+                                    <option value="reason01">사유01</option>
                                     <option value="direct">직접입력</option>
                                 </select>
                                 <div id="textarea" className="textarea mt5">
-                                    <textarea id="text_word" name="text_word" className="autosize"></textarea>
-                                    <div id="text_cnt">(0 / 3,000)</div>
+                                    <textarea id="text_word" name="text_word" className="autosize" placeholder="최대 3,000자"></textarea>
+                                    {/* <div id="text_cnt">(0 / 3,000)</div> */}
                                 </div>
                                 <div className="l-button mt50">
+                                    <button type="button" className="full_button button button--disabled mb5">
+                                        탈퇴하기(사유선택전)
+                                    </button>
                                     <button type="button" className="full_button button button--primary" onClick={() => openModal("completion")}>
-                                        탈퇴하기
+                                        탈퇴하기(사유선택후)
                                     </button>
                                 </div>
                             </div>
@@ -74,6 +77,7 @@ const Withdrawal = () => {
                             <button type="button" className="button link button--primary" onClick={() => openModal("completion")}>
                                 탈퇴
                             </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -87,7 +91,7 @@ const Withdrawal = () => {
                                 <img src="/img/page/user_img2.png" alt="회원이미지" />
                                 <div className="sub_form tac">
                                     <div className="Title03">정상적으로 탈퇴 되었습니다.</div>
-                                    <div className="mt10 summary">기존 아이디로 바로 재가입 가능합니다.</div>
+                                    <div className="mt10 summary">그동안 이용해 주셔서 감사합니다.</div>
                                     <div className="l-button mt50">
                                         <button type="button" className="full_button button button--primary" onClick={() => navigation("/")}>
                                             확인
