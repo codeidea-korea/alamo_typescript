@@ -1402,6 +1402,7 @@ input[id*="phone_number_value"] {
 }
 .mypage .button.step{height: 20px;line-height: 20px;}
 .mypage .button.step span{font-size:10px;}
+.mypage .id{display: flex; margin-top: 5px;}
 /******** mypage E ********/
 
 /*** 회사소개 ***/
@@ -1468,6 +1469,11 @@ input[id*="phone_number_value"] {
     border-right: 1px solid var(--gray-color);
     transform: rotate(180deg);
 }
+
+.agreeAll > span{position: inline-block; text-indent: -9999px; float:right}
+.agreeAll > span:after{transform: rotate(-45deg);}
+.agreeAll > span.active:after{transform: rotate(135deg);}
+
 
 /******** Modal S ********/
 /*** 요금 및 기본사양  ***/

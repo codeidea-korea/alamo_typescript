@@ -61,7 +61,7 @@ const MypageTp = () => {
                                             <button type="button" className="button myinfo step ml10">
                                                 <span className="Fs_sm" onClick={() => navigation("/personal_info_TP")}>
                                                     나의정보
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px" viewBox="0 0 50 80">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5px" height="7px" viewBox="0 0 50 80">
                                                         <polyline
                                                             fill="none"
                                                             stroke="#fff"
@@ -79,7 +79,7 @@ const MypageTp = () => {
                                         픽업예정
                                         <span className="fwb ml5 Title03">
                                             100건
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px" viewBox="0 0 50 80">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5px" height="10px" viewBox="0 0 50 80">
                                                 <polyline
                                                     fill="none"
                                                     stroke="#333"
