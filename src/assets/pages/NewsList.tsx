@@ -47,7 +47,7 @@ const NewsList = () => {
                   alt=""
                 />
                 <input
-                  type="search"
+                  type="text"
                   autoComplete="off"
                   className="search_input mr5"
                   data-test-id="search-input"
@@ -75,7 +75,7 @@ const NewsList = () => {
                   />
                 </svg>
                 <input
-                  type="search"
+                  type="text"
                   autoComplete="off"
                   className="search_input mr5"
                   data-test-id="search-input"
