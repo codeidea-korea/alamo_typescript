@@ -521,9 +521,11 @@ header.scroll .header_head {
     border-radius: 5px;
     z-index: 99;
   }
+  
   .modal-content2 .cont_info {
     padding: 20px 16px 16px 16px;
     border-top: 0 !important;
+    max-height: calc(100vh - 250px)!important;
   }
   .rdrDateRangePickerWrapper,
   .rdrCalendarWrapper {
@@ -727,5 +729,8 @@ header.scroll .header_head {
   }
   .app_download button{
     font-size:1.2rem;
+  }
+  .mypage_top-right a{
+    width:100%;
   }
 }

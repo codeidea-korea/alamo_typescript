@@ -311,7 +311,7 @@ const Main = () => {
                     className="button button--primary step Fs_sm"
                     onClick={() => openModal("point-search")}
                   >
-                    <span className="mr5">단계별 검색</span>
+                    <span className="">단계별 검색</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6px"
@@ -350,7 +350,7 @@ const Main = () => {
                     className="button button--primary step Fs_sm"
                     onClick={() => openModal("point-search")}
                   >
-                    <span className="mr5">단계별 검색</span>
+                    <span className="">단계별 검색</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6px"
@@ -390,7 +390,7 @@ const Main = () => {
                     className="button button--primary step Fs_sm"
                     onClick={() => openModal("point-search")}
                   >
-                    <span className="mr5">단계별 검색</span>
+                    <span className="">단계별 검색</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6px"
@@ -431,7 +431,7 @@ const Main = () => {
                     className="button button--primary step Fs_sm"
                     onClick={() => openModal("point-search")}
                   >
-                    <span className="mr5">단계별 검색</span>
+                    <span className="">단계별 검색</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6px"

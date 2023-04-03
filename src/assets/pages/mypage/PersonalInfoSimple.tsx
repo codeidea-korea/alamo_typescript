@@ -102,7 +102,7 @@ const PersonalInfoSimple = () => {
                                                 <option value="+1 670">미국령북마리아나제도 +1 670</option>
                                                 <option value="+61 8 9164">크리스마스 섬 제도 +61 8 9164</option>
                                             </select>
-                                            <input type="text" defaultValue="01012345678" autoComplete="off" />
+                                            <input type="number" defaultValue="01012345678" autoComplete="off" />
                                         </div>
                                     </div>
 

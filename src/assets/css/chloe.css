@@ -148,7 +148,7 @@
 }
 #main .rsv-form_input .button.step {
   height: 32px;
-  width: 90px;
+  /* width: 90px; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 400;
