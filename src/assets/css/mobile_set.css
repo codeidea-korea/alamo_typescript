@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+.share .share_ico img{
+  vertical-align: unset;
+}
 .rate-title{
   display: flex;
   align-items: flex-end;

@@ -116,14 +116,14 @@ const RsvNodifyView = () => {
             <article>
               {/* <!-- 예약번호 S --> */}
               <div className="box_cont l-rsv-com">
-                <div className="cont_info Fs_sm">
+                <div className="cont_info Fs_sm bt-0">
                   <ul className="rsv-com border-bottom">
                     <li className="line">수정날짜</li>
                     <li className="rsv-com-date">2022-11-25 1:11</li>
                   </ul>
                   <ul className="rsv-num mt10">
                     <li>예약번호</li>
-                    <li className="Title02 ml10">1123455667</li>
+                    <li className="Title02 ml10 fs-24">1123455667</li>
                   </ul>
                 </div>
               </div>
@@ -162,23 +162,11 @@ const RsvNodifyView = () => {
                     onClick={() => openModal("spec")}
                   >
                     기본 사양 보기
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="6px"
-                      height="12px"
-                      viewBox="0 0 50 80"
-                      className="ml5"
-                    >
-                      <polyline
-                        fill="none"
-                        stroke="#333"
-                        stroke-width="6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        points="
-                                0.375,0.375 45.63,38.087 0.375,75.8 "
-                      ></polyline>
-                    </svg>
+                    <img
+                      className="arrow_r"
+                      src="/img/icon/arrow_r.svg"
+                      alt=""
+                    />
                   </span>
                 </h3>
                 <div className="cont_info">
@@ -255,23 +243,11 @@ const RsvNodifyView = () => {
                     onClick={() => openModal("spec")}
                   >
                     기본 사양 보기
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="6px"
-                      height="12px"
-                      viewBox="0 0 50 80"
-                      className="ml5"
-                    >
-                      <polyline
-                        fill="none"
-                        stroke="#333"
-                        stroke-width="6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        points="
-                                0.375,0.375 45.63,38.087 0.375,75.8 "
-                      ></polyline>
-                    </svg>
+                    <img
+                      className="arrow_r"
+                      src="/img/icon/arrow_r.svg"
+                      alt=""
+                    />
                   </span>
                 </h3>
                 <div className="cont_info">
@@ -512,10 +488,10 @@ const RsvNodifyView = () => {
                     />
                   </div>
                   <div
-                    className="tooltip Fs_sm pa10 tooltip_cont3"
+                    className="tooltip Fs_sm pa10 tooltip_cont3 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    대여일정 툴팁
                   </div>
                 </div>
                 <div className="clar">대여기간 : 1일</div>
@@ -575,10 +551,10 @@ const RsvNodifyView = () => {
                     />
                   </div>
                   <div
-                    className="tooltip Fs_sm pa10 tooltip_cont4"
+                    className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    요금 및 옵션 툴팁
                   </div>
                 </div>
                 <div className="clar">
@@ -931,7 +907,7 @@ const RsvNodifyView = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont5"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    결제 금액 툴팁
                   </div>
                 </div>
               </div>
@@ -1038,7 +1014,7 @@ const RsvNodifyView = () => {
             </article>
 
             <article>
-              <div className="l-button flex jc-ct">
+              <div className="l-button flex jc-ct btn_full">
                 <button
                   type="button"
                   className="button link button--cancle mr10"
