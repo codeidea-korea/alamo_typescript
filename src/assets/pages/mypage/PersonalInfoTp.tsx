@@ -38,15 +38,19 @@ const PersonalInfoTp = () => {
     }
     const toggleHandle = () => {
         $(".toggle_cont").toggle();
-    };
+        $(".toggle_tit").toggleClass("active");
+      };
     const toggleHandle2 = () => {
         $(".toggle_cont2").toggle();
+        $(".toggle_tit2").toggleClass("active");
     };
     const toggleHandle3 = () => {
         $(".toggle_cont3").toggle();
+        $(".toggle_tit3").toggleClass("active");
     };
     const toggleHandle4 = () => {
         $(".toggle_cont4").toggle();
+        $(".toggle_tit4").toggleClass("active");
     };
     // 체크
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
@@ -82,7 +86,7 @@ const PersonalInfoTp = () => {
                                 <fieldset>
                                     <div className="l-box mb10">
                                         <div className="box_cont open drop">
-                                            <div className="cont_title arrow toggle_btn" onClick={toggleHandle}>
+                                            <div className="toggle_tit cont_title arrow toggle toggle_btn" onClick={toggleHandle}>
                                                 사업자 정보
                                             </div>
                                             <div className="cont_info view toggle_cont">
@@ -130,7 +134,7 @@ const PersonalInfoTp = () => {
 
                                     <div className="l-box mb10">
                                         <div className="box_cont open drop">
-                                            <div className="cont_title arrow toggle_btn" onClick={toggleHandle2}>
+                                            <div className="toggle_tit2 cont_title arrow toggle_btn" onClick={toggleHandle2}>
                                                 부서 정보
                                             </div>
                                             <div className="cont_info view toggle_cont2">
@@ -180,7 +184,7 @@ const PersonalInfoTp = () => {
 
                                     <div className="l-box">
                                         <div className="box_cont open drop">
-                                            <div className="cont_title arrow toggle_btn" onClick={toggleHandle3}>
+                                            <div className="toggle_tit3 cont_title arrow toggle_btn" onClick={toggleHandle3}>
                                                 담당자 정보
                                             </div>
                                             <div className="cont_info view toggle_cont3">
@@ -203,12 +207,12 @@ const PersonalInfoTp = () => {
                                                 </div>
 
                                                 <div className="form_input mt20">
-                                                    <label htmlFor="name_ko">한글이름</label>
+                                                    <label htmlFor="name_ko" className="import">한글이름</label>
                                                     <input type="text" defaultValue="홍길동" autoComplete="off" />
                                                 </div>
 
                                                 <div className="form_input phone-nm mt20">
-                                                    <label htmlFor="call" className="import">
+                                                    <label htmlFor="call">
                                                         담당자 전화번호
                                                     </label>
                                                     <div className="lookup_input">
@@ -223,7 +227,7 @@ const PersonalInfoTp = () => {
                                                 </div>
 
                                                 <div className="form_input phone-nm mt20">
-                                                    <label htmlFor="phone" className="import">
+                                                    <label htmlFor="phone">
                                                         담당자 휴대폰번호
                                                     </label>
                                                     <div className="lookup_input">
@@ -238,7 +242,7 @@ const PersonalInfoTp = () => {
                                                 </div>
 
                                                 <div className="form_input mt20">
-                                                    <label htmlFor="email" className="import">
+                                                    <label htmlFor="email">
                                                         담당자 이메일
                                                     </label>
                                                     <input type="email" defaultValue="abcd@email.com" id="email" name="email" autoComplete="off" />
@@ -248,15 +252,16 @@ const PersonalInfoTp = () => {
                                     </div>
 
                                     <div className="l-line"></div>
-                                    <div className="l-box">
+                                    <div className="l-box check_table">
                                         <div className="box_cont open drop" id="joinAgree">
-                                            <div className="cont_title arrow toggle_btn agreeAll">
+                                            <div className="cont_title toggle_btn agreeAll">
                                                 <input type="checkbox" id="checkAll" checked={isAllChecked} onChange={handleCheckAll} />
                                                 <label htmlFor="checkAll">
                                                     <span className="import fwb">약관 전체 동의</span>
                                                 </label>
+                                                <span className="arrow toggle_tit" onClick={toggleHandle}>토글</span>
                                             </div>
-                                            <div className="cont_info view Fs_sm">
+                                            <div className="cont_info view Fs_sm toggle_cont">
                                                 <div className="agree_check">
                                                     <input type="checkbox" name="join_agree" id="join_agree" onChange={handleCheck} />
                                                     <label htmlFor="join_agree" className="ml10">

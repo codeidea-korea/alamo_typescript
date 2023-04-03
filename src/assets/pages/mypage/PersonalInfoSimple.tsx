@@ -68,7 +68,7 @@ const PersonalInfoSimple = () => {
                                 <fieldset>
                                     <div className="form_input mt20">
                                         <label htmlFor="name_ko">한글이름</label>
-                                        <input type="text" placeholder="이름을 입력해주세요." autoComplete="off" />
+                                        <input type="text" placeholder="이름을 입력해주세요." autoComplete="off" value={"홍길동"}/>
                                     </div>
 
                                     <div className="form_input mt20">
@@ -83,13 +83,13 @@ const PersonalInfoSimple = () => {
                                             <label htmlFor="first_name">
                                                 여권 성 <span className="summary">(여권상)</span>
                                             </label>
-                                            <input type="text" placeholder="여권 영문 성" autoComplete="off" />
+                                            <input type="text" placeholder="여권 영문 성" autoComplete="off" value={"HONG"}/>
                                         </div>
                                         <div>
                                             <label htmlFor="last_name">
                                                 여권 이름 <span className="summary">(여권상)</span>
                                             </label>
-                                            <input type="text" placeholder="여권 영문 이름" autoComplete="off" />
+                                            <input type="text" placeholder="여권 영문 이름" autoComplete="off" value={"GILDONG"}/>
                                         </div>
                                     </div>
 

@@ -31,7 +31,8 @@ const PersonalInfo = () => {
     }
     const toggleHandle = () => {
         $(".toggle_cont").toggle();
-    };
+        $(".toggle_tit").toggleClass("active");
+      };
     // 체크
     const [isAllChecked, setIsAllChecked] = useState<boolean>(false);
 
@@ -84,21 +85,21 @@ const PersonalInfo = () => {
 
                                     <div className="form_input mt20">
                                         <label htmlFor="name_ko">한글이름</label>
-                                        <input type="text" placeholder="이름을 입력해주세요." autoComplete="off" />
+                                        <input type="text" placeholder="이름을 입력해주세요." autoComplete="off" value={"홍길동"}/>
                                     </div>
 
                                     <div className="lookup_input mt20">
                                         <div className="mr5">
                                             <label htmlFor="first_name">
-                                                여권 성 <span className="Fs_sm summary">(여권상)</span>
+                                                여권 성 <span className="summary">(여권상)</span>
                                             </label>
-                                            <input type="text" placeholder="여권 영문 성" autoComplete="off" />
+                                            <input type="text" placeholder="여권 영문 성" autoComplete="off" value={"HONG"}/>
                                         </div>
                                         <div>
                                             <label htmlFor="last_name">
-                                                여권 이름 <span className="Fs_sm summary">(여권상)</span>
+                                                여권 이름 <span className="summary">(여권상)</span>
                                             </label>
-                                            <input type="text" placeholder="여권 영문 이름" autoComplete="off" />
+                                            <input type="text" placeholder="여권 영문 이름" autoComplete="off" value={"GILDONG"}/>
                                         </div>
                                     </div>
 
@@ -111,7 +112,7 @@ const PersonalInfo = () => {
                                                 <option value="+1 670">미국령북마리아나제도 +1 670</option>
                                                 <option value="+61 8 9164">크리스마스 섬 제도 +61 8 9164</option>
                                             </select>
-                                            <input type="text" placeholder="휴대폰번호를 입력해주세요" autoComplete="off" />
+                                            <input type="text" placeholder="휴대폰번호를 입력해주세요" autoComplete="off" defaultValue={"01012345678"}/>
                                         </div>
                                     </div>
 
@@ -119,44 +120,75 @@ const PersonalInfo = () => {
                                         <label htmlFor="email" className="import">
                                             이메일
                                         </label>
-                                        <input type="email" placeholder="이메일을 입력해주세요." id="email" name="email" autoComplete="off" />
+                                        <input type="email" placeholder="이메일을 입력해주세요." id="email" name="email" autoComplete="off" value={"abc@email.com"}/>
                                     </div>
 
                                     <div className="form_input mt20">
                                         <div className="">
                                             <label htmlFor="date_birth">생년월일</label>
-                                            <div className="join_date flex">
+                                            <div className="join_date flex ai-ct">
                                                 <select name="select_change" className="mr5">
                                                     <option value="" disabled hidden>
                                                         년도
                                                     </option>
-                                                    <option value="2022">2022년</option>
-                                                    <option value="2021">2021년</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2021">2021</option>
                                                 </select>
                                                 <select name="select_change" className="mr5">
                                                     <option value="" disabled hidden>
                                                         월
                                                     </option>
-                                                    <option value="1월">1월</option>
-                                                    <option value="2월">2월</option>
-                                                    <option value="3월">3월</option>
-                                                    <option value="4월">4월</option>
-                                                    <option value="5월">5월</option>
-                                                    <option value="6월">6월</option>
-                                                    <option value="7월">7월</option>
-                                                    <option value="8월">8월</option>
-                                                    <option value="9월">9월</option>
-                                                    <option value="10월">10월</option>
-                                                    <option value="11월">11월</option>
-                                                    <option value="12월">12월</option>
+                                                    <option value="1월">01</option>
+                                                    <option value="2월">02</option>
+                                                    <option value="3월">03</option>
+                                                    <option value="4월">04</option>
+                                                    <option value="5월">05</option>
+                                                    <option value="6월">06</option>
+                                                    <option value="7월">07</option>
+                                                    <option value="8월">08</option>
+                                                    <option value="9월">09</option>
+                                                    <option value="10월">10</option>
+                                                    <option value="11월">11</option>
+                                                    <option value="12월">12</option>
                                                 </select>
-                                                <select name="select_change" className="">
+                                                <p className="mr5">월</p>
+                                                <select name="select_change" className="mr5">
                                                     <option value="" disabled hidden>
                                                         일
                                                     </option>
-                                                    <option value="1일">1일</option>
-                                                    <option value="2일">2일</option>
+                                                    <option value="01일">01</option>
+                                                    <option value="02일">02</option>
+                                                    <option value="03일">03</option>
+                                                    <option value="04일">04</option>
+                                                    <option value="05일">05</option>
+                                                    <option value="06일">06</option>
+                                                    <option value="07일">07</option>
+                                                    <option value="08일">08</option>
+                                                    <option value="09일">09</option>
+                                                    <option value="10일">10</option>
+                                                    <option value="11일">11</option>
+                                                    <option value="12일">12</option>
+                                                    <option value="13일">13</option>
+                                                    <option value="14일">14</option>
+                                                    <option value="15일">15</option>
+                                                    <option value="16일">16</option>
+                                                    <option value="17일">17</option>
+                                                    <option value="18일">18</option>
+                                                    <option value="19일">19</option>
+                                                    <option value="20일">20</option>
+                                                    <option value="21일">21</option>
+                                                    <option value="21일">22</option>
+                                                    <option value="22일">23</option>
+                                                    <option value="23일">24</option>
+                                                    <option value="24일">25</option>
+                                                    <option value="25일">26</option>
+                                                    <option value="26일">27</option>
+                                                    <option value="27일">28</option>
+                                                    <option value="29일">29</option>
+                                                    <option value="30일">30</option>
+                                                    <option value="31일">31</option>
                                                 </select>
+                                                <p>일</p>
                                             </div>
                                         </div>
                                     </div>
@@ -185,8 +217,9 @@ const PersonalInfo = () => {
                                                 <label htmlFor="checkAll">
                                                     <span className="import fwb">약관 전체 동의</span>
                                                 </label>
+                                                <span className="arrow toggle_tit" onClick={toggleHandle}>토글</span>
                                             </div>
-                                            <div className="cont_info view Fs_sm">
+                                            <div className="cont_info view Fs_sm toggle_cont">
                                                 <div className="agree_check">
                                                     <input type="checkbox" name="join_agree" id="join_agree" onChange={handleCheck} />
                                                     <label htmlFor="join_agree" className="ml10">
