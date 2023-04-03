@@ -241,7 +241,7 @@ const PickupScheduled = () => {
                                         <img className="ml5" src="/img/icon/question.svg" alt="설명툴팁" />
                                     </div>
                                     <div className="tooltip Fs_sm pa10 tooltip_cont3" style={{display: "none"}}>
-                                        운전자정보 툴팁
+                                        대여일정 툴팁
                                     </div>
                                 </div>
                                 <div className="clar">대여기간 : 1일</div>
@@ -286,7 +286,7 @@ const PickupScheduled = () => {
                                         <img className="ml5" src="/img/icon/question.svg" alt="설명툴팁" />
                                     </div>
                                     <div className="tooltip Fs_sm pa10 tooltip_cont4" style={{display: "none"}}>
-                                        운전자정보 툴팁
+                                        요금 및 옵션 툴팁
                                     </div>
                                 </div>
                                 <div className="clar">
@@ -428,7 +428,7 @@ const PickupScheduled = () => {
                                         <img className="ml5" src="/img/icon/question.svg" alt="설명툴팁" />
                                     </div>
                                     <div className="tooltip Fs_sm pa10 tooltip_cont5" style={{display: "none"}}>
-                                        운전자정보 툴팁
+                                        결제 금액 툴팁
                                     </div>
                                 </div>
                             </div>
@@ -515,7 +515,7 @@ const PickupScheduled = () => {
                                         <li>온라인 체크인은 운전면허증 정보와 현지에서 필요한 옵션 및 도착 정보를 사전에 입력하여 카운터에서의 시간을 절약할 수 있는 시스템 입니다.</li>
                                         <li>온라인 체크인을 완료 하시더라도 필수 서류인 예약확정서, 국내 면허증, 국제 면허증, 여권, 주운전자 명의 해외신용카드를 시 지참해 주시기 바랍니다.</li>
                                     </ul>
-                                    <button type="button" className="button button--primary mt20">
+                                    <button type="button" className="button button--primary mt20 py12 btn_full">
                                         온라인 체크인 이용 가이드 다운로드
                                     </button>
                                 </div>

@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+.py12{
+  padding:0 12px;
+}
 .header_gnb > ul ul > li{
   color:#b7d3ef;
 }
@@ -330,6 +333,11 @@ header.scroll .header_head {
 }
 .disabled-selected{
   padding-left:10px;
+}
+.tooltip_cont3.left_0,
+.tooltip_cont4.left_0,
+.tooltip_cont5.left_0 {
+  left: 0 !important;
 }
 /* mobile 시작 */
 @media screen and (max-width: 1024px) {

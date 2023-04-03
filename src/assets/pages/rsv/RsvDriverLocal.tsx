@@ -347,7 +347,7 @@ const RsvDriverLocal = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont3 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    요금 및 옵션 툴팁
                   </div>
                 </div>
                 <div className="clar">
@@ -536,7 +536,7 @@ const RsvDriverLocal = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    결제 금액 툴팁
                   </div>
                 </div>
               </div>
@@ -655,7 +655,7 @@ const RsvDriverLocal = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont5 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    운전자 정보 툴팁
                   </div>
                 </div>
                 {/* <div className="clar">25세이상</div> */}

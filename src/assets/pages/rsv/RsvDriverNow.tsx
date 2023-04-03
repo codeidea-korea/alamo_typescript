@@ -541,7 +541,7 @@ const RsvDriverNow = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    결제 금액 툴팁
                   </div>
                 </div>
               </div>
@@ -675,7 +675,7 @@ const RsvDriverNow = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont5"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    운전자 정보 툴팁
                   </div>
                 </div>
                 {/* <div className="clar">25세이상</div> */}

@@ -1075,7 +1075,7 @@ const RsvNodify = () => {
                               className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                               style={{ display: "none" }}
                             >
-                              결제 금액 툴팁
+                              툴팁
                             </div>
                           </div>
                           <p className="Fs_xsm">

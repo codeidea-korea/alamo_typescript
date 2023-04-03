@@ -749,7 +749,7 @@ const RsvComNow = () => {
                       해외신용카드를 시 지참해 주시기 바랍니다.
                     </li>
                   </ul>
-                  <button type="button" className="button button--primary mt20 btn_full">
+                  <button type="button" className="button button--primary mt20 btn_full py-12">
                     온라인 체크인 이용 가이드 다운로드
                   </button>
                 </div>

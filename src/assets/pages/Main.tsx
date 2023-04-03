@@ -487,7 +487,7 @@ const Main = () => {
                           />
                         </div>
                         <div
-                          className="tooltip Fs_sm pa10 tooltip_cont2 center"
+                          className="tooltip Fs_sm pa10 tooltip_cont2"
                           style={{ display: "none" }}
                         >
                           대부분의 주에서는 만 21세 이상부터 렌터카 차량 이용이

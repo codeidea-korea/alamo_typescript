@@ -363,7 +363,7 @@ const RsvComLocal = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont3 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    대여일정 툴팁
                   </div>
                 </div>
                 <div className="clar">대여기간 : 1일</div>
@@ -412,10 +412,10 @@ const RsvComLocal = () => {
                     />
                   </div>
                   <div
-                    className="tooltip Fs_sm pa10 tooltip_cont4"
+                    className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    요금 및 옵션 툴팁
                   </div>
                 </div>
                 <div className="clar">
@@ -604,7 +604,7 @@ const RsvComLocal = () => {
                     className="tooltip Fs_sm pa10 tooltip_cont5"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    결제 금액 툴팁
                   </div>
                 </div>
               </div>
@@ -733,7 +733,7 @@ const RsvComLocal = () => {
                       해외신용카드를 시 지참해 주시기 바랍니다.
                     </li>
                   </ul>
-                  <button type="button" className="button button--primary mt20 btn_full">
+                  <button type="button" className="button button--primary mt20 btn_full py12">
                     온라인 체크인 이용 가이드 다운로드
                   </button>
                 </div>

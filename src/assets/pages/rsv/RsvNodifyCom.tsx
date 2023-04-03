@@ -583,10 +583,10 @@ const RsvNodifyCom = () => {
                     />
                   </div>
                   <div
-                    className="tooltip Fs_sm pa10 tooltip_cont5"
+                    className="tooltip Fs_sm pa10 tooltip_cont5 left_0"
                     style={{ display: "none" }}
                   >
-                    운전자정보 툴팁
+                    결제 금액 툴팁
                   </div>
                 </div>
               </div>
@@ -715,7 +715,7 @@ const RsvNodifyCom = () => {
                       해외신용카드를 시 지참해 주시기 바랍니다.
                     </li>
                   </ul>
-                  <button type="button" className="button button--primary mt20 btn_full">
+                  <button type="button" className="button button--primary mt20 btn_full py12">
                     온라인 체크인 이용 가이드 다운로드
                   </button>
                 </div>
