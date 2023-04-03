@@ -77,6 +77,16 @@ const BaseLayout = () => {
     $(".hidden").hide();
   }, []);
 
+  $(".modal .close_newsletter_com").click(function () {
+    $(".modal#newsletter_com").hide();
+    $("body").removeClass("noneScroll");
+  });
+
+  $(".modal .close_newsletter").click(function () {
+    $(".modal#newsletter").hide();
+    $("body").removeClass("noneScroll");
+  });
+
   useEffect(() => {
     // mobile gnb click
     $(document).on("click", ".ham_btn", function () {
@@ -516,16 +526,22 @@ const BaseLayout = () => {
                 <div className="l-button flex jc-ct mt30">
                   <button
                     type="button"
-                    className="button link button--cancle mr10"
+                    className="button link button--cancle mr10 close_newsletter"
                   >
                     취소
                   </button>
                   <button
                     type="button"
-                    className="button link button--disabled"
-                    onClick={() => openModal("newsletter_com")}
+                    className="button link button--disabled mr10"
                   >
                     신청하기
+                  </button>
+                  <button
+                    type="button"
+                    className="button link button--primary"
+                    onClick={() => openModal("newsletter_com")}
+                  >
+                    신청하기(모두 입력 시)
                   </button>
                 </div>
               </form>
@@ -549,7 +565,8 @@ const BaseLayout = () => {
                 즐거운 소식 전하도록 노력하겠습니다.
               </div>
               <div className="l-button flex jc-ct mt30">
-                <button type="button" className="button link button--primary">
+                <button type="button" className="button link button--primary close_newsletter_com"
+                >
                   확인
                 </button>
               </div>

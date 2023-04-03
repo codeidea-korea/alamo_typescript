@@ -84,7 +84,7 @@ const InqueryList = () => {
                                     <li>휴무</li>
                                 </ul>
                             </div>
-                            <button className="button link tac Fs_sm" onClick={() => navigate("/inquiry_regist")}>
+                            <button className="button link tac Fs_sm fwb" onClick={() => navigate("/inquiry_regist")}>
                                 1:1 문의등록
                             </button>
                         </div>
@@ -116,7 +116,7 @@ const InqueryList = () => {
                                 {/* <!-- User inquiry_list S --> */}
                                 <div className="inquiry_list">
                                     <div className="box_cont open drop answer_waiting all mb10">
-                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit" onClick={toggleHandle}>
+                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit items-center" onClick={toggleHandle}>
                                             <li className="line tac wd_15 pa30 summary">답변대기</li>
                                             <li className="pa30">
                                                 <ul>
@@ -143,7 +143,7 @@ const InqueryList = () => {
                                     </div>
 
                                     <div className="box_cont open drop answer_complete all mb10">
-                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit2" onClick={toggleHandle2}>
+                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit2 items-center" onClick={toggleHandle2}>
                                             <li className="line tac wd_15 pa30 point">답변완료</li>
                                             <li className="pa30">
                                                 <ul>
@@ -196,7 +196,7 @@ const InqueryList = () => {
                                     </div>
 
                                     <div className="box_cont open drop answering all">
-                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit3" onClick={toggleHandle3}>
+                                        <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit3 items-center" onClick={toggleHandle3}>
                                             <li className="line tac wd_15 pa30 primary">답변중</li>
                                             <li className="pa30">
                                                 <ul>
