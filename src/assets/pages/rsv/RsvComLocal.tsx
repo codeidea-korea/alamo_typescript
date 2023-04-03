@@ -1178,7 +1178,7 @@ const RsvComLocal = () => {
             <div className="cont_info">
               <p>예약 픽업일자 : 2021-01-11 12:00</p>
               <div className="ask-box mt10">예약을 취소하시겠습니까?</div>
-              <div className="l-button mt30 flex">
+              <div className="l-button mt30 flex justy-center">
                 <button
                   type="button"
                   className="button link button--cancle mr10"

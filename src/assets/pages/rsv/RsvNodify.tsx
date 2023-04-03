@@ -1,6 +1,40 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import $ from "jquery";
 import { useNavigate } from "react-router-dom";
+
+// 카운터 컴포넌트
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const handleMinusClick = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
+  const handlePlusClick = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <>
+      <input
+        type="button"
+        className="count mr5"
+        onClick={handleMinusClick}
+        value="-"
+        disabled={count === 0}
+      />
+      <div id="result">{count}</div>
+      <input
+        type="button"
+        className="count ml5"
+        onClick={handlePlusClick}
+        value="+"
+      />
+    </>
+  );
+}
 
 const RsvNodify = () => {
   const navigation = useNavigate();
@@ -37,25 +71,25 @@ const RsvNodify = () => {
     $("body").addClass("noneScroll");
   }
   /* 버튼 클릭 숫자 증감 s */
-  function count(type: any) {
-    // 결과를 표시할 element
-    const resultElement = document.getElementById("result");
-    // 현재 화면에 표시된 값
-    let number = resultElement?.innerText;
-    let result = 0;
-    // 더하기/빼기
-    if (type === "plus") {
-      if (number !== undefined) {
-        result = parseInt(number) + 1;
-      }
-    } else if (type === "minus") {
-      if (number !== undefined) {
-        result = parseInt(number) - 1;
-      }
-    }
-    // 결과 출력
-    $("#result").text(result);
-  }
+  //   function count(type: any) {
+  //     // 결과를 표시할 element
+  //     const resultElement = document.getElementById("result");
+  //     // 현재 화면에 표시된 값
+  //     let number = resultElement?.innerText;
+  //     let result = 0;
+  //     // 더하기/빼기
+  //     if (type === "plus") {
+  //       if (number !== undefined) {
+  //         result = parseInt(number) + 1;
+  //       }
+  //     } else if (type === "minus") {
+  //       if (number !== undefined) {
+  //         result = parseInt(number) - 1;
+  //       }
+  //     }
+  //     // 결과 출력
+  //     $("#result").text(result);
+  //   }
   /* 버튼 클릭 숫자 증감 e */
 
   const tooltipHandle = () => {
@@ -73,6 +107,9 @@ const RsvNodify = () => {
 
   const tooltipHandle5 = () => {
     $(".tooltip_cont5").show();
+  };
+  const tooltipHandle6 = () => {
+    $(".tooltip_cont6").show();
   };
   useEffect(() => {
     $("#rsv_nodify").on("click", () => {
@@ -104,6 +141,7 @@ const RsvNodify = () => {
     $(".toggle_cont5").toggle();
     $(".toggle_tit5").toggleClass("active");
   };
+
   const toggleHandle7 = () => {
     $(".toggle_cont7").toggle();
     $(".toggle_tit7").toggleClass("active");
@@ -152,6 +190,11 @@ const RsvNodify = () => {
       allChecked = allChecked && checkbox.checked;
     });
     setIsAllChecked(allChecked);
+  };
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (tabIndex: SetStateAction<number>) => {
+    setActiveTab(tabIndex);
   };
   return (
     <>
@@ -320,22 +363,11 @@ const RsvNodify = () => {
                               >
                                 {" "}
                                 기본 사양 보기
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="6px"
-                                  height="12px"
-                                  viewBox="0 0 50 80"
-                                >
-                                  <polyline
-                                    fill="none"
-                                    stroke="#333"
-                                    strokeWidth="6"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    points="
-                    0.375,0.375 45.63,38.087 0.375,75.8 "
-                                  ></polyline>
-                                </svg>
+                                <img
+                                  className="arrow_r"
+                                  src="/img/icon/arrow_r.svg"
+                                  alt=""
+                                />
                               </span>
                             </h3>
                             <div className="cont_info">
@@ -496,22 +528,11 @@ const RsvNodify = () => {
                               >
                                 {" "}
                                 기본 사양 보기
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="6px"
-                                  height="12px"
-                                  viewBox="0 0 50 80"
-                                >
-                                  <polyline
-                                    fill="none"
-                                    stroke="#333"
-                                    strokeWidth="6"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    points="
-                    0.375,0.375 45.63,38.087 0.375,75.8 "
-                                  ></polyline>
-                                </svg>
+                                <img
+                                  className="arrow_r"
+                                  src="/img/icon/arrow_r.svg"
+                                  alt=""
+                                />
                               </span>
                             </h3>
                             <div className="cont_info">
@@ -679,22 +700,11 @@ const RsvNodify = () => {
                               >
                                 {" "}
                                 기본 사양 보기
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="6px"
-                                  height="12px"
-                                  viewBox="0 0 50 80"
-                                >
-                                  <polyline
-                                    fill="none"
-                                    stroke="#333"
-                                    strokeWidth="6"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    points="
-                    0.375,0.375 45.63,38.087 0.375,75.8 "
-                                  ></polyline>
-                                </svg>
+                                <img
+                                  className="arrow_r"
+                                  src="/img/icon/arrow_r.svg"
+                                  alt=""
+                                />
                               </span>
                             </h3>
                             <div className="cont_info">
@@ -1021,6 +1031,7 @@ const RsvNodify = () => {
                   </ul>
                 </div>
               </div>
+
               <div className="box_cont open drop mt10">
                 <div
                   className="cont_title arrow toggle_btn toggle_tit4"
@@ -1061,7 +1072,7 @@ const RsvNodify = () => {
                               />
                             </div>
                             <div
-                              className="tooltip Fs_sm pa10 tooltip_cont4"
+                              className="tooltip Fs_sm pa10 tooltip_cont4 left_0"
                               style={{ display: "none" }}
                             >
                               결제 금액 툴팁
@@ -1072,19 +1083,7 @@ const RsvNodify = () => {
                           </p>
                         </td>
                         <td className="p-count">
-                          <input
-                            type="button"
-                            className="count mr5"
-                            onClick={() => count("minus")}
-                            value="-"
-                          />
-                          <div id="result">0</div>
-                          <input
-                            type="button"
-                            className="count ml5"
-                            onClick={() => count("plus")}
-                            value="+"
-                          />
+                          <Counter />
                         </td>
                       </tr>
                       <tr>
@@ -1095,19 +1094,7 @@ const RsvNodify = () => {
                           </p>
                         </td>
                         <td className="p-count">
-                          <input
-                            type="button"
-                            className="count mr5"
-                            onClick={() => count("minus")}
-                            value="-"
-                          />
-                          <div id="result">0</div>
-                          <input
-                            type="button"
-                            className="count ml5"
-                            onClick={() => count("plus")}
-                            value="+"
-                          />
+                          <Counter />
                         </td>
                       </tr>
                       <tr>
@@ -1118,19 +1105,7 @@ const RsvNodify = () => {
                           </p>
                         </td>
                         <td className="p-count">
-                          <input
-                            type="button"
-                            className="count mr5"
-                            onClick={() => count("minus")}
-                            value="-"
-                          />
-                          <div id="result">0</div>
-                          <input
-                            type="button"
-                            className="count ml5"
-                            onClick={() => count("plus")}
-                            value="+"
-                          />
+                          <Counter />
                         </td>
                       </tr>
                       <tr>
@@ -1142,19 +1117,7 @@ const RsvNodify = () => {
                           </p>
                         </td>
                         <td className="p-count">
-                          <input
-                            type="button"
-                            className="count mr5"
-                            onClick={() => count("minus")}
-                            value="-"
-                          />
-                          <div id="result">0</div>
-                          <input
-                            type="button"
-                            className="count ml5"
-                            onClick={() => count("plus")}
-                            value="+"
-                          />
+                          <Counter />
                         </td>
                       </tr>
                       <tr>
@@ -1166,19 +1129,7 @@ const RsvNodify = () => {
                           </p>
                         </td>
                         <td className="p-count">
-                          <input
-                            type="button"
-                            className="count mr5"
-                            onClick={() => count("minus")}
-                            value="-"
-                          />
-                          <div id="result">0</div>
-                          <input
-                            type="button"
-                            className="count ml5"
-                            onClick={() => count("plus")}
-                            value="+"
-                          />
+                          <Counter />
                         </td>
                       </tr>
                     </tbody>
@@ -1278,13 +1229,15 @@ const RsvNodify = () => {
                   >
                     <fieldset>
                       <div className="lookup_input">
-                        <input
-                          type="checkbox"
-                          name="same-info"
-                          id="same-info"
-                          className="mr5"
-                        />
-                        회원정보와 동일
+                        <label htmlFor="same-info">
+                          <input
+                            type="checkbox"
+                            name="same-info"
+                            id="same-info"
+                            className="mr5"
+                          />
+                          회원정보와 동일
+                        </label>
                       </div>
 
                       <div className="form_input mt20">
@@ -1300,7 +1253,7 @@ const RsvNodify = () => {
 
                       <div className="lookup_input mt20">
                         <div className="mr5">
-                          <label htmlFor="first_name">
+                          <label htmlFor="first_name" className="import">
                             여권 성{" "}
                             <span className="Fs_sm summary">(여권상)</span>
                           </label>
@@ -1314,7 +1267,7 @@ const RsvNodify = () => {
 
                       <div className="lookup_input mt20">
                         <div>
-                          <label htmlFor="last_name">
+                          <label htmlFor="last_name" className="import">
                             여권 이름{" "}
                             <span className="Fs_sm summary">(여권상)</span>
                           </label>
@@ -1327,7 +1280,9 @@ const RsvNodify = () => {
                       </div>
 
                       <div className="form_input phone-nm mt20">
-                        <label htmlFor="phone">휴대폰번호</label>
+                        <label htmlFor="phone" className="import">
+                          휴대폰번호
+                        </label>
                         <div className="lookup_input">
                           <input
                             type="text"
@@ -1344,7 +1299,7 @@ const RsvNodify = () => {
                             </option>
                           </select>
                           <input
-                            type="text"
+                            type="number"
                             placeholder="휴대폰번호를 입력해주세요"
                             autoComplete="off"
                           />
@@ -1367,10 +1322,7 @@ const RsvNodify = () => {
                       <div className="form_input mt20">
                         <label htmlFor="flight" className="box_title">
                           도착항공편
-                          <div
-                            className="l-tooltip"
-                            x-data="{ tooltip: false }"
-                          >
+                          <div className="l-tooltip" onClick={tooltipHandle6}>
                             <div x-show="true">
                               <img
                                 className="ml5"
@@ -1379,7 +1331,7 @@ const RsvNodify = () => {
                               />
                             </div>
                             <div
-                              className="tooltip Fs_sm pa10"
+                              className="tooltip Fs_sm pa10 tooltip_cont6"
                               style={{ display: "none" }}
                             >
                               항공편 연착을 대비하여 도착 항공편 정보를 입력 해
@@ -1428,10 +1380,11 @@ const RsvNodify = () => {
             </article>
 
             <article>
-              <div className="l-button flex jc-ct">
+              <div className="l-button flex jc-ct btn_full">
                 <button
                   type="button"
-                  className="button link button--cancle mr10"
+                  className="button link button--cancle mr10 "
+                  onClick={() => history.back()}
                 >
                   예약수정 취소
                 </button>
@@ -1541,10 +1494,20 @@ const RsvNodify = () => {
               </div>
               <div className="car-detail">
                 <ul className="tab-group fwb">
-                  <li className="tab_item active">요금제 선택</li>
-                  <li className="tab_item">차량정보</li>
+                  <li
+                    className={`tab_item ${activeTab === 1 ? "active" : ""}`}
+                    onClick={() => handleTabClick(1)}
+                  >
+                    요금제 선택
+                  </li>
+                  <li
+                    className={`tab_item ${activeTab === 2 ? "active" : ""}`}
+                    onClick={() => handleTabClick(2)}
+                  >
+                    차량정보
+                  </li>
                 </ul>
-                <div className="tab_inner active">
+                <div className={`tab_inner ${activeTab === 1 ? "active" : ""}`}>
                   <div className="cont_right">
                     <div className="rate mb20">
                       <div className="rate-title fwb">
@@ -1555,18 +1518,22 @@ const RsvNodify = () => {
                         </p>
                       </div>
                       <ul className="mt10">
-                        <li className="Fs_xsm">
-                          현지결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">147.00</b>
-                          </p>
-                        </li>
-                        <li className="Fs_xsm">
-                          지금결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">150.00</b>
-                          </p>
-                        </li>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            현지결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">147.00</b>
+                            </p>
+                          </li>
+                        </a>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            지금결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">150.00</b>
+                            </p>
+                          </li>
+                        </a>
                       </ul>
                     </div>
                     <div className="rate mb20">
@@ -1578,18 +1545,22 @@ const RsvNodify = () => {
                         </p>
                       </div>
                       <ul className="mt10">
-                        <li className="Fs_xsm">
-                          현지결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">147.00</b>
-                          </p>
-                        </li>
-                        <li className="Fs_xsm">
-                          지금결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">150.00</b>
-                          </p>
-                        </li>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            현지결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">147.00</b>
+                            </p>
+                          </li>
+                        </a>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            지금결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">150.00</b>
+                            </p>
+                          </li>
+                        </a>
                       </ul>
                     </div>
                     <div className="rate">
@@ -1600,23 +1571,27 @@ const RsvNodify = () => {
                         </p>
                       </div>
                       <ul className="mt10">
-                        <li className="Fs_xsm">
-                          현지결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">147.00</b>
-                          </p>
-                        </li>
-                        <li className="Fs_xsm">
-                          지금결제
-                          <p className="price-info Fs_sm">
-                            USD <b className="Title03 primary">150.00</b>
-                          </p>
-                        </li>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            현지결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">147.00</b>
+                            </p>
+                          </li>
+                        </a>
+                        <a href="#?" className="w-full">
+                          <li className="Fs_xsm w-full">
+                            지금결제
+                            <p className="price-info Fs_sm">
+                              USD <b className="Title03 primary">150.00</b>
+                            </p>
+                          </li>
+                        </a>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="tab_inner">
+                <div className={`tab_inner ${activeTab === 2 ? "active" : ""}`}>
                   <ul className="Fs_sm summary mt20">
                     <li>· 4인승 (4Passengers)</li>
                     <li>· 수화물 2개 (2 Pieces of Luggage)</li>
