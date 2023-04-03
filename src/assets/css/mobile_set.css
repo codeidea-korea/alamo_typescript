@@ -725,4 +725,7 @@ header.scroll .header_head {
   .step.change_btn {
     height: 44px;
   }
+  .app_download button{
+    font-size:1.2rem;
+  }
 }

@@ -216,7 +216,7 @@ const PersonalInfoSimple = () => {
                                         </div>
                                     </div>
                                 </fieldset>
-                                <div className="l-button mt50 flex jc-ct">
+                                <div className="l-button mt50 flex jc-ct btn_full">
                                     <button type="button" className="button link button--disabled mr10" onClick={() => navigation("/mypage_simple")}>
                                         취소
                                     </button>
