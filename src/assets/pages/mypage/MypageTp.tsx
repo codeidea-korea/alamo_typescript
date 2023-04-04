@@ -47,7 +47,7 @@ const MypageTp = () => {
                   className="ico logout"
                   onClick={() => openModal("confirm")}
                 ></div>
-                <div className="ico alarm"></div>
+                 <div className="ico alarm" onClick={() => openModal("alarm")}></div>
                 <div className="ico set"></div>
               </div>
             </article>
