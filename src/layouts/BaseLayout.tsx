@@ -1078,7 +1078,7 @@ const BaseLayout = () => {
                         (Main Country / Region)
                       </span>
                       <br />
-                      <select name="" id="" className="mt10 wd_80">
+                      <select name="" id="" className="mt10">
                         <option value="">선택하세요</option>
                       </select>
                     </div>
@@ -1088,7 +1088,7 @@ const BaseLayout = () => {
                       <span>주/지방</span>
                       <span className="Fs_sm summary">(State / Territory)</span>
                       <br />
-                      <select name="" id="" className="mt10 wd_80">
+                      <select name="" id="" className="mt10">
                         <option value="">선택하세요</option>
                       </select>
                     </div>
@@ -1098,7 +1098,7 @@ const BaseLayout = () => {
                       <span>도시</span>
                       <span className="Fs_sm summary">(City)</span>
                       <br />
-                      <select name="" id="" className="mt10 wd_80">
+                      <select name="" id="" className="mt10">
                         <option value="">선택하세요</option>
                       </select>
                     </div>
@@ -1108,7 +1108,7 @@ const BaseLayout = () => {
                       <span>지점명</span>
                       <span className="Fs_sm summary">(Location Name)</span>
                       <br />
-                      <select name="" id="" className="mt10 wd_80">
+                      <select name="" id="" className="mt10">
                         <option value="">선택하세요</option>
                       </select>
                     </div>
