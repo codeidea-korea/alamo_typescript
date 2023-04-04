@@ -353,8 +353,9 @@ const InquiryRegist = () => {
                           id="text_word"
                           name="text_word"
                           className="autosize"
+                          placeholder="최대 3,000자"
                         ></textarea>
-                        <div id="text_cnt">(0 / 3,000)</div>
+                        {/* <div id="text_cnt">(0 / 3,000)</div> */}
                       </div>
                     </div>
                   </div>
