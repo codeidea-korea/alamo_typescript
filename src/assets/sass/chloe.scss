@@ -48,6 +48,15 @@
     margin-bottom: 0.5rem
 }
 
+
+.search_ic{
+    padding-top:2px;
+    @media (max-width:1024px){
+        left:6px;
+    }
+}
+
+
 // main
 #main {
     .swiper-main {
@@ -337,3 +346,5 @@
         }
     }
 }
+
+
