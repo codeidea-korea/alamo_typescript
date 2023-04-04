@@ -117,7 +117,6 @@
     box-shadow: none;
     max-width: 1600px;
     margin: 0 auto;
-    width: 97%;
 }
 #main .rsv-form {
     position: absolute;
@@ -221,7 +220,7 @@
 
 @media screen and (max-width: 1024px) {
     #main .box_cont.rsv-box {
-        padding: 20px;
+        padding: 16px;
         padding-top: 0px;
     }
     #main .mb120 {
