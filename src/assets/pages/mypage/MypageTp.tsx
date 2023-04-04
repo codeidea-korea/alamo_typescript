@@ -104,7 +104,7 @@ const MypageTp = () => {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           points="
-              0.375,0.375 45.63,38.087 0.375,75.8 "
+              0.375,0.375 45.63,38.087 0.375,75.8 "  
                         ></polyline>
                       </svg>
                     </span>
@@ -122,6 +122,7 @@ const MypageTp = () => {
                     </li>
                     <li className="cursor tac ico" onClick={() => navigation("/news_list")} >
                     <img src="/img/icon/Megaphone.svg" alt="뉴스&이벤트" />
+
                     <p>뉴스&이벤트</p>
                     </li>
                   </ul>

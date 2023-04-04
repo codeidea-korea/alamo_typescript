@@ -1491,6 +1491,12 @@ input[id*="phone_number_value"] {
 #setting .button{padding:10px; color:var(--main-color)}
 #setting .toggle-btn{top: 0;bottom: 0; margin: auto;}
 
+/* alarm */
+#alarm .box_cont{border-bottom: 1px solid var(--border-color);}
+#alarm .box_cont ul{padding:10px 0px}
+#alarm .modal-content2 .cont_info{padding:0 16px 16px}
+
+
 /******** Modal S ********/
 /*** 요금 및 기본사양  ***/
 .modal .car-detail {
@@ -1827,4 +1833,9 @@ input[id*="phone_number_value"] {
 }
 .bg_white {
     background-color: #fff !important;
+}
+
+@media screen and (max-width: 500px) {
+/* alarm */
+#alarm .box_cont ul li > span:first-child{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 88%; display: inline-block;}
 }
