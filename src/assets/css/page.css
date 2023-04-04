@@ -1842,7 +1842,6 @@ input[id*="phone_number_value"] {
 
 /* inquary_list */
 .inquiry_info .button{width: auto; height: auto; padding:10px}
-.inquiry_list .box_cont >ul > li{padding:0 25px 0 0!important;}
 
 /* alarm */
 #alarm .box_cont ul li > span:first-child, span.ellipsis{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 88%; display: inline-block;}
