@@ -1837,6 +1837,7 @@ input[id*="phone_number_value"] {
 .bg_white {
     background-color: #fff !important;
 }
+.search-box.form{margin-bottom: 40px;}
 
 @media screen and (max-width: 500px) {
 
