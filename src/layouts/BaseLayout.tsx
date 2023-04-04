@@ -181,6 +181,33 @@ const BaseLayout = () => {
     setIsToggled2(!isToggled2);
   };
 
+  /* 알림함 토글 */
+  const toggleHandle = () => {
+    $(".toggle_cont").toggle();
+    $(".toggle_tit").toggleClass("active");
+  };
+  const toggleHandle2 = () => {
+    $(".toggle_cont2").toggle();
+    $(".toggle_tit2").toggleClass("active");
+  };
+  const toggleHandle3 = () => {
+    $(".toggle_cont3").toggle();
+    $(".toggle_tit3").toggleClass("active");
+  };
+  const toggleHandle4 = () => {
+    $(".toggle_cont4").toggle();
+    $(".toggle_tit4").toggleClass("active");
+  };
+  const toggleHandle5 = () => {
+    $(".toggle_cont5").toggle();
+    $(".toggle_tit5").toggleClass("active");
+  };
+  const toggleHandle6 = () => {
+    $(".toggle_cont6").toggle();
+    $(".toggle_tit6").toggleClass("active");
+  };
+
+
   return (
     <React.Fragment>
       <div className="app_download">
@@ -652,6 +679,7 @@ const BaseLayout = () => {
           </div>
         </div>
 
+
         <div id="confirm" className="modal">
           <div className="modal-content">
             <span className="close fwb">&times;</span>
@@ -663,6 +691,93 @@ const BaseLayout = () => {
             >
               확인
             </button>
+          </div>
+        </div>
+
+        {/* 알람 */}
+        <div id="alarm" className="modal">
+          <div className="modal-content2">
+            <div className="modal-title Title03">알림함</div>
+            <span className="close fwb">&times;</span>
+            <div className="cont_info">
+            <div className="board-box">
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit" onClick={toggleHandle}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li>
+                      <span>안녕하세요 업그레이드 쿠폰이 발행되었습니다testtesttesttesttest.</span>
+                      <span className="wd_5 file_icon">
+                        <img src="/img/icon/mo_file_icon.svg" className="mo_icon" alt=""/>
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont mb10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit2" onClick={toggleHandle2}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li><span>안녕하세요 업그레이드 쿠폰이 발행되었습니다.</span></li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont2 mab10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit3" onClick={toggleHandle3}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li><span>안녕하세요 업그레이드 쿠폰이 발행되었습니다.</span></li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont3 mb10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit4" onClick={toggleHandle4}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li><span>안녕하세요 업그레이드 쿠폰이 발행되었습니다.</span>
+                      <span className="wd_5 file_icon">
+                        <img src="/img/icon/mo_file_icon.svg" className="mo_icon" alt=""/></span>
+                    </li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont4 mb10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit5" onClick={toggleHandle5}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li><span>안녕하세요 업그레이드 쿠폰이 발행되었습니다.</span></li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont5 mb10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+
+                <div className="box_cont open">
+                  <ul className="cont_title toggle_btn toggle active toggle_tit6" onClick={toggleHandle6}>
+                    <li className="Fs_sm summary">2022-09-11</li>
+                    <li>
+                      <span>안녕하세요 업그레이드 쿠폰이 발행되었습니다.</span>
+                      <span className="wd_5 file_icon">
+                        <img src="/img/icon/mo_file_icon.svg" className="mo_icon" alt=""/>
+                      </span>
+                    </li>
+                  </ul>
+                  <div className="cont_info view pa20 hidden toggle_cont6 mb10">
+                    <p className="primary mb10">알림함 내용</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
 
