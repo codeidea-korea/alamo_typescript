@@ -16,7 +16,7 @@
 .footer_info ul{display: flex; flex-wrap: wrap;}
 .footer_info li{padding-right:20px;}
 .footer_info li:last-child{padding-right: 0;}
-.footer_info li:after {content: ""; position: absolute; width: 1px; height: 50%; top: 0; bottom: 0; right: 10px; margin: auto; background:var(--light_gray-color);}
+/* .footer_info li:after {content: ""; position: absolute; width: 1px; height: 50%; top: 0; bottom: 0; right: 10px; margin: auto; background:var(--light_gray-color);} */
 .footer_info li:last-child:after {content: none;}
 .footer_info .copy{width: 80%;color:var(--light_gray-color)}
 
