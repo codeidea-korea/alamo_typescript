@@ -450,7 +450,7 @@ header.scroll .header_head {
   .btn_full {
     width: 100%;
   }
-  .btn_full button {
+  .btn_full button, .btn_full a {
     width: 100% !important;
   }
   .tooltip_cont3.left_0,

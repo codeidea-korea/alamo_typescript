@@ -1644,6 +1644,30 @@ const RsvNodify = () => {
           </div>
         </div>
         {/* <!-- Modal content E --> */}
+
+        {/* <!-- Modal content S --> */}
+        <div id="rsv-cancle" className="modal">
+          <div className="modal-content2">
+            <div className="modal-title Title03">예약취소</div>
+            <span className="close fwb">&times;</span>
+            <div className="cont_info">
+              <p>예약 픽업일자 : 2021-01-11 12:00</p>
+              <div className="ask-box mt10">예약을 취소하시겠습니까?</div>
+              <div className="l-button mt30 flex">
+                <button
+                  type="button"
+                  className="button link button--cancle mr10"
+                >
+                  예약유지
+                </button>
+                <button type="button" className="button link button--primary">
+                  예약취소 처리
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <!-- Modal content E --> */}
       </main>
     </>
   );
