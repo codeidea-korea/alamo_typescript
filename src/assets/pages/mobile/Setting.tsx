@@ -25,23 +25,24 @@ const Setting = () => {
   }
   return (
     <>
-      <main className="sub rsv-page" id="rsv-page">
+      <main className="sub rsv-page" id="setting">
         <div className="sub-vis"></div>
 
         <section className="contents">
           <div className="inner">
             {/* <!-- sub title --> */}
             <article className="sub_title Title01 tac">설정</article>
-            <div className="flex items-center border-b py-10">
-              <div className="box_title Title03 mb-0">홍길동</div>
-              <a
-                href="#?"
-                className="ml-auto"
-                onClick={() => openModal("confirm")}
-              >
-                로그아웃
-              </a>
+            <div className="color_box flex items-center border-b py-10 flex jc-sb">
+              <div className="flex">
+                <div className="box_title mb-0 line">내계정</div>
+                <div className="box_title mb-0">홍길동</div>
+              </div>
+              <button type="button" className="button myinfo step ml10">
+                <span className="Fs_sm" onClick={() => openModal("confirm")}> 로그아웃
+                </span>
+              </button>
             </div>
+
 
             <div className="flex items-center border-b py-10">
               <div className="box_title Title03 mb-0">앱 푸시</div>
