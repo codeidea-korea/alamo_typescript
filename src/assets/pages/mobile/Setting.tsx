@@ -44,20 +44,12 @@ const Setting = () => {
             </div>
 
 
-            <div className="flex items-center border-b py-10">
-              <div className="box_title Title03 mb-0">앱 푸시</div>
-              <div className="switch-toggle ml-auto">
-                <input
-                  type="checkbox"
-                  className="switch-toggle-checkbox"
-                  checked={isOn}
-                  onChange={handleToggle}
-                  id="switch-toggle-checkbox"
-                />
-                <label
-                  className="switch-toggle-label"
-                  htmlFor="switch-toggle-checkbox"
-                ></label>
+            <div className="flex items-center border-b py-10 select mt10">
+              <div className="box_title mb-0">앱 푸시</div>
+              <div className="toggle-btn yes">
+                <input type="checkbox" className="checkbox" />
+                <div className="knobs"></div>
+                <div className="layer"></div>
               </div>
             </div>
 

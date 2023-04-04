@@ -108,31 +108,19 @@ const MypageSimple = () => {
                   </button>
                 </div>
                 <div className="mypage_top-right box_cont">
-                  <ul className="top-right_ico">
-                    <a href="/rsv_status">
-                      <li className="cursor tac line ico">
+                <ul className="top-right_ico">
+                    <li className="cursor tac line ico"  onClick={() => navigation("/rsv_status")}>
                         <img src="/img/icon/Check_File.svg" alt="예약확인" />
                         <p>예약확인</p>
-                      </li>
-                    </a>
-                    <a href="/rsv_main">
-                      <li
-                        className="cursor tac line ico"
-                        onClick={() => navigation("/rsv_main")}
-                      >
+                    </li>
+                    <li className="cursor tac line ico" onClick={() => navigation("/rsv_main")}>
                         <img src="/img/icon/Calendar_Plus.svg" alt="예약하기" />
                         <p>예약하기</p>
-                      </li>
-                    </a>
-                    <a href="/news_list">
-                      <li
-                        className="cursor tac ico"
-                        onClick={() => navigation("/news_list")}
-                      >
-                        <img src="/img/icon/Megaphone.svg" alt="뉴스&이벤트" />
-                        <p>뉴스&이벤트</p>
-                      </li>
-                    </a>
+                    </li>
+                    <li className="cursor tac ico" onClick={() => navigation("/news_list")} >
+                    <img src="/img/icon/Megaphone.svg" alt="뉴스&이벤트" />
+                    <p>뉴스&이벤트</p>
+                    </li>
                   </ul>
                 </div>
               </div>

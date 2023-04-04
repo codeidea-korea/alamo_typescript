@@ -969,7 +969,7 @@ input[id*="phone_number_value"] {
 }
 .toggle-btn .checkbox:checked + .knobs:before {
     content: "";
-    left: 24px;
+    left: 22px;
 }
 .toggle-btn .checkbox:checked ~ .layer {
     background-color: var(--light_gray-color);
@@ -1486,8 +1486,8 @@ input[id*="phone_number_value"] {
 
 /* setting */
 #setting .color_box{background:var(--main-color); color:#fff; border-radius:10px; padding:20px 10px;}
-
-
+#setting .button{padding:10px; color:var(--main-color)}
+#setting .toggle-btn{top: 0;bottom: 0; margin: auto;}
 
 /******** Modal S ********/
 /*** 요금 및 기본사양  ***/
