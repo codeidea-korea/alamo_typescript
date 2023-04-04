@@ -170,7 +170,7 @@ const InqueryList = () => {
                                                 {/* <!-- 재문의하기 리스트 S --> */}
                                                 <ul className="mt20">
                                                     <li className="guide_title arrow toggle_btn toggle re-answer pa20 summary active toggle_tit4" onClick={toggleHandle4}>
-                                                        체크/데빗 카드로 결제가 가능한가요?
+                                                    <span className="ellipsis">체크/데빗 카드로 결제가 가능한가요?</span>
                                                     </li>
                                                     <li className="cont_info view hidden pa30 toggle_cont4">
                                                         <p className="Fs_sm summary mb10">
@@ -181,7 +181,7 @@ const InqueryList = () => {
                                                 </ul>
                                                 <ul>
                                                     <li className="guide_title arrow toggle_btn toggle re-answer pa20 summary active toggle_tit5" onClick={toggleHandle5}>
-                                                        차종 선택이 가능한가요?
+                                                    <span className="ellipsis">차종 선택이 가능한가요?</span>
                                                     </li>
                                                     <li className="cont_info view hidden pa30 toggle_cont5">
                                                         <p className="Fs_sm summary mb10">
@@ -223,7 +223,7 @@ const InqueryList = () => {
                                                 {/* <!-- 재문의하기 리스트 S --> */}
                                                 <ul className="mt20">
                                                     <li className="guide_title arrow toggle_btn toggle re-answer pa20 summary active toggle_tit6" onClick={toggleHandle6}>
-                                                        체크/데빗 카드로 결제가 가능한가요?
+                                                        <span className="ellipsis">체크/데빗 카드로 결제가 가능한가요?</span>
                                                     </li>
                                                     <li className="cont_info view hidden pa30 toggle_cont6">
                                                         <p className="Fs_sm summary mb10">
@@ -234,7 +234,7 @@ const InqueryList = () => {
                                                 </ul>
                                                 <ul>
                                                     <li className="guide_title arrow toggle_btn toggle re-answer pa20 summary active toggle_tit7" onClick={toggleHandle7}>
-                                                        차종 선택이 가능한가요?
+                                                        <span className="ellipsis">차종 선택이 가능한가요?</span>
                                                     </li>
                                                     <li className="cont_info view hidden pa30 toggle_cont7">
                                                         <p className="Fs_sm summary mb10">
