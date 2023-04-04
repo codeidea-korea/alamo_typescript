@@ -70,11 +70,11 @@ const RsvVihicle = () => {
           <ul className="step-pc">
             <li className="ico">
               <img src="/img/icon/step01-ing.png" alt="" />
-              <p>차량 및 요금제 선택</p>
+              <p>차량 및 <br />요금제 선택</p>
             </li>
             <li className="step_com ico">
               <img src="/img/icon/step02-exp.png" alt="" />
-              <p>요금확인 및 옵션추가</p>
+              <p>요금확인 및 <br />옵션추가</p>
             </li>
             <li className="step_com ico">
               <img src="/img/icon/step03-exp.png" alt="" />

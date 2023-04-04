@@ -11,7 +11,7 @@
     margin-left: 150px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   #main_vis .vis_txt {
     margin-left: 0;
   }
@@ -20,7 +20,7 @@
 .pc_only {
   display: block;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .pc_only {
     display: none;
   }
@@ -29,7 +29,7 @@
 .mo_only {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .mo_only {
     display: block;
   }
@@ -68,7 +68,7 @@
   width: auto;
   height: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   #main .swiper-main .swiper-button-pause {
     display: none;
   }
@@ -78,12 +78,12 @@
   width: 12px;
   height: 12px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .box_cont {
     margin-bottom: 30px !important;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .rsv-form {
     background: #FFFFFF;
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -96,7 +96,7 @@
   background: #fff url("../img/icon/arrow02.svg") no-repeat right 0rem center/10px;
   color: var(--gray-color);
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .rsv-form {
     height: auto;
   }
@@ -104,7 +104,7 @@
 #main .rsv-form label {
   font-size: 1.4rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .rsv-form_input {
     padding-left: 28px;
   }
@@ -147,8 +147,8 @@
   color: #A8ABAE;
 }
 #main .rsv-form_input .button.step {
-  height: 32px;
-  /* width: 90px; */
+  height: 24px;
+  width: 85px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 400;
@@ -162,13 +162,13 @@
   line-height: 140%;
   color: #808386;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .rsv-form_title:after {
     top: 2px;
   }
 }
 #main .rsv-form .period-badge {
-  padding: 3px 13px;
+  padding: 0 13px;
 }
 #main .rsv-form .l-tooltip.px14 img {
   width: 14px;
@@ -179,12 +179,12 @@
   bottom: 37px;
   width: 500px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   #main .rsv-form .l-button {
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main .rsv-form .l-button {
     position: static;
     width: auto;
@@ -193,7 +193,7 @@
 #main #quick-menu {
   margin-top: 212px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #main #quick-menu {
     margin-top: 0;
   }
@@ -249,7 +249,7 @@
   background-size: contain;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   #swiper-event {
     margin-bottom: 30px !important;
   }
@@ -262,8 +262,22 @@
 .swiper-etc .swiper-pagination {
   margin-top: 20px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .swiper-etc .swiper-pagination {
     margin-top: 10px;
   }
+}
+
+.step-pc li.step_com p {
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7px;
 }

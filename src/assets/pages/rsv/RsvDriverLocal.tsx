@@ -129,11 +129,11 @@ const RsvDriverLocal = () => {
           <ul className="step-pc">
             <li className="step_com ico">
               <img src="/img/icon/step-com.png" alt="" />
-              <p>차량 및 요금제 선택</p>
+              <p>차량 및 <br />요금제 선택</p>
             </li>
             <li className="step_com ico">
               <img src="/img/icon/step-com.png" alt="" />
-              <p>요금확인 및 옵션추가</p>
+              <p>요금확인 및 <br />옵션추가</p>
             </li>
             <li className="ico">
               <img src="/img/icon/step03-ing.png" alt="" />
