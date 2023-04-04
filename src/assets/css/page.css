@@ -1265,6 +1265,7 @@ input[id*="phone_number_value"] {
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom:10px;
 }
 .video-container iframe {
     position: absolute;
