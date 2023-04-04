@@ -971,7 +971,7 @@ input[id*="phone_number_value"] {
 }
 .toggle-btn .checkbox:checked + .knobs:before {
     content: "";
-    left: 24px;
+    left: 22px;
 }
 .toggle-btn .checkbox:checked ~ .layer {
     background-color: var(--light_gray-color);
@@ -1477,16 +1477,19 @@ input[id*="phone_number_value"] {
 .agreeAll > span.active:after{transform: rotate(135deg);}
 
 
-/* rsv_status */
+/* rsv_status  */
 #rsv_status .table01 td span{display: inline-block; width: auto!important;}
 #rsv_status .button.step{height: 20px;line-height: 20px; font-size: 1.2rem;}
 #rsv_status .table01 tr{display: flex;justify-content: space-between;}
 #rsv_status .table01 td span.pay{display: flex; align-items: center;}
 #rsv_status .table01 .ico img{width: 20px;}
-/* #rsv_status .tab_l-box{width: 100%; overflow-x: hidden;}
-#rsv_status .tab_l-box > ul{min-width: 1024px; overflow-x: auto;} */
 #rsv_status .tab_l-box > ul >li{width: 130px!important;}
 
+
+/* setting */
+#setting .color_box{background:var(--main-color); color:#fff; border-radius:10px; padding:20px 10px;}
+#setting .button{padding:10px; color:var(--main-color)}
+#setting .toggle-btn{top: 0;bottom: 0; margin: auto;}
 
 /******** Modal S ********/
 /*** 요금 및 기본사양  ***/

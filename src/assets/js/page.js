@@ -34,15 +34,16 @@ $('.unchange_btn').on('click', function(){
 
 
 /* 직접입력 시 인풋박스 나타내기 */
-$(function(){
-$("#textarea").hide();
-$("#selbox").change(function() {
-if($("#selbox").val() == "direct") {
-  $("#textarea").show();
-}  else {
-  $("#ttextarea").hide();
-}
-}) 
+$(function () {
+  $("#textarea").hide();
+  $("#selbox").change(function () {
+    if ($("#selbox").val() == "direct") {
+      $("#textarea").show();
+    } else {
+      $("#textarea").hide();
+    }
+  })
+});
 
 
 /* textarea 글자수 제한 */
@@ -61,7 +62,7 @@ function resize(obj) {
   obj.style.height = "1px";
   obj.style.height = (12+obj.scrollHeight)+"px";
 }
-});
+
 
 
 /* 탭버튼 S */
