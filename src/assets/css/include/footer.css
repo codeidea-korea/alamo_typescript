@@ -1,5 +1,8 @@
 @charset "utf-8";
-.footer {background-color: #414B5F; position: relative; padding:50px 0;}
+.footer {background-color: #414B5F; padding:50px 0;}
+.footer .inner{
+   position:relative;
+}
    /* top_btn */
 .top_btn {position: fixed; border: 1px solid var(--border-color); width: 60px; height: 60px; border-radius: 100%; bottom:30px; right: 30px; z-index: 88; background: #fff url('../../img/icon/top_btn.png')no-repeat center/35%;}
 
