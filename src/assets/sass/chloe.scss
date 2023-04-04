@@ -302,10 +302,38 @@
 
 // 차량 예약
 
-.step-pc li p{
-    height:34px;
-    display:flex;
+.step-pc li p {
+    height: 34px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:7px;
+    margin-top: 7px;
+}
+
+
+// 1:1문의
+
+.inquiry_list {
+
+    .line-new {
+        min-width:82px;
+        &:after {
+            display: none;
+        }
+    }
+
+    .line-new+.pa30 {
+        position:relative;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 1px;
+            height: 100%;
+            background: var(--border-color);
+        }
+    }
 }

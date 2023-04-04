@@ -281,3 +281,24 @@
           justify-content: center;
   margin-top: 7px;
 }
+
+.inquiry_list .line-new {
+  min-width: 82px;
+}
+.inquiry_list .line-new:after {
+  display: none;
+}
+.inquiry_list .line-new + .pa30 {
+  position: relative;
+}
+.inquiry_list .line-new + .pa30:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1px;
+  height: 100%;
+  background: var(--border-color);
+}

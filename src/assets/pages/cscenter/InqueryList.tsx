@@ -117,7 +117,7 @@ const InqueryList = () => {
                                 <div className="inquiry_list">
                                     <div className="box_cont open drop answer_waiting all mb10">
                                         <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit items-center" onClick={toggleHandle}>
-                                            <li className="line tac wd_15 pa30 summary">답변대기</li>
+                                            <li className="line tac wd_15 pa30 summary line-new">답변대기</li>
                                             <li className="pa30">
                                                 <ul>
                                                     <li className="Fs_sm summary">2022-09-11</li>
@@ -144,7 +144,7 @@ const InqueryList = () => {
 
                                     <div className="box_cont open drop answer_complete all mb10">
                                         <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit2 items-center" onClick={toggleHandle2}>
-                                            <li className="line tac wd_15 pa30 point">답변완료</li>
+                                            <li className="line tac wd_15 pa30 point line-new">답변완료</li>
                                             <li className="pa30">
                                                 <ul>
                                                     <li className="Fs_sm summary">2022-09-11</li>
@@ -197,7 +197,7 @@ const InqueryList = () => {
 
                                     <div className="box_cont open drop answering all">
                                         <ul className="cont_title arrow toggle_btn toggle flex ac active toggle_tit3 items-center" onClick={toggleHandle3}>
-                                            <li className="line tac wd_15 pa30 primary">답변중</li>
+                                            <li className="line tac wd_15 pa30 primary line-new">답변중</li>
                                             <li className="pa30">
                                                 <ul>
                                                     <li className="Fs_sm summary">2022-09-11</li>
