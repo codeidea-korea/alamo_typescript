@@ -384,6 +384,10 @@ header.scroll .header_head {
 .tooltip_cont5.left_0 {
   left: 0 !important;
 }
+#main .rsv-form_input .button.step{
+  width:auto!important;
+  height:30px!important;
+}
 /* mobile 시작 */
 @media screen and (max-width: 1024px) {
   .search_input{
