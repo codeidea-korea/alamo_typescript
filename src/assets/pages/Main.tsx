@@ -59,11 +59,6 @@ const Main = () => {
       $(".modal#data_share").hide();
       $("body").removeClass("noneScroll");
     });
-
-    $(".modal .info_close").click(function () {
-      $(".modal#info_popup").hide();
-      $("body").removeClass("noneScroll");
-    });
     $(".modal .rsv_date_close").click(function () {
       $(".modal#rsv_date").hide();
       $("body").removeClass("noneScroll");
@@ -172,8 +167,6 @@ const Main = () => {
   const handleToggleClick2 = () => {
     setIsToggled2(!isToggled2);
   };
-  
-  
 
   return (
     <>
@@ -287,7 +280,10 @@ const Main = () => {
                   </div>
                 </div>
                 {/* 같은 지점일 때 */}
-                <div className="rsv-form_input mt10 pc_only"  style={{ display: isChecked ? "block" : "none" }}>
+                <div
+                  className="rsv-form_input mt10 pc_only"
+                  style={{ display: isChecked ? "block" : "none" }}
+                >
                   <div
                     className="wd_80"
                     onClick={() => openModal("pickup_location")}
@@ -328,7 +324,10 @@ const Main = () => {
                     </svg>
                   </button>
                 </div>
-                <div className="rsv-form_input mt10 pc_only" style={{ display: isChecked ? "block" : "none" }}>
+                <div
+                  className="rsv-form_input mt10 pc_only"
+                  style={{ display: isChecked ? "block" : "none" }}
+                >
                   <div
                     className="wd_80"
                     onClick={() => openModal("pickup_location")}
@@ -367,7 +366,10 @@ const Main = () => {
                     </svg>
                   </button>
                 </div>
-                <div className="rsv-form_input mt10 pc_only" style={{ display: isChecked ? "none" : "block" }}>
+                <div
+                  className="rsv-form_input mt10 pc_only"
+                  style={{ display: isChecked ? "none" : "block" }}
+                >
                   <div
                     className="wd_80"
                     onClick={() => openModal("pickup_location")}
@@ -408,7 +410,10 @@ const Main = () => {
                   </button>
                 </div>
 
-                <div className="rsv-form_input mt10 pc_only"  style={{ display: isChecked ? "none" : "block" }}>
+                <div
+                  className="rsv-form_input mt10 pc_only"
+                  style={{ display: isChecked ? "none" : "block" }}
+                >
                   <div
                     className="wd_80"
                     onClick={() => openModal("dropoff_location")}
@@ -801,13 +806,11 @@ const Main = () => {
       {/* 지점 모달 */}
       <div id="pickup_location" className="modal">
         <div className="modal-content2">
-          <div className="modal-title Title03 h-66"></div>
+          <div className="modal-title Title03 h-66">픽업 지점 선택</div>
           <span className="close fwb">&times;</span>
           <div className="cont_info">
             <div className="search-box flex search">
-              <svg viewBox="0 0 56.7 56.7" className="search_icon">
-                <path d="M42.8 7.3C33-2.4 17.1-2.4 7.3 7.3c-9.8 9.8-9.8 25.7 0 35.5 8.7 8.7 22.2 9.7 32 2.9l9.6 9.6c1.8 1.8 4.7 1.8 6.4 0 1.8-1.8 1.8-4.7 0-6.4l-9.6-9.6c6.8-9.8 5.8-23.3-2.9-32zm-6.2 29.3c-6.4 6.4-16.7 6.4-23.1 0s-6.4-16.7 0-23.1c6.4-6.4 16.7-6.4 23.1 0 6.4 6.4 6.4 16.8 0 23.1z"></path>
-              </svg>
+              <img className="search_ic" src="/img/icon/search_ic.svg" alt="" />
               <input
                 type="text"
                 autoComplete="off"
@@ -815,26 +818,133 @@ const Main = () => {
                 data-test-id="search-input"
                 placeholder="영문/한글 도시 이름"
               />
-              {/* <button type="button" className="button search_btn">
-                                <span className="ico">검색</span>
-                            </button> */}
+              <a href="#?" className="reload_ic">
+                <img src="/img/icon/reload_ic.svg" alt="" />
+              </a>
             </div>
             {/* <!-- 지점 리스트 S --> */}
             <ul className="point_detail">
-              <li className="guide_title pa20 close_btn">
-                <div>
+              <li
+                className={`guide_title arrow toggle_btn arrow_custom pa20 flex ai-ct ${
+                  isToggled ? "toggle" : ""
+                }`}
+              >
+                <div className="mr20 starcheck">
+                  <input type="checkbox" id="star_check04" />
+                  <label
+                    htmlFor="star_check04"
+                    className="star_check_bg"
+                  ></label>
+                </div>
+                <div
+                  onClick={() => {
+                    handleToggleClick();
+                    handleToggle();
+                  }}
+                  className="w-full"
+                >
                   말라가 공항 - (스페인)
                   <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
                 </div>
               </li>
-              <li className="guide_title pa20 close_btn">
-                <div>
-                  말라가 공항 - (스페인)
-                  <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
+              <li className="cont_info view hidden pa30 toggle_cont">
+                <div className="mb10 flex items-center">
+                  <div>지점 상세정보</div>
+                  <img
+                    className="export_ic ml-auto"
+                    src="./img/icon/export_ic.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="detail">
+                  <div className="title Fs_sm summary border-bottom pb5">
+                    지점 주소
+                  </div>
+                  <div className="adress ico">
+                    <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
+                    ENTERPRISE-RENT-A-CAR MALAGA MA 29004 ES
+                  </div>
+                  <div className="call ico">
+                    <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
+                  </div>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary border-bottom pb5">
+                    영업시간
+                  </div>
+                  <table className="table02 mb10">
+                    <thead>
+                      <tr>
+                        <th>요일</th>
+                        <th>영업시간</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>월</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>화</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>수</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>목</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>금</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>토</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>일</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary  border-bottom pb5">
+                    찾아가기
+                  </div>
+                  <div>
+                    Our office is located OFFSITE outside the terminal. Once you
+                    have picked up your baggage please follow the exit signs and
+                    exit the terminal building. minutes away.
+                  </div>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary  border-bottom pb5">
+                    위치보기
+                  </div>
+                  <div id="map_container"></div>
+                  <div id="map"></div>
+                </div>
+                <div className="l-button mt30">
+                  <button
+                    type="button"
+                    className="button full_button button--primary"
+                  >
+                    바로 예약하기
+                  </button>
                 </div>
               </li>
             </ul>
             {/* <!-- 지점 리스트 E --> */}
+            <button
+              type="button"
+              className="button full_button button--primary mt30"
+            >
+              선택지점 예약하기
+            </button>
           </div>
         </div>
       </div>
@@ -842,13 +952,11 @@ const Main = () => {
       {/* <!-- 반납 지점 modal --> */}
       <div id="dropoff_location" className="modal">
         <div className="modal-content2">
-          <div className="modal-title Title03"></div>
+          <div className="modal-title Title03">반납 지점 선택</div>
           <span className="close fwb">&times;</span>
           <div className="cont_info">
             <div className="search-box flex search">
-              <svg viewBox="0 0 56.7 56.7" className="search_icon">
-                <path d="M42.8 7.3C33-2.4 17.1-2.4 7.3 7.3c-9.8 9.8-9.8 25.7 0 35.5 8.7 8.7 22.2 9.7 32 2.9l9.6 9.6c1.8 1.8 4.7 1.8 6.4 0 1.8-1.8 1.8-4.7 0-6.4l-9.6-9.6c6.8-9.8 5.8-23.3-2.9-32zm-6.2 29.3c-6.4 6.4-16.7 6.4-23.1 0s-6.4-16.7 0-23.1c6.4-6.4 16.7-6.4 23.1 0 6.4 6.4 6.4 16.8 0 23.1z"></path>
-              </svg>
+              <img className="search_ic" src="/img/icon/search_ic.svg" alt="" />
               <input
                 type="text"
                 autoComplete="off"
@@ -856,26 +964,133 @@ const Main = () => {
                 data-test-id="search-input"
                 placeholder="영문/한글 도시 이름"
               />
-              {/* <button type="button" className="button search_btn">
-                                <span className="ico">검색</span>
-                            </button> */}
+              <a href="#?" className="reload_ic">
+                <img src="/img/icon/reload_ic.svg" alt="" />
+              </a>
             </div>
             {/* <!-- 지점 리스트 S --> */}
             <ul className="point_detail">
-              <li className="guide_title pa20 close_btn">
-                <div>
+              <li
+                className={`guide_title arrow toggle_btn arrow_custom pa20 flex ai-ct ${
+                  isToggled ? "toggle" : ""
+                }`}
+              >
+                <div className="mr20 starcheck">
+                  <input type="checkbox" id="star_check05" />
+                  <label
+                    htmlFor="star_check05"
+                    className="star_check_bg"
+                  ></label>
+                </div>
+                <div
+                  onClick={() => {
+                    handleToggleClick();
+                    handleToggle();
+                  }}
+                  className="w-full"
+                >
                   말라가 공항 - (스페인)
                   <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
                 </div>
               </li>
-              <li className="guide_title pa20 close_btn">
-                <div>
-                  말라가 공항 - (스페인)
-                  <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
+              <li className="cont_info view hidden pa30 toggle_cont">
+                <div className="mb10 flex items-center">
+                  <div>지점 상세정보</div>
+                  <img
+                    className="export_ic ml-auto"
+                    src="./img/icon/export_ic.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="detail">
+                  <div className="title Fs_sm summary border-bottom pb5">
+                    지점 주소
+                  </div>
+                  <div className="adress ico">
+                    <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
+                    ENTERPRISE-RENT-A-CAR MALAGA MA 29004 ES
+                  </div>
+                  <div className="call ico">
+                    <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
+                  </div>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary border-bottom pb5">
+                    영업시간
+                  </div>
+                  <table className="table02 mb10">
+                    <thead>
+                      <tr>
+                        <th>요일</th>
+                        <th>영업시간</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>월</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>화</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>수</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>목</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>금</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>토</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                      <tr>
+                        <td>일</td>
+                        <td>08:00 ~ 23:59</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary  border-bottom pb5">
+                    찾아가기
+                  </div>
+                  <div>
+                    Our office is located OFFSITE outside the terminal. Once you
+                    have picked up your baggage please follow the exit signs and
+                    exit the terminal building. minutes away.
+                  </div>
+                </div>
+                <div className="detail mt20">
+                  <div className="title Fs_sm summary  border-bottom pb5">
+                    위치보기
+                  </div>
+                  <div id="map_container"></div>
+                  <div id="map"></div>
+                </div>
+                <div className="l-button mt30">
+                  <button
+                    type="button"
+                    className="button full_button button--primary"
+                  >
+                    바로 예약하기
+                  </button>
                 </div>
               </li>
             </ul>
             {/* <!-- 지점 리스트 E --> */}
+            <button
+              type="button"
+              className="button full_button button--primary mt30"
+            >
+              선택지점 예약하기
+            </button>
           </div>
         </div>
       </div>
@@ -887,13 +1102,13 @@ const Main = () => {
           <div className="cont_info mt20">
             <div className="box_cont open drop">
               <div
-                className={`cont_title arrow toggle_btn ${isToggled ? 'toggle' : ''}`}
-                onClick={() =>
-                 {
-                  handleToggleClick()
-                  handleToggle()
-                 }
-                }
+                className={`cont_title arrow toggle_btn ${
+                  isToggled ? "toggle" : ""
+                }`}
+                onClick={() => {
+                  handleToggleClick();
+                  handleToggle();
+                }}
               >
                 픽업 / 반납 날짜를 선택해주세요.
               </div>
@@ -933,25 +1148,20 @@ const Main = () => {
             <div className="rsv_time">
               <div className="box_cont open drop">
                 <div
-                  className={`cont_title arrow toggle_btn ${isToggled2 ? 'toggle' : ''}`}
-                  onClick={()=>
-                  {
-                    handleToggleClick2()
-                    handleToggle3()
-                  }
-                  }
+                  className={`cont_title arrow toggle_btn ${
+                    isToggled2 ? "toggle" : ""
+                  }`}
+                  onClick={() => {
+                    handleToggleClick2();
+                    handleToggle3();
+                  }}
                 >
                   시간을 선택해주세요.
                 </div>
                 <div className="cont_info view pa10 flex jc-sb toggle_cont3 time_info">
                   <div className="mr5">
                     <div className="pickup-return">
-                      <input
-                        type="radio"
-                        id="pickup"
-                        
-                        name="pickup-return"
-                      />
+                      <input type="radio" id="pickup" name="pickup-return" />
                       <label className="" htmlFor="pickup">
                         픽업
                       </label>
