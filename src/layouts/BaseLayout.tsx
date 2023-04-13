@@ -349,7 +349,7 @@ const BaseLayout = () => {
                 >
                   Travel Partner
                 </li>
-                {/* <li>
+                <li className="text">
 								<b>홍길동님 </b>
 								<a href="/pickup_scheduled">
 									픽업예정 <span className="primary">1</span>
@@ -357,8 +357,8 @@ const BaseLayout = () => {
 								<a href="#?" className="ml5" onClick={() => openModal("confirm")}>
 									<img src="./img/icon/Log_out.png" alt="" style={{width: "24px"}} />
 								</a>
-							</li> */}
-                {/* <li>
+							</li>
+                <li className="text">
 								<b>투어코리아여행사 </b>
 								홍길동님
 								<a href="/pickup_scheduled">
@@ -367,7 +367,7 @@ const BaseLayout = () => {
 								<a href="#?" className="ml5" onClick={() => openModal("confirm")}>
 									<img src="./img/icon/Log_out.png" alt="" style={{width: "24px"}} />
 								</a>
-							</li> */}
+							</li>
               </ul>
               <div className="right-mo">
                 {url !== "/join_simple" &&
@@ -488,7 +488,7 @@ const BaseLayout = () => {
                 </div>
               </div>
             </div>
-            <div className="overflow_box">
+            
               <ul className="mobile-menu_ico pa15 flex">
                 <li className="cursor tac ico line">
                   <a href="/rsv_status">
@@ -509,6 +509,8 @@ const BaseLayout = () => {
                   </a>
                 </li>
               </ul>
+              {/* 로그인 안했을때,했을때 overflow_box에 h340 추가 */}
+              <div className="overflow_box">
               <nav className="mobile-menu_gnb">
                 <ul>
                   <li
@@ -546,6 +548,7 @@ const BaseLayout = () => {
                   </li>
                 </ul>
               </nav>
+            </div>
               <ul className="mobile-menu_bottom summary flex jc-ct">
                 <li className="Fs_sm tac">
                   <a href="/company">알라모 소개</a>
@@ -557,7 +560,6 @@ const BaseLayout = () => {
                   <a onClick={() => openModal("Privacy_Stat")}>개인정보 취급방침</a>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
       </header>
@@ -856,7 +858,7 @@ const BaseLayout = () => {
                 {/* <!-- 지점 리스트 S --> */}
                 <ul className="point_detail">
                   <li
-                    className={`guide_title arrow toggle_btn arrow_custom pa20 flex ai-ct ${
+                    className={`guide_title toggle_btn  pa20 flex ai-ct ${
                       isToggled ? "toggle" : ""
                     }`}
                   >
@@ -872,7 +874,7 @@ const BaseLayout = () => {
                         handleToggleClick();
                         handleToggle();
                       }}
-                      className="w-full"
+                      className="w-full arrow arrow_custom"
                     >
                       말라가 공항 - (스페인)
                       <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
@@ -972,7 +974,7 @@ const BaseLayout = () => {
 
                 <ul className="point_detail">
                   <li
-                    className={`guide_title arrow toggle_btn arrow_custom pa20 flex ai-ct ${
+                    className={`guide_title toggle_btn pa20 flex ai-ct ${
                       isToggled2 ? "toggle" : ""
                     }`}
                   >
@@ -988,7 +990,7 @@ const BaseLayout = () => {
                         handleToggleClick2();
                         handleToggle2();
                       }}
-                      className="w-full"
+                      className="w-full arrow arrow_custom"
                     >
                       말라가 공항 - (스페인)
                       <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>

@@ -117,6 +117,22 @@ header.scroll .header_head .right-pc_btn:hover {
     color: #fff;
     border: 1px solid var(--main-color);
 }
+.right-pc .text,
+.right-pc .text .primary,
+.right-pc .text a {
+    color:#fff;
+}
+
+header:hover .right-pc .text,
+header.scroll .right-pc .text,
+header:hover .right-pc .text a,
+header.scroll .right-pc .text a {
+    color:#333;
+}
+header:hover .right-pc .text .primary,
+header.scroll .right-pc .text .primary {
+    color:var(--main-color);
+}
 
 /* MO */
 .right-mo {
@@ -209,9 +225,12 @@ header.scroll .right-mo .img.ham_btn {
     gap: 20px;
 }
 .overflow_box {
-    height: calc(100% - 400px);
+    height: calc(100% - 410px);
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.overflow_box.h340 {
+    height:calc(100% - 340px)
 }
 .mobile-menu_gnb {
     width: 100%;
@@ -232,6 +251,7 @@ header.scroll .right-mo .img.ham_btn {
 }
 /* 소개, 약관, 취급방침 */
 .mobile-menu_bottom {
+    padding-top:10px;
     padding-bottom: 20px;
 }
 .mobile-menu_bottom li {
