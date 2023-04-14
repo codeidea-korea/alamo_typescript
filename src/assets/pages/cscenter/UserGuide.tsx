@@ -42,7 +42,7 @@ const UserGuide = () => {
     $(".view").show();
     $(".hidden").hide();
 
-    $(".modal .close").click(function () {
+    $(".modal .close, .modal .check_btn").click(function () {
       $(".modal").hide();
       $("body").removeClass("noneScroll");
     });
@@ -59,6 +59,7 @@ const UserGuide = () => {
   function openModal(modalname: any) {
     $("#" + modalname).show();
     $("body").addClass("noneScroll");
+    console.log(modalname)
   }
 
   const inquiryHandle = (e: any) => {
@@ -375,6 +376,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -397,6 +399,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -419,6 +422,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -441,6 +445,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -463,6 +468,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -485,6 +491,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -507,6 +514,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -529,6 +537,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -551,6 +560,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -573,6 +583,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -595,6 +606,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -617,6 +629,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -639,6 +652,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -661,6 +675,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -695,6 +710,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -717,6 +733,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -739,6 +756,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -761,6 +779,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -783,6 +802,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -817,6 +837,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -839,6 +860,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -861,6 +883,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -883,6 +906,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -905,6 +929,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -999,6 +1024,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1021,6 +1047,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1043,6 +1070,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1065,6 +1093,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1087,6 +1116,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1184,6 +1214,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1206,6 +1237,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1228,6 +1260,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1250,6 +1283,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1272,6 +1306,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1294,6 +1329,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1316,6 +1352,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1338,6 +1375,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1360,6 +1398,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1382,6 +1421,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1404,6 +1444,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1426,6 +1467,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1448,6 +1490,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1470,6 +1513,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1504,6 +1548,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1526,6 +1571,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1548,6 +1594,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1570,6 +1617,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1592,6 +1640,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1626,6 +1675,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1648,6 +1698,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1670,6 +1721,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1692,6 +1744,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1714,6 +1767,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1804,6 +1858,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1826,6 +1881,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1848,6 +1904,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1870,6 +1927,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1892,6 +1950,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -1985,6 +2044,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2007,6 +2067,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2029,6 +2090,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2051,6 +2113,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2073,6 +2136,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2095,6 +2159,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2117,6 +2182,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2139,6 +2205,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2161,6 +2228,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2183,6 +2251,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2205,6 +2274,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2227,6 +2297,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2249,6 +2320,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2271,6 +2343,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2305,6 +2378,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2327,6 +2401,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2349,6 +2424,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2371,6 +2447,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2393,6 +2470,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2427,6 +2505,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2449,6 +2528,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2471,6 +2551,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2493,6 +2574,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2515,6 +2597,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2605,6 +2688,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2627,6 +2711,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2649,6 +2734,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2671,6 +2757,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2693,6 +2780,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2786,6 +2874,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2808,6 +2897,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2830,6 +2920,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2852,6 +2943,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2874,6 +2966,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2896,6 +2989,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2918,6 +3012,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2940,6 +3035,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2962,6 +3058,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -2984,6 +3081,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3006,6 +3104,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3028,6 +3127,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3050,6 +3150,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3072,6 +3173,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3106,6 +3208,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3128,6 +3231,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3150,6 +3254,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3172,6 +3277,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3194,6 +3300,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3228,6 +3335,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3250,6 +3358,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3272,6 +3381,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3294,6 +3404,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3316,6 +3427,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3406,6 +3518,7 @@ const UserGuide = () => {
                                     주차합니다. 실내 주차장 표시는 P마크 위에
                                     집모양의 ^표시가 있습니다.
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3428,6 +3541,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3450,6 +3564,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3472,6 +3587,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>
@@ -3494,6 +3610,7 @@ const UserGuide = () => {
                                   <div className="info-detail">
                                     <b>1. 제목</b>
                                   </div>
+                                  <button type="button" className="button link button--primary check_btn">확인</button>
                                 </div>
                               </div>
                             </div>

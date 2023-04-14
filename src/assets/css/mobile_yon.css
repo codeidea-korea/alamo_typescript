@@ -1,3 +1,5 @@
+#user_guide .button.check_btn {margin:10px auto 0;}
+#user_guide .modal-content2 .cont_info {max-height:calc(100vh - 200px);}
 #user_guide .search-box.mo_search {
     display: none;
 }

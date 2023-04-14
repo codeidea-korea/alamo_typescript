@@ -382,7 +382,12 @@ const LinkList = () => {
                                     <span className="division" style={{height: "calc(100% - 30px)"}}></span>
                                     <li className="sub">
                                         <a href="/em/mail_rsv_com.html" target="_blank">
-                                            예약확정
+                                            예약확정 - 현지결제
+                                        </a>
+                                    </li>
+                                    <li className="sub">
+                                        <a href="/em/mail_rsv_com_now.html" target="_blank">
+                                            예약확정 - 지금결제
                                         </a>
                                     </li>
                                     <li className="sub">
