@@ -147,6 +147,7 @@ const BaseLayout = () => {
   };
   const downloadHandle = () => {
     $(".app_download").hide();
+    setIsDown(false)
   };
   const [isChecked, setIsChecked] = useState(false);
 
@@ -157,13 +158,13 @@ const BaseLayout = () => {
   };
 
   useEffect(() => {
-    $(".toggle_btn").on("click", function () {
-      if ($(this).hasClass("toggle")) {
-        $(this).removeClass("toggle");
-      } else {
-        $(this).addClass("toggle");
-      }
-    });
+    // $(".toggle_btn").on("click", function () {
+    //   if ($(this).hasClass("toggle")) {
+    //     $(this).removeClass("toggle");
+    //   } else {
+    //     $(this).addClass("toggle");
+    //   }
+    // });
     $(".modal .close_btn").click(function () {
       $(".modal").hide();
       $("body").removeClass("noneScroll");
@@ -234,6 +235,33 @@ const BaseLayout = () => {
     $(".toggle_cont6").toggle();
     $(".toggle_tit6").toggleClass("active");
   };
+
+  const [isDown,setIsDown]= useState(true)
+  const setOneVh = () => {
+    const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+  useEffect(() => {
+    setOneVh();
+      window.addEventListener('resize', setOneVh);
+      window.addEventListener('click', setOneVh);
+  }, []);
+
+  const toggleClass = (e:any)=>{
+    const pointlist = document.getElementById('point-search-list');
+    const ul = pointlist?.querySelectorAll<HTMLUListElement>('ul');
+    
+    if (e.currentTarget.classList.contains("active")) {
+      e.currentTarget.classList.remove("active");
+    } else {
+      ul?.forEach((item)=>{
+        const li = item.querySelector('li.guide_title') as HTMLLIElement
+        li.classList.remove("active")
+      })
+      e.currentTarget.classList.add("active");
+    }
+  }
+  
 
 
   return (
@@ -434,8 +462,9 @@ const BaseLayout = () => {
                 </a>
                 <a className="img search02" href="/rsv_main"></a>
               </div>
-
-              <a href="/login" className="login-btn fwb tac mt10 w-full">
+              
+              {/* 로그인 안했을때 */}
+              {/* <a href="/login" className="login-btn fwb tac mt10 w-full">
                 회원 로그인
               </a>
               <ul className="sns-box mt10 flex">
@@ -448,7 +477,8 @@ const BaseLayout = () => {
                 <li className="ico">
                   <img src="/img/icon/google.svg" alt="구글" />
                 </li>
-              </ul>
+              </ul> */}
+
               {/* 회원로그인 시 */}
               <div className="mobile_top_info mt10">
                 <div>
@@ -509,8 +539,11 @@ const BaseLayout = () => {
                   </a>
                 </li>
               </ul>
-              {/* 로그인 안했을때,했을때 overflow_box에 h340 추가 */}
-              <div className="overflow_box">
+
+              {/* 로그인 했을때 */}
+              <div className={isDown?"overflow_box":"overflow_box h270"}>
+              {/* 로그인 안했을때 */}
+              {/* <div className={isDown?"overflow_box islogin":"overflow_box islogin h270"}> */}
               <nav className="mobile-menu_gnb">
                 <ul>
                   <li
@@ -549,7 +582,7 @@ const BaseLayout = () => {
                 </ul>
               </nav>
             </div>
-              <ul className="mobile-menu_bottom summary flex jc-ct">
+              <ul className={isDown?"mobile-menu_bottom summary flex jc-ct istopbanner":"mobile-menu_bottom summary flex jc-ct"}>
                 <li className="Fs_sm tac">
                   <a href="/company">알라모 소개</a>
                 </li>
@@ -856,237 +889,244 @@ const BaseLayout = () => {
                   </a>
                 </div>
                 {/* <!-- 지점 리스트 S --> */}
-                <ul className="point_detail">
-                  <li
-                    className={`guide_title toggle_btn  pa20 flex ai-ct ${
-                      isToggled ? "toggle" : ""
-                    }`}
-                  >
-                    <div className="mr20 starcheck">
-                      <input type="checkbox" id="star_check01" />
-                      <label
-                        htmlFor="star_check01"
-                        className="star_check_bg"
-                      ></label>
-                    </div>
-                    <div
-                      onClick={() => {
-                        handleToggleClick();
-                        handleToggle();
-                      }}
-                      className="w-full arrow arrow_custom"
+                <div id="point-search-list">
+                  <ul className="point_detail">
+                    <li
+                      className={`guide_title  pa20 flex ai-ct ${
+                        isToggled ? "toggle" : ""
+                      }`}
+                      onClick={toggleClass}
                     >
-                      말라가 공항 - (스페인)
-                      <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
-                    </div>
-                  </li>
-                  <li className="cont_info view hidden pa30 toggle_cont">
-                    <div className="mb10 flex items-center">
-                      <div>지점 상세정보</div>
-                      <img
-                        className="export_ic ml-auto"
-                        src="./img/icon/export_ic.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="detail">
-                      <div className="title Fs_sm summary border-bottom pb5">
-                        지점 주소
+                      <div className="mr20 starcheck">
+                        <input type="checkbox" id="star_check01" />
+                        <label
+                          htmlFor="star_check01"
+                          className="star_check_bg"
+                        ></label>
                       </div>
-                      <div className="adress ico">
-                        <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
-                        ENTERPRISE-RENT-A-CAR MALAGA MA 29004 ES
-                      </div>
-                      <div className="call ico">
-                        <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
-                      </div>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary border-bottom pb5">
-                        영업시간
-                      </div>
-                      <table className="table02 mb10">
-                        <thead>
-                          <tr>
-                            <th>요일</th>
-                            <th>영업시간</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>월</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>화</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>수</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>목</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>금</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>토</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>일</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary  border-bottom pb5">
-                        찾아가기
-                      </div>
-                      <div>
-                        Our office is located OFFSITE outside the terminal. Once
-                        you have picked up your baggage please follow the exit
-                        signs and exit the terminal building. minutes away.
-                      </div>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary  border-bottom pb5">
-                        위치보기
-                      </div>
-                      <div id="map_container"></div>
-                      <div id="map"></div>
-                    </div>
-                    <div className="l-button mt30">
-                      <button
-                        type="button"
-                        className="button full_button button--primary"
+                      <div
+                        
+                        className="w-full"
                       >
-                        바로 예약하기
-                      </button>
-                    </div>
-                  </li>
-                </ul>
+                        말라가 공항 - (스페인)
+                        <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
+                      </div>
+                      <i className="arrow_icon arrow arrow_custom modal_arrow" 
+                        onClick={() => {
+                          handleToggleClick();
+                          handleToggle();
+                        }}></i>
+                    </li>
+                    <li className="cont_info view hidden pa30 toggle_cont">
+                      <div className="mb10 flex items-center">
+                        <div>지점 상세정보</div>
+                        <img
+                          className="export_ic ml-auto"
+                          src="./img/icon/export_ic.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="detail">
+                        <div className="title Fs_sm summary border-bottom pb5">
+                          지점 주소
+                        </div>
+                        <div className="adress ico">
+                          <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
+                          ENTERPRISE-RENT-A-CAR MALAGA MA 29004 ES
+                        </div>
+                        <div className="call ico">
+                          <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
+                        </div>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary border-bottom pb5">
+                          영업시간
+                        </div>
+                        <table className="table02 mb10">
+                          <thead>
+                            <tr>
+                              <th>요일</th>
+                              <th>영업시간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>월</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>화</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>수</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>목</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>금</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>토</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>일</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary  border-bottom pb5">
+                          찾아가기
+                        </div>
+                        <div>
+                          Our office is located OFFSITE outside the terminal. Once
+                          you have picked up your baggage please follow the exit
+                          signs and exit the terminal building. minutes away.
+                        </div>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary  border-bottom pb5">
+                          위치보기
+                        </div>
+                        <div id="map_container"></div>
+                        <div id="map"></div>
+                      </div>
+                      <div className="l-button mt30">
+                        <button
+                          type="button"
+                          className="button full_button button--primary"
+                        >
+                          바로 예약하기
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
 
-                <ul className="point_detail">
-                  <li
-                    className={`guide_title toggle_btn pa20 flex ai-ct ${
-                      isToggled2 ? "toggle" : ""
-                    }`}
-                  >
-                    <div className="mr20 starcheck">
-                      <input type="checkbox" id="star_check02" />
-                      <label
-                        htmlFor="star_check02"
-                        className="star_check_bg"
-                      ></label>
-                    </div>
-                    <div
-                      onClick={() => {
-                        handleToggleClick2();
-                        handleToggle2();
-                      }}
-                      className="w-full arrow arrow_custom"
+                  <ul className="point_detail">
+                    <li
+                      className={`guide_title pa20 flex ai-ct ${
+                        isToggled2 ? "toggle" : ""
+                      }`}
+                      onClick={toggleClass}
                     >
-                      말라가 공항 - (스페인)
-                      <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
-                    </div>
-                  </li>
-                  <li className="cont_info view hidden pa30 toggle_cont2">
-                    <div className="mb10 flex items-center">
-                      <div>지점 상세정보</div>
-                      <img
-                        className="export_ic ml-auto"
-                        src="./img/icon/export_ic.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="detail">
-                      <div className="title Fs_sm summary border-bottom pb5">
-                        지점 주소
+                      <div className="mr20 starcheck">
+                        <input type="checkbox" id="star_check02" />
+                        <label
+                          htmlFor="star_check02"
+                          className="star_check_bg"
+                        ></label>
                       </div>
-                      <div className="adress ico">
-                        <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
-                        enterprse-rent-a-car malaga ma 29004 es
-                      </div>
-                      <div className="call ico">
-                        <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
-                      </div>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary border-bottom pb5">
-                        영업시간
-                      </div>
-                      <table className="table02 mb10">
-                        <thead>
-                          <tr>
-                            <th>요일</th>
-                            <th>영업시간</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>월</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>화</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>수</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>목</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>금</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>토</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                          <tr>
-                            <td>일</td>
-                            <td>08:00 ~ 23:59</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary  border-bottom pb5">
-                        찾아가기
-                      </div>
-                      <div>
-                        Our office is located OFFSITE outside the terminal. Once
-                        you have picked up your baggage please follow the exit
-                        signs and exit the terminal building. minutes away.
-                      </div>
-                    </div>
-                    <div className="detail mt20">
-                      <div className="title Fs_sm summary  border-bottom pb5">
-                        위치보기
-                      </div>
-                      <div id="map_container"></div>
-                      <div id="map"></div>
-                    </div>
-                    <div className="l-button mt30">
-                      <button
-                        type="button"
-                        className="button full_button button--primary"
+                      <div
+                        className="w-full"
                       >
-                        바로 예약하기
-                      </button>
-                    </div>
-                  </li>
-                </ul>
+                        말라가 공항 - (스페인)
+                        <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
+                      </div>
+                      <i className="arrow_icon arrow arrow_custom modal_arrow" 
+                        onClick={() => {
+                          handleToggleClick2();
+                          handleToggle2();
+                        }}></i>
+                    </li>
+                    <li className="cont_info view hidden pa30 toggle_cont2">
+                      <div className="mb10 flex items-center">
+                        <div>지점 상세정보</div>
+                        <img
+                          className="export_ic ml-auto"
+                          src="./img/icon/export_ic.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div className="detail">
+                        <div className="title Fs_sm summary border-bottom pb5">
+                          지점 주소
+                        </div>
+                        <div className="adress ico">
+                          <img src="/img/icon/Local.svg" alt="지점주소" />{" "}
+                          enterprse-rent-a-car malaga ma 29004 es
+                        </div>
+                        <div className="call ico">
+                          <img src="/img/icon/Call.svg" alt="전화번호" /> 962-3134
+                        </div>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary border-bottom pb5">
+                          영업시간
+                        </div>
+                        <table className="table02 mb10">
+                          <thead>
+                            <tr>
+                              <th>요일</th>
+                              <th>영업시간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>월</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>화</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>수</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>목</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>금</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>토</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                            <tr>
+                              <td>일</td>
+                              <td>08:00 ~ 23:59</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary  border-bottom pb5">
+                          찾아가기
+                        </div>
+                        <div>
+                          Our office is located OFFSITE outside the terminal. Once
+                          you have picked up your baggage please follow the exit
+                          signs and exit the terminal building. minutes away.
+                        </div>
+                      </div>
+                      <div className="detail mt20">
+                        <div className="title Fs_sm summary  border-bottom pb5">
+                          위치보기
+                        </div>
+                        <div id="map_container"></div>
+                        <div id="map"></div>
+                      </div>
+                      <div className="l-button mt30">
+                        <button
+                          type="button"
+                          className="button full_button button--primary"
+                        >
+                          바로 예약하기
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
                 {/* <!-- 지점 리스트 E --> */}
                 <button
                   type="button"

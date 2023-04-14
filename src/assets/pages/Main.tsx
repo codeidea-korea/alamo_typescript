@@ -168,6 +168,21 @@ const Main = () => {
     setIsToggled2(!isToggled2);
   };
 
+  const toggleClass = (e:any)=>{
+    const pointlist = document.getElementById('point-search-list');
+    const ul = pointlist?.querySelectorAll<HTMLUListElement>('ul');
+    
+    if (e.currentTarget.classList.contains("active")) {
+      e.currentTarget.classList.remove("active");
+    } else {
+      ul?.forEach((item)=>{
+        const li = item.querySelector('li.guide_title') as HTMLLIElement
+        li.classList.remove("active")
+      })
+      e.currentTarget.classList.add("active");
+    }
+  }
+
   return (
     <>
       <main id="main">
@@ -825,9 +840,10 @@ const Main = () => {
             {/* <!-- 지점 리스트 S --> */}
             <ul className="point_detail">
               <li
-                className={`guide_title arrow toggle_btn arrow_custom pa20 flex ai-ct ${
+                className={`guide_title pa20 flex ai-ct ${
                   isToggled ? "toggle" : ""
                 }`}
+                onClick={toggleClass}
               >
                 <div className="mr20 starcheck">
                   <input type="checkbox" id="star_check04" />
@@ -837,15 +853,16 @@ const Main = () => {
                   ></label>
                 </div>
                 <div
-                  onClick={() => {
-                    handleToggleClick();
-                    handleToggle();
-                  }}
                   className="w-full"
                 >
                   말라가 공항 - (스페인)
                   <p className="Fs_sm summary">(MALAGA AIRPORT OFF SITE)</p>
                 </div>
+                <i className="arrow_icon arrow arrow_custom modal_arrow" 
+                  onClick={() => {
+                    handleToggleClick();
+                    handleToggle();
+                  }}></i>
               </li>
               <li className="cont_info view hidden pa30 toggle_cont">
                 <div className="mb10 flex items-center">

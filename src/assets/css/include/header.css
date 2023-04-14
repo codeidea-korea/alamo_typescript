@@ -120,18 +120,18 @@ header.scroll .header_head .right-pc_btn:hover {
 .right-pc .text,
 .right-pc .text .primary,
 .right-pc .text a {
-    color:#fff;
+    color: #fff;
 }
 
 header:hover .right-pc .text,
 header.scroll .right-pc .text,
 header:hover .right-pc .text a,
 header.scroll .right-pc .text a {
-    color:#333;
+    color: #333;
 }
 header:hover .right-pc .text .primary,
 header.scroll .right-pc .text .primary {
-    color:var(--main-color);
+    color: var(--main-color);
 }
 
 /* MO */
@@ -225,16 +225,23 @@ header.scroll .right-mo .img.ham_btn {
     gap: 20px;
 }
 .overflow_box {
-    height: calc(100% - 410px);
-    overflow-y: scroll;
+    height: calc((var(--vh, 1vh) * 100) - 325px);
+    overflow-y: auto;
     overflow-x: hidden;
 }
-.overflow_box.h340 {
-    height:calc(100% - 340px)
+.overflow_box.h270 {
+    height: calc((var(--vh, 1vh) * 100) - 265px);
+}
+.overflow_box.islogin {
+    height: calc((var(--vh, 1vh) * 100) - 345px);
+}
+.overflow_box.h270.islogin {
+    height: calc((var(--vh, 1vh) * 100) - 295px);
 }
 .mobile-menu_gnb {
     width: 100%;
     padding: 16px;
+    padding-bottom: 0;
 }
 .mobile-menu_gnb > ul > li {
     display: block;
@@ -246,13 +253,24 @@ header.scroll .right-mo .img.ham_btn {
     border-radius: 5px;
     box-sizing: border-box;
 }
+.mobile-menu_gnb > ul > li:last-of-type {
+    margin-bottom: 0;
+}
 .mobile-menu_gnb > ul > li a {
     display: block;
 }
 /* 소개, 약관, 취급방침 */
 .mobile-menu_bottom {
-    padding-top:10px;
-    padding-bottom: 20px;
+    /* z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; */
+    padding:15px 0;
+    background-color: #fff;
+}
+.mobile-menu_bottom.istopbanner {
+    /* bottom: 60px; */
 }
 .mobile-menu_bottom li {
     padding: 0 10px;
@@ -334,9 +352,9 @@ header.scroll .right-mo .img.ham_btn {
     box-sizing: border-box;
     justify-content: space-between;
 }
-.app_download span img{
-    width:20px;
-    height:20px;
+.app_download span img {
+    width: 20px;
+    height: 20px;
 }
 
 .app_download img {
@@ -367,4 +385,14 @@ header.scroll .right-mo .img.ham_btn {
 
 .color_blue {
     color: var(--main-color);
+}
+.modal_arrow {
+    width:25px; 
+    height:25px;
+}
+.modal_arrow:after {
+    right:7px !important;
+}
+.guide_title.active {
+    background-color:#f9f9f9;
 }
