@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 const PersonalInfo = () => {
     const navigation = useNavigate();
     useEffect(() => {
-        $(".modal .close").click(function () {
+        $(".modal .close, .modal .close_btn").click(function () {
             $(".modal").hide();
             $("body").removeClass("noneScroll");
         });
@@ -225,7 +225,7 @@ const PersonalInfo = () => {
                                                     <label htmlFor="join_agree" className="ml10">
                                                         이벤트 및 할인 혜택 안내 동의<span className="Fs_xsm">(선택)</span>
                                                     </label>
-                                                    <a href="#" className="detail join_agree_btn1">
+                                                    <a href="#?" onClick={() => openModal("privacy_01")} className="detail join_agree_btn1">
                                                         전문보기
                                                     </a>
                                                 </div>
@@ -287,7 +287,7 @@ const PersonalInfo = () => {
                                 </fieldset>
                             </form>
                             <div className="l-button mt30">
-                                <button type="button" className="button link button--primary">
+                                <button type="button" className="button link button--primary close_btn">
                                     변경하기
                                 </button>
                             </div>
@@ -295,6 +295,17 @@ const PersonalInfo = () => {
                     </div>
                 </div>
                 {/* <!-- Modal content E --> */}
+
+                {/* <!-- 개인정보 취급방침 --> */}
+                <div id="privacy_01" className="modal">
+                    <div className="modal-content2">
+                        <div className="modal-title Title03">이벤트 및 할인 혜택 안내 동의</div>
+                        <span className="close fwb">&times;</span>
+                        <div className="cont_info">
+                            약관 내용 입니다.
+                        </div>
+                    </div>
+                </div>
             </main>
         </>
     );

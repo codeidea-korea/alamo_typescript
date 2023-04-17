@@ -188,7 +188,7 @@
   bottom: 37px;
   width: 500px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   #main .rsv-form .l-button {
     width: 100%;
   }

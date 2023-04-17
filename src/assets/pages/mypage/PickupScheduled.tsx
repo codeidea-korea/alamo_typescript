@@ -103,8 +103,8 @@ const PickupScheduled = () => {
                     <li className="line">수정날짜</li>
                     <li className="rsv-com-date">2022-11-25 1:11</li>
                   </ul>
-                  <ul className="rsv-num">
-                    <li>예약번호</li>
+                  <ul className="rsv-num pt5">
+                    <li className="mt2">예약번호</li>
                     <li className="Title02 ml10">1123455667</li>
                   </ul>
                 </div>
@@ -743,7 +743,7 @@ const PickupScheduled = () => {
                       이용가능 합니다.
                       <br />
                       (만 21세~24세 운전자는 이용가능 한 차량등급이 제한될 수
-                      있습니다.) *뉴욕과 미시간주에서는 만18세 이상부터 렌터카
+                      있습니다.)<br /> *뉴욕과 미시간주에서는 만18세 이상부터 렌터카
                       이용이 가능하며, 추가 비용 및 이용 가능한 차량 등급도타
                       주와 상이합니다.
                       <br />

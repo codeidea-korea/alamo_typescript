@@ -285,9 +285,9 @@ input[id*="phone_number_value"] {
 #joinAgree .detail {
     float: right;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     color: #717171;
-    margin-top: 5px;
+    margin-top: 0;
 }
 #joinAgree .detail img {
     vertical-align: inherit;

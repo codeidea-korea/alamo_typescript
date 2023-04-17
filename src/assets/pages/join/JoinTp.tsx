@@ -60,6 +60,16 @@ const JoinTp = () => {
             setWrite(false);
         }
     };
+    const openModal = (modalname: any) => {
+        $("#" + modalname).show();
+        $("body").addClass("noneScroll");
+    };
+    useEffect(() => {
+        $(".modal .close").click(function () {
+            $(".modal").hide();
+            $("body").removeClass("noneScroll");
+        });
+    }, []);
     return (
         <>
             <main className="sub join" id="join">
@@ -458,7 +468,7 @@ const JoinTp = () => {
                                             <label htmlFor="join_agree" className="ml10">
                                                 만 14세 이상<span className="ess Fs_xsm">(필수)</span>
                                             </label>
-                                            <a href="#" className="detail join_agree_btn1">
+                                            <a href="#?" onClick={() => openModal("privacy_01")} className="detail join_agree_btn1">
                                                 전문보기
                                             </a>
                                         </div>
@@ -467,7 +477,7 @@ const JoinTp = () => {
                                             <label htmlFor="join_agree2" className="ml10">
                                                 서비스 이용약관<span className="ess Fs_xsm">(필수)</span>
                                             </label>
-                                            <a href="#" className="detail join_agree_btn2">
+                                            <a href="#?" onClick={() => openModal("privacy_02")} className="detail join_agree_btn2">
                                                 전문보기
                                             </a>
                                         </div>
@@ -476,7 +486,7 @@ const JoinTp = () => {
                                             <label htmlFor="join_agree3" className="ml10">
                                                 개인정보 수집 및 이용 동의<span className="ess Fs_xsm">(필수)</span>
                                             </label>
-                                            <a href="#" className="detail join_agree_btn2">
+                                            <a href="#?" onClick={() => openModal("privacy_03")} className="detail join_agree_btn2">
                                                 전문보기
                                             </a>
                                         </div>
@@ -485,7 +495,7 @@ const JoinTp = () => {
                                             <label htmlFor="join_agree4" className="ml10">
                                                 제 3자 제공 동의<span className="ess Fs_xsm">(필수)</span>
                                             </label>
-                                            <a href="#" className="detail join_agree_btn2">
+                                            <a href="#?" onClick={() => openModal("privacy_04")} className="detail join_agree_btn2">
                                                 전문보기
                                             </a>
                                         </div>
@@ -494,7 +504,7 @@ const JoinTp = () => {
                                             <label htmlFor="join_agree5" className="ml10">
                                                 이벤트 및 할인 혜택 안내 동의<span className="Fs_xsm">(선택)</span>
                                             </label>
-                                            <a href="#" className="detail join_agree_btn3">
+                                            <a href="#?" onClick={() => openModal("privacy_05")} className="detail join_agree_btn3">
                                                 전문보기
                                             </a>
                                         </div>
@@ -516,6 +526,57 @@ const JoinTp = () => {
                     </div>
                 </section>
             </main>
+
+            {/* <!-- 개인정보 취급방침 --> */}
+            <div id="privacy_01" className="modal">
+                <div className="modal-content2">
+                    <div className="modal-title Title03">만 14세이상</div>
+                    <span className="close fwb">&times;</span>
+                    <div className="cont_info">
+                        약관 내용 입니다.
+                    </div>
+                </div>
+            </div>
+
+            <div id="privacy_02" className="modal">
+                <div className="modal-content2">
+                    <div className="modal-title Title03">서비스 이용약관</div>
+                    <span className="close fwb">&times;</span>
+                    <div className="cont_info">
+                        약관 내용 입니다.
+                    </div>
+                </div>
+            </div>
+
+            <div id="privacy_03" className="modal">
+                <div className="modal-content2">
+                    <div className="modal-title Title03">개인정보 수집 및 이용 동의</div>
+                    <span className="close fwb">&times;</span>
+                    <div className="cont_info">
+                        약관 내용 입니다.
+                    </div>
+                </div>
+            </div>
+
+            <div id="privacy_04" className="modal">
+                <div className="modal-content2">
+                    <div className="modal-title Title03">제 3자 제공 동의</div>
+                    <span className="close fwb">&times;</span>
+                    <div className="cont_info">
+                        약관 내용 입니다.
+                    </div>
+                </div>
+            </div>
+
+            <div id="privacy_05" className="modal">
+                <div className="modal-content2">
+                    <div className="modal-title Title03">이벤트 및 할인 혜택 안내 동의</div>
+                    <span className="close fwb">&times;</span>
+                    <div className="cont_info">
+                        약관 내용 입니다.
+                    </div>
+                </div>
+            </div>
         </>
     );
 };

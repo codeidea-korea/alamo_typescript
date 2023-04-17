@@ -55,7 +55,7 @@ const Setting = () => {
 
             <div className="flex flex-col border-b py-10">
               <div className="box_title Title03 mb-0 ">약관 관련</div>
-              <a href="#?">
+              <a href="#?" onClick={() => openModal("tos")}>
                 <div className="flex py-5 items-center w-full mt-5">
                   <div className="shrink-0">회원 이용약관</div>
                   <img
@@ -65,14 +65,16 @@ const Setting = () => {
                   />
                 </div>
               </a>
-              <a href="#?">
+              <a href="#?" onClick={() => openModal("Privacy_Stat")}>
                 <div className="flex py-5 items-center w-full">
-                  <div className="shrink-0">개인정보 수집 이용동의 </div>
-                  <img
-                    className="h-12 w-12 ml-auto"
-                    src="/img/icon/arrow_r.svg"
-                    alt=""
-                  />
+                  <div className="flex py-5 items-center w-full">
+                    <div className="shrink-0">개인정보 수집 이용동의 </div>
+                    <img
+                      className="h-12 w-12 ml-auto"
+                      src="/img/icon/arrow_r.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </a>
             </div>
@@ -110,6 +112,7 @@ const Setting = () => {
           </button>
         </div>
       </div>
+
     </>
   );
 };

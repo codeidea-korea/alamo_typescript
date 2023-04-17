@@ -484,6 +484,9 @@ header.scroll .header_head {
         width: 100% !important;
         font-size: 1.2rem;
     }
+    .rate-title {
+        display: block;
+    }
     .Fs_sm.summary.fwn {
         margin-top: 5px;
     }

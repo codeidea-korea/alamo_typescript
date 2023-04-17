@@ -110,7 +110,7 @@ const InquiryRegist = () => {
                       <button
                         type="button"
                         className="button button--tip step Fs_sm mr5 h24"
-                        onClick={() => openModal("point-search")}
+                        onClick={() => openModal("recom_tip_01")}
                       >
                         <span className="mr5 mfs10">사륜구동</span>
                         <svg
@@ -132,7 +132,7 @@ const InquiryRegist = () => {
                       <button
                         type="button"
                         className="button button--tip step Fs_sm h24"
-                        onClick={() => openModal("point-search")}
+                        onClick={() => openModal("recom_tip_02")}
                       >
                         <span className="mr5 mfs10">환불안내</span>
                         <svg
@@ -485,6 +485,27 @@ const InquiryRegist = () => {
             </article>
           </div>
         </section>
+
+        {/* <!-- 개인정보 취급방침 --> */}
+        <div id="recom_tip_01" className="modal">
+            <div className="modal-content2">
+                <div className="modal-title Title03">사륜구동</div>
+                <span className="close fwb">&times;</span>
+                <div className="cont_info">
+                    사륜구동 팁 내용입니다.
+                </div>
+            </div>
+        </div>
+
+        <div id="recom_tip_02" className="modal">
+            <div className="modal-content2">
+                <div className="modal-title Title03">환불안내</div>
+                <span className="close fwb">&times;</span>
+                <div className="cont_info">
+                    환불안내 팁 내용입니다.
+                </div>
+            </div>
+        </div>
       </main>
     </>
   );

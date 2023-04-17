@@ -808,7 +808,7 @@ const Main = () => {
                 </p>
                 <button
                   type="button"
-                  className="button link button--primary info_close"
+                  className="button link button--primary info_close close_btn"
                 >
                   닫기
                 </button>

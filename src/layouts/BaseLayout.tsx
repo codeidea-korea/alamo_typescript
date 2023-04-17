@@ -676,7 +676,7 @@ const BaseLayout = () => {
               <div className="l-button flex jc-ct mt30">
                 <button
                   type="button"
-                  className="button link button--primary close_newsletter_com"
+                  className="button link button--primary close_newsletter_com close_btn"
                 >
                   확인
                 </button>
@@ -753,7 +753,7 @@ const BaseLayout = () => {
             <p>로그아웃하시겠습니까?</p>
             <button
               type="button"
-              className="full_button button button--primary mt30"
+              className="full_button button button--primary mt30 close_btn"
               onClick={() => navigation("/")}
             >
               확인
@@ -880,7 +880,7 @@ const BaseLayout = () => {
                   <input
                     type="text"
                     autoComplete="off"
-                    className="search_input mr5"
+                    className="search_input"
                     data-test-id="search-input"
                     placeholder="영문/한글 도시 이름"
                   />

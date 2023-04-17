@@ -185,7 +185,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>예약 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont">
-                    <p className="primary mb10">
+                    <p className="primary">
                       현지에서 계약서 작성 시 고객님께서 추가/변경하는 부분이
                       없다면, 예약 확정서 상의 최종 예상 요금 이외에 별도의
                       비용이 발생하지 않습니다. 서명된 부분에 대해서는 추후
@@ -204,7 +204,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>보유차량 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont2">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>이용방법 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont3">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
 
@@ -228,7 +228,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>유럽 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont4">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
 
@@ -240,7 +240,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>기타 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont5">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
 
@@ -252,7 +252,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>이용조건 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont6">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
 
@@ -264,7 +264,7 @@ const Faq = () => {
                     <span className="primary mr5">Q .</span>교통법규 관련 문의
                   </div>
                   <div className="cont_info view pa20 hidden toggle_cont7">
-                    <p className="primary mb10">FAQ 내용</p>
+                    <p className="primary">FAQ 내용</p>
                   </div>
                 </div>
               </div>
