@@ -49,6 +49,7 @@ import LinkList from "../assets/pages/Link";
 import LinkLayout from "../layouts/LinkLayout";
 import { element } from "prop-types";
 import Setting from "../assets/pages/mobile/Setting";
+import RsvVihicleCoupon from "../assets/pages/rsv/RsvVihicleCoupon";
 
 function Router() {
     const routes = [
@@ -153,6 +154,10 @@ function Router() {
                 {
                     path: "rsv_vihicle",
                     element: <RsvVihicle />,
+                },
+                {
+                    path: "rsv_vihicle_coupon",
+                    element: <RsvVihicleCoupon />,
                 },
                 {
                     path: "rsv_pay_now",

@@ -698,6 +698,7 @@ input[id*="phone_number_value"] {
     text-align: center;
     cursor: pointer;
 }
+.cont_right ul li.w100 {width:100%;}
 .cont_right ul li:hover {
     border-color: var(--main-color);
 }

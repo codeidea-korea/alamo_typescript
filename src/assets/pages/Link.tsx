@@ -146,6 +146,11 @@ const LinkList = () => {
                                 </a>
                             </li>
                             <li className="sub">
+                                <a href="rsv_vihicle_coupon" target="_blank">
+                                    step1 - 차량 및 요금제 선택(업그레이드 쿠폰 선택시)
+                                </a>
+                            </li>
+                            <li className="sub">
                                 <a href="rsv_pay_now" target="_blank">
                                     step2 - 요금확인 및 옵션추가(지금결제)
                                 </a>
